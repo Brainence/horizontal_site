@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Main Brainence Site", ".", "{FBF20F2E-9C99-4675-931A-8A8A7767E40C}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Brainence site", ".", "{FBF20F2E-9C99-4675-931A-8A8A7767E40C}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50652"
-		Debug.AspNetCompiler.PhysicalPath = "..\Main Brainence Site\"
+		Debug.AspNetCompiler.PhysicalPath = "..\Brainence site\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50652\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_50652"
-		Release.AspNetCompiler.PhysicalPath = "..\Main Brainence Site\"
+		Release.AspNetCompiler.PhysicalPath = "..\Brainence site\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50652\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50652"
-		SlnRelativePath = "..\Main Brainence Site\"
+		SlnRelativePath = "..\Brainence site\"
 	EndProjectSection
 EndProject
 Global

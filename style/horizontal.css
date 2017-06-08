@@ -84,9 +84,12 @@
 
 /* One Item Per Frame example*/
 .oneperframe {  }
-.oneperframe ul li { width: 100vw; }
+.oneperframe ul li{ width: 100vw; }
 .oneperframe ul li.active { background: transparent; }
 
+.testimonial-item{
+    width:1150px !important;
+}
 /* Crazy example */
 .crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
 .crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
