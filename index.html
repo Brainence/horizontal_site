@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html ng-app="brainenceApp">
+<head>
+    <title>Brainence</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/horizontal.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="lib/sly.min.js"></script>
+    <script src="src/app.js"></script>
+
+</head>
+<body>
+    <div id="animated-background"></div>
+    <header>
+        <nav class="navbar main-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <img class="logo" src="content/images/logo.png" />
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="menu-button-0" href="#" onclick="activatePageNr(0)">home</a></li>
+                    <li><a id="menu-button-1" href="#" onclick="activatePageNr(1)">portfolio</a></li>
+                    <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">testimonial</a></li>
+                    <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">team</a></li>
+                    <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">contacts</a></li>
+                    <li><a href="https://twitter.com/brainence" target="_blank"><img src="content/images/Twitter_icon.png" /></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <div>
+            <div class="wrap">
+                <div class="frame oneperframe" id="oneperframe">
+                    <ul class="clearfix">
+                        <li id="home">
+                            <div class="page-content">
+                                <div class="homepage-details">
+                                    <p class="page-slogan" style="vertical-align: middle;">LEADING EDGE STRATEGIES FOR YOUR BUSINESS</p>
+                                    <div style="width: 100%; height: 3px; background-image: radial-gradient(circle at 128% 3448%, #7511cd, #d54a08 81%, #d85b05);"></div>
+                                    <div class="row nomargin">
+                                        <div class="col-sm-3 panel">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
+                                                <img src="content/images/Web_app_Icon.png" />
+                                                <span class="home-widget-text">web | app development</span>
+                                            </div>
+                                            <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
+                                                <img src="content/images/website_grafic_icon.png" />
+                                                <span class="home-widget-text">website and grafics design</span>
+                                            </div>
+                                            <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
+                                                <img src="content/images/Software_dev_icon.png" />
+                                                <span class="home-widget-text">software development</span>
+                                            </div>
+                                            <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
+                                                <img src="content/images/Custom_progr_icon.png" />
+                                                <span class="home-widget-text">custom programming</span>
+                                            </div>
+                                            <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="page-content">
+                                <div class="homepage-details">
+                                    <p class="page-slogan" style="vertical-align: middle;">LEADING EDGE STRATEGIES FOR YOUR BUSINESS</p>
+                                    <div style="width: 100%; height: 3px; background-image: radial-gradient(circle at 128% 3448%, #7511cd, #d54a08 81%, #d85b05);"></div>
+                                    <div class="row nomargin">
+                                        <div class="col-sm-3 panel">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
+                                                <img src="content/images/Web_app_Icon.png" />
+                                                <span class="home-widget-text">web | app development</span>
+                                            </div>
+                                            <div id="web-app-dev2" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
+                                                <img src="content/images/website_grafic_icon.png" />
+                                                <span class="home-widget-text">website and grafics design</span>
+                                            </div>
+                                            <div id="website-graph-design2" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
+                                                <img src="content/images/Software_dev_icon.png" />
+                                                <span class="home-widget-text">software development</span>
+                                            </div>
+                                            <div id="software-development2" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
+                                                <img src="content/images/Custom_progr_icon.png" />
+                                                <span class="home-widget-text">custom programming</span>
+                                            </div>
+                                            <div id="custom-programming2" class="panel-collapse collapse panel-collapse-content-home">
+                                                <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+
+
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="src/vendor/plugins.js"></script>
+    <script src="src/horizontal.js"></script>
+
+    <script src="src/background.js"></script>
+    <script>
+        $(".collapsible-heading").hover(
+ function (event) {
+     var href = $(event.delegateTarget).attr('href');
+     $(href).collapse('show');
+ }, function (event) {
+     var href = $(event.target).attr('href');
+     $(href).collapse('hide');
+ }
+);</script>
+</body>
+</html>

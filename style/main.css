@@ -1,0 +1,85 @@
+﻿@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/RobotoCondensed-Regular.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'BauhausC';
+    src: url('../content/fonts/BauhausC-Light.ttf');
+    font-weight: 200;
+}
+
+.logo {
+    /*height: 30px;*/
+    margin-top: 15px;
+}
+
+.main-header {
+    background: black;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent !important;
+}
+
+.nav > li > a {
+    color: white;
+}
+
+    .nav > li > a:active, .nav > li > a:hover {
+        color: #FF6B00;
+    }
+
+.page-content {
+    margin: 0 auto;
+    width: 1150px;
+    height: calc(100vh - 63px);
+}
+
+.page-slogan {
+    font-size: 52px;
+    color: #ffffff;
+    letter-spacing: 3.1px;
+    margin-top: 30%;
+}
+
+body {
+    background-image: radial-gradient(circle at 47% 12%, #5b5959, #292929);
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.homepage-details {
+    font-family: 'Roboto' !important;
+}
+
+.home-widget-text {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.menu-active {
+    color: #ff6b00 !important;
+}
+.panel {
+    background: transparent !important;
+}
+.panel-default>.panel-heading {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.details-home-page {
+    font-family: 'BauhausC';
+    font-size: 14px;
+    color: #f0f0f0;
+}
+.panel-collapse-content-home {
+    line-height: 0.5 !important;
+}
