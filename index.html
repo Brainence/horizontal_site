@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/horizontal.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/testimonials.css" />
+    <link rel="stylesheet" href="style/portfolio.css" />
+    <link rel="stylesheet" href="style/contacts.css" />
 
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>
@@ -15,6 +17,8 @@
     <script src="lib/sly.min.js"></script>
     <script src="src/app.js"></script>
     <script src="src/testimonial.js"></script>
+    <script src="src/portfolio.js"></script>
+    <script src="src/contacts.js"></script>
 
 </head>
 <body>
@@ -88,46 +92,30 @@
                                 </div>
                             </div>
                         </li>
+
                         <li>
-                            <div class="page-content">
-                                <div class="homepage-details">
-                                    <p class="page-slogan" style="vertical-align: middle;">LEADING EDGE STRATEGIES FOR YOUR BUSINESS</p>
+                            <div class="page-content" ng-controller="portfolioCtrl">
+                                <div class="portfolio-page-details">
+                                    <div class="portfolio-header">
+                                        <span class="portfolio-page-slogan">PORTFOLIO</span>
+                                        <span class="portfolio-menu">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</span>
+                                    </div>
                                     <div class="gradient"></div>
-                                    <div class="row nomargin">
-                                        <div class="col-sm-3 panel">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
-                                                <img src="content/images/Web_app_Icon.png" />
-                                                <span class="home-widget-text">web | app development</span>
-                                            </div>
-                                            <div id="web-app-dev2" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                            </div>
+                                    <div class="wrap">
+                                        <div class="frame portfolio-frame row" id="portfolio-frame">
+                                            <ul class="clearfix">
+                                                <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
+                                                    <div class="portfolio-data">
+                                                        <p class="portfolio-title">{{portfolio.title}}</p>
+                                                        <img class="portfolio-image" ng-src="{{portfolio.image}}" />
+                                                        <p class="portfolio-text">{{portfolio.text}} <a href="">...read more...</a></p>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
-                                                <img src="content/images/website_grafic_icon.png" />
-                                                <span class="home-widget-text">website and grafics design</span>
-                                            </div>
-                                            <div id="website-graph-design2" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
-                                                <img src="content/images/Software_dev_icon.png" />
-                                                <span class="home-widget-text">software development</span>
-                                            </div>
-                                            <div id="software-development2" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
-                                                <img src="content/images/Custom_progr_icon.png" />
-                                                <span class="home-widget-text">custom programming</span>
-                                            </div>
-                                            <div id="custom-programming2" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
+                                        <div class="portfolio-scrollbar">
+                                            <div class="portfolio-handle">
+                                                <div class="portfolio-mousearea"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -136,10 +124,10 @@
                         </li>
                         
                         <li>
-                            <div class="page-content">
-                                <div class="testimonial-page-details" ng-controller="testimonialCtrl">
+                            <div class="page-content" ng-controller="testimonialCtrl">
+                                <div class="testimonial-page-details">
                                     <div class="testimonial-header">
-                                        <span class="testimonial-page-slogan">Testimonials</span>
+                                        <span class="testimonial-page-slogan">TESTIMONIALS</span>
                                         <span class="testimonial-menu">LATEST  |   RESENT</span>
                                     </div>
                                     <div class="gradient"></div>
@@ -177,7 +165,36 @@
                         </li>
 
                         <li>3</li>
-                        <li>4</li>
+                        <li>
+                            <div class="page-content">
+                                <div class="contacts-page-details row">
+                                    <div class="col-sm-4 contacts">
+                                        <p class="contacts-page-slogan">CONTACTS</p>
+                                        <div class="gradient"></div>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97940.7786553472!2d24.040431781659347!3d49.829509183023795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add0fe5c6318b%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497007338989"
+                                                 id="map" frameborder="0"></iframe>
+                                        <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
+                                        <div id="info">
+                                            <div class="contacts-info">
+                                                <p>Phone # +1 (847) 868 0980</p>
+                                                <div class="gradient"></div>
+                                            </div>
+                                            <div class="contacts-info">
+                                                <p>Email: info@brainence.com</p>
+                                                <div class="gradient"></div>
+                                            </div>
+                                            <div class="contacts-info">
+                                                <p>Skype: andrew.valenko</p>
+                                                <div class="gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 team">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 

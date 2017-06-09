@@ -1,0 +1,63 @@
+﻿
+.portfolio-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top:15%;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.portfolio-page-slogan {
+    font-family: Roboto;
+    font-size: 27px;
+    font-stretch: condensed;
+    text-align: left;
+}
+
+.portfolio-menu {
+    font-family: Roboto;
+    font-size: 14px;
+    font-stretch: condensed;
+    align-self: flex-end;
+}
+
+.portfolio-title{
+    font-family: BauhausC;
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 44px;
+    padding-bottom: 20px;
+    margin:0px;
+    text-align: left;
+}
+
+.portfolio-image {
+    padding:0px;
+    text-align: left;
+}
+
+.portfolio-text {
+    font-family: BauhausC !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 1.36 !important;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.portfolio-text a{
+    color: #6ed2ff;
+}
+
+.portfolio-frame{
+    height: auto !important;
+    width: 1150px !important;
+    margin: 0px;
+}
+
+.portfolio-item {
+    padding: 0px;
+    text-align:left !important;
+    width: 350px !important;
+    margin-right:50px !important;
+}

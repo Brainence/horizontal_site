@@ -1,0 +1,47 @@
+﻿
+.contacts-page-details{
+    margin-top:10%;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.contacts-page-slogan {
+    font-family: Roboto;
+    font-size: 27px;
+    font-stretch: condensed;
+    text-align: left;
+}
+
+#map {
+    height: 292px;
+    width: 100%;
+    padding-top: 45px;
+}
+
+#location {
+    font-family: BauhausC;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.69;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#info {
+    text-align:left;
+}
+
+.contacts-info {
+    display: inline-block;
+}
+
+.contacts-info p{
+    font-family: Roboto;
+    font-size: 24px !important;
+    font-stretch: condensed;
+    line-height: 2.13;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px
+}

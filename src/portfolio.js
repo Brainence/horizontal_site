@@ -1,28 +1,27 @@
 ﻿
-angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
-    
-    $.getJSON("content/testimonials.json", function (data) {
-        $scope.testimonials = data;
+angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
+
+    $.getJSON("content/portfolios.json", function (data) {
+        $scope.portfolios = data;
         $scope.$apply();
     });
 
-
-    var $testimonial_frame = $('#testimonial-frame');
+    var $portfolio_frame = $('#portfolio-frame');
     jQuery(function ($) {
         (function () {
 
-            var $testimonial_wrap = $testimonial_frame.parent();
+            var $portfolio_wrap = $portfolio_frame.parent();
 
-            $testimonial_frame.sly({
+            $portfolio_frame.sly({
                 horizontal: 1,
-                itemNav: 'forceCentered',
+                itemNav: 'centered',
                 smart: 1,
                 activateMiddle: 1,
                 mouseDragging: 1,
                 touchDragging: 1,
                 releaseSwing: 1,
                 startAt: 0,
-                scrollBar: $testimonial_wrap.find('.testimonial-scrollbar'),
+                scrollBar: $portfolio_wrap.find('.portfolio-scrollbar'),
                 scrollBy: 1,
                 speed: 1000,
                 elasticBounds: 1,
