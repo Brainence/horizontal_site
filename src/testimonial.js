@@ -1,12 +1,5 @@
 ﻿
 angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
-    
-    $.getJSON("content/testimonials.json", function (data) {
-        $scope.testimonials = data;
-        $scope.$apply();
-    });
-
-
     var $testimonial_frame = $('#testimonial-frame');
     jQuery(function ($) {
         (function () {
@@ -34,4 +27,10 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
         }());
     });
 
+    $.getJSON("content/testimonials.json", function (data) {
+        $scope.testimonials = data;
+        $scope.$apply();
+
+        $('#testimonial-frame').sly('reload');
+    });
 });

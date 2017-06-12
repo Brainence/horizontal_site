@@ -1,24 +1,27 @@
 ﻿
 .portfolio-header{
     display: flex;
+    font-family: Roboto;
+    font-stretch: condensed;
     justify-content: space-between;
     margin-top:15%;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     color: #ffffff;
 }
 
 .portfolio-page-slogan {
-    font-family: Roboto;
     font-size: 27px;
-    font-stretch: condensed;
     text-align: left;
+    padding:0px;
 }
 
 .portfolio-menu {
-    font-family: Roboto;
     font-size: 14px;
-    font-stretch: condensed;
     align-self: flex-end;
+    text-align: right !important;
+    padding:0px;
+    font-family: Roboto !important;
+    font-stretch: condensed !important;
 }
 
 .portfolio-title{
@@ -60,4 +63,44 @@
     text-align:left !important;
     width: 350px !important;
     margin-right:50px !important;
+}
+
+
+
+.selected-portfolio-item {
+    height: auto !important;
+    margin: 0px;
+    margin-top: 60px;
+    width: 1150px !important;
+}
+
+.selected-portfolio-menu {
+    font-size: 14px;
+    text-align: left;
+    font-family: Roboto;
+    color: #ffffff;
+    font-stretch: condensed;
+}
+
+.selected-portfolio-text {
+    font-family: BauhausC;
+    font-size: 24px;
+    line-height: 1.54;
+    text-align: justify;
+}
+
+.selected-portfolio-image {
+    padding: 0px;
+    text-align: left;
+    background-size:auto;
+}
+
+.selected-portfolio-details {
+    padding-right:0px;
+    padding-left:50px;
+}
+
+.selected-portfolio-back-button {
+    font-size: 16px;
+    text-align:left;
 }

@@ -1,10 +1,13 @@
 ﻿
-angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
 
-    $.getJSON("content/portfolios.json", function (data) {
-        $scope.portfolios = data;
-        $scope.$apply();
-    });
+angular.module('brainenceApp').filter('cropString', function () {
+    return function (x) {
+        return x.substring(0,145);
+    };
+});
+
+
+angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
 
     var $portfolio_frame = $('#portfolio-frame');
     jQuery(function ($) {
@@ -32,5 +35,23 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
             }).init();
         }());
     });
+
+    $.getJSON("content/portfolios.json", function (data) {
+        $scope.portfolios = data;
+        $scope.$apply();
+
+        $('#portfolio-frame').sly('reload');
+    });
+
+
+    $scope.SelectPortfolio = function (index) {
+        $scope.showList = false;
+        $scope.selectedPortfolio = $scope.portfolios[index];
+        $scope.$apply();
+    }
+
+    $scope.SelectList = function () {
+        $scope.showList = true;
+    }
 
 });

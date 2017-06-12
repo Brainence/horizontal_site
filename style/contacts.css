@@ -1,8 +1,9 @@
 ﻿
 .contacts-page-details{
     margin-top:10%;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     color: #ffffff;
+    font-size: 24px;
 }
 
 .contacts-page-slogan {
@@ -23,13 +24,15 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 1.69;
-    color: #ffffff;
+    color: #ddd;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: 5px;
 }
 
 #info {
     text-align:left;
+    font-size: 24px !important;
 }
 
 .contacts-info {

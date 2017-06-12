@@ -16,8 +16,6 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="lib/sly.min.js"></script>
     <script src="src/app.js"></script>
-    <script src="src/testimonial.js"></script>
-    <script src="src/portfolio.js"></script>
     <script src="src/contacts.js"></script>
 
 </head>
@@ -94,11 +92,11 @@
                         </li>
 
                         <li>
-                            <div class="page-content" ng-controller="portfolioCtrl">
-                                <div class="portfolio-page-details">
+                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true">
+                                <div class="portfolio-page-details" ng-show="showList">
                                     <div class="portfolio-header">
-                                        <span class="portfolio-page-slogan">PORTFOLIO</span>
-                                        <span class="portfolio-menu">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</span>
+                                        <p class="portfolio-page-slogan col-sm-6">PORTFOLIO</p>
+                                        <p class="portfolio-menu col-sm-6">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</p>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="wrap">
@@ -108,7 +106,7 @@
                                                     <div class="portfolio-data">
                                                         <p class="portfolio-title">{{portfolio.title}}</p>
                                                         <img class="portfolio-image" ng-src="{{portfolio.image}}" />
-                                                        <p class="portfolio-text">{{portfolio.text}} <a href="">...read more...</a></p>
+                                                        <p class="portfolio-text">{{portfolio.text | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -120,15 +118,30 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="portfolio-page-details" ng-show="!showList">
+                                    <div class="portfolio-header">
+                                        <p class="portfolio-page-slogan col-sm-6">{{selectedPortfolio.title}}</p>
+                                        <p class="portfolio-menu col-sm-6">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</p>
+                                    </div>
+                                    <div class="gradient"></div>
+                                    <div class="selected-portfolio-item row">
+                                        <img class="col-sm-4 selected-portfolio-image" ng-src="{{selectedPortfolio.image}}" />
+                                        <div class="col-sm-8 selected-portfolio-details">
+                                            <p class="selected-portfolio-menu">PROBLEM  |   SOLUTION  |  BUSSINES</p>
+                                            <p class="selected-portfolio-text">{{selectedPortfolio.text}}</p>
+                                            <a class="selected-portfolio-back-button" ng-click="SelectList()">Back</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         
                         <li>
                             <div class="page-content" ng-controller="testimonialCtrl">
                                 <div class="testimonial-page-details">
-                                    <div class="testimonial-header">
-                                        <span class="testimonial-page-slogan">TESTIMONIALS</span>
-                                        <span class="testimonial-menu">LATEST  |   RESENT</span>
+                                    <div class="testimonial-header row">
+                                        <p class="testimonial-page-slogan col-sm-6">TESTIMONIALS</p>
+                                        <p class="testimonial-menu col-sm-6">LATEST  |   RESENT</p>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="wrap">
@@ -190,7 +203,8 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8 team">
-
+                                        <p class="contacts-page-slogan">OUR TEAM</p>
+                                        <div class="gradient"></div>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +225,9 @@
     </div>
     <script src="src/vendor/plugins.js"></script>
     <script src="src/horizontal.js"></script>
-
+    <script src="src/testimonial.js"></script>
+    <script src="src/portfolio.js"></script>
+    
     <script src="src/background.js"></script>
     <script>
         $(".collapsible-heading").hover(

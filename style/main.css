@@ -91,3 +91,18 @@ body {
 }
 
 
+
+
+.footer {
+    margin-bottom:50px;
+    font-size: 40px !important;
+    text-align: center;
+    margin-top:-300px;
+}
+
+.footer p {
+    opacity: 0.13;
+    font-family: HarmoniaSansProCyr;
+    font-size: 10px;
+    color: #ffffff;
+}

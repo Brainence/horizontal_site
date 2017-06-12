@@ -1,4 +1,5 @@
-﻿var $frame = $('#oneperframe');
+﻿
+var $frame = $('#oneperframe');
 jQuery(function ($) {
     (function () {
         
