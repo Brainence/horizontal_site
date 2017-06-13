@@ -31,7 +31,8 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
                 easing: 'swing',
                 dragHandle: 1,
                 dynamicHandle: 1,
-                clickBar: 1
+                clickBar: 1,
+                scrollTrap: 1
             }).init();
         }());
     });
