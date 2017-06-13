@@ -44,6 +44,16 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
     });
 
 
+    $scope.PrevPortfolio = function () {
+        $portfolio_frame.sly('prevPage');
+    };
+
+    $scope.NextPortfolio = function () {
+        $portfolio_frame.sly('nextPage');
+    };
+
+
+
     $scope.SelectPortfolio = function (index) {
         $scope.showList = false;
         $scope.selectedPortfolio = $scope.portfolios[index];

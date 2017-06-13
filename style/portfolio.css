@@ -4,7 +4,7 @@
     font-family: Roboto;
     font-stretch: condensed;
     justify-content: space-between;
-    margin-top:15%;
+    margin-top:12%;
     margin-bottom: 0px;
     color: #ffffff;
 }
@@ -101,6 +101,16 @@
 }
 
 .selected-portfolio-back-button {
+    font-family: BauhausC;
     font-size: 16px;
     text-align:left;
+}
+
+.selected-portfolio-back-button a {
+    color: #6ed2ff;
+}
+
+.selected-portfolio-back-button a:hover {
+    cursor:pointer;
+    color: #6ed2ff;
 }

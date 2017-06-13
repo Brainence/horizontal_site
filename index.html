@@ -110,6 +110,8 @@
                                                     </div>
                                                 </li>
                                             </ul>
+                                            <img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/switch_button_triangle.png" />
+                                            <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
                                         </div>
                                         <div class="portfolio-scrollbar">
                                             <div class="portfolio-handle">
@@ -129,7 +131,7 @@
                                         <div class="col-sm-8 selected-portfolio-details">
                                             <p class="selected-portfolio-menu">PROBLEM  |   SOLUTION  |  BUSSINES</p>
                                             <p class="selected-portfolio-text">{{selectedPortfolio.text}}</p>
-                                            <a class="selected-portfolio-back-button" ng-click="SelectList()">Back</a>
+                                            <p class="selected-portfolio-back-button"><a ng-click="SelectList()">Back</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,6 +168,8 @@
                                                     </div>
                                                 </li>
                                             </ul>
+                                            <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" />
+                                            <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
                                         </div>
                                         <div class="testimonial-scrollbar">
                                             <div class="testimonial-handle">
@@ -179,12 +183,12 @@
 
                         <li>3</li>
                         <li>
-                            <div class="page-content">
+                            <div class="page-content" ng-controller="contactsCtrl">
                                 <div class="contacts-page-details row">
                                     <div class="col-sm-4 contacts">
                                         <p class="contacts-page-slogan">CONTACTS</p>
                                         <div class="gradient"></div>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97940.7786553472!2d24.040431781659347!3d49.829509183023795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add0fe5c6318b%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497007338989"
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
                                                  id="map" frameborder="0"></iframe>
                                         <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
                                         <div id="info">
@@ -205,13 +209,59 @@
                                     <div class="col-sm-8 team">
                                         <p class="contacts-page-slogan">OUR TEAM</p>
                                         <div class="gradient"></div>
-                                    </div>
+
+                                        <div class="row">
+                                            <div class="selected-contact-item col-sm-6">
+                                                <img ng-src="{{selectedContact.image}}"/>
+                                                <p>{{selectedContact.name}}  {{selectedContact.position}}</p>
+                                            </div>
+
+                                            <div class="contacts-items col-sm-6">
+                                                <div class="wrap">
+                                                    <div class="frame contacts-frame" id="contacts-frame">
+                                                        <ul class="clearfix">
+                                                            <li class="contacts-item" ng-repeat="contact in contacts">
+                                                                <img ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="contacts-scrollbar">
+                                                        <div class="contacts-handle">
+                                                            <div class="contacts-mousearea"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="photos row">
+                                            <div class="wrap">
+                                                <div class="frame photo-frame" id="photo-frame">
+                                                    <ul class="clearfix">
+                                                        <li class="photo-item" ng-repeat="photo in photos">
+                                                            <img ng-src="{{photo}}" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="photo-scrollbar">
+                                                    <div class="photo-handle">
+                                                        <div class="photo-mousearea"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
+                    <div class="footer">
+                        <a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
+                        <a href="#"><img id="bullet-1" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(1)" /></a>
+                        <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
+                        <a href="#"><img id="bullet-3" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(3)" /></a>
+                        <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
+                        <p>Copyright © 2017 Brainence, Ltd.</p>
+                    </div>
                 </div>
-
 
                 <div class="scrollbar">
                     <div class="handle">

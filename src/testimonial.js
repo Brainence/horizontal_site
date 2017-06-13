@@ -33,4 +33,13 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
 
         $('#testimonial-frame').sly('reload');
     });
+
+
+    $scope.PrevTesimonial = function () {
+        $testimonial_frame.sly('prev');
+    };
+
+    $scope.NextTesimonial = function () {
+        $testimonial_frame.sly('next');
+    };
 });

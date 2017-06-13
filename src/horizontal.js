@@ -22,18 +22,29 @@ jQuery(function ($) {
             dragHandle: 1,
             dynamicHandle: 1,
             clickBar: 1
+            }, {
+                change: changePage
             }).init();
     }());
 });
+
+
+
+function changePage(eventName) {
+    activatePageNr(this.rel.activeItem);
+}
+
 
 var activatePageNr = function (index) {
     $frame.sly('activate', index);
     clearmenuclass();
     $("#menu-button-" + index).addClass('menu-active');
+    $("#bullet-" + index).addClass('bullet-active');
 }
 
 var clearmenuclass = function() {
     for (i = 0; i < 5; i++) {
         $("#menu-button-" + i).removeClass('menu-active');
+        $("#bullet-" + i).removeClass('bullet-active');
     }
 }

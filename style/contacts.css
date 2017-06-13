@@ -1,6 +1,15 @@
 ﻿
+.contacts {
+    padding-right:25px;
+}
+
+.team {
+    padding-left:25px;
+}
+
+
 .contacts-page-details{
-    margin-top:10%;
+    margin-top:8%;
     margin-bottom: 0px;
     color: #ffffff;
     font-size: 24px;
@@ -16,7 +25,7 @@
 #map {
     height: 292px;
     width: 100%;
-    padding-top: 45px;
+    margin-top: 45px;
 }
 
 #location {
@@ -47,4 +56,77 @@
     color: #ffffff;
     margin: 0px;
     padding: 0px
+}
+
+
+.contacts-frame {
+    height: auto !important;
+    margin: 0px;
+    margin-top: 45px;
+    text-align:right !important;
+    width:350px;
+}
+
+.contacts-item {
+    padding: 0px;
+    text-align:right !important;
+    width: 175px !important;
+    height: 146px;
+    padding:0px;
+}
+
+.contacts-item img {
+    width: 175px !important;
+}
+
+.contacts-items{
+    text-align: right;
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    text-align: -o-right; 
+    text-align: -ms-right;
+}
+
+
+.selected-contact-item {
+    margin-top: 45px;
+    margin-right:0px;
+    padding-right:0px;
+    text-align: left;
+}
+
+.selected-contact-item img {
+    height:292px;
+}
+
+.selected-contact-item p {
+    font-family: BauhausC;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 11px;
+}
+
+
+
+
+
+
+.photos {
+    margin: 0px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.photo-item {
+    width: 200px !important;
+}
+
+.photo-item img {
+    height: 180px;
+    text-align: left;
+}
+
+.photo-frame {
+    height: 180px;
 }

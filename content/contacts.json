@@ -1,0 +1,44 @@
+﻿[
+  {
+    "name": "Name1",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img1.png"
+  }, 
+
+  {
+    "name": "Name2",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }, 
+
+  {
+    "name": "Name3",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }, 
+
+  {
+    "name": "Name4",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }, 
+
+  {
+    "name": "Name5",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }, 
+
+  {
+    "name": "Name6",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }, 
+
+  {
+    "name": "Name7",
+    "position": "Position1",
+    "image": "content/images/portfolios/Img2.png"
+  }
+
+]
