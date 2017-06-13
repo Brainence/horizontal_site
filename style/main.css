@@ -81,6 +81,7 @@ body {
     color: #f0f0f0;
 }
 .panel-collapse-content-home {
+    text-align: left;
     line-height: 0.5 !important;
 }
 
