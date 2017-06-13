@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="style/portfolio.css" />
     <link rel="stylesheet" href="style/contacts.css" />
 
+    <link rel="icon" href="content/images/wsi-imageoptim-cropped-Brain1Small-1-150x150.png">
+
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="lib/sly.min.js"></script>
     <script src="src/app.js"></script>
-    <script src="src/contacts.js"></script>
 
 </head>
 <body>
@@ -54,36 +55,36 @@
                                             <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
                                                 <img src="content/images/Web_app_Icon.png" />
                                                 <span class="home-widget-text">web | app development</span>
-                                            </div>
-                                            <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                <div id="web-app-dev" class="panel-collapse collapse in panel-collapse-content-home">
+                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
                                                 <img src="content/images/website_grafic_icon.png" />
                                                 <span class="home-widget-text">website and grafics design</span>
-                                            </div>
-                                            <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                <div id="website-graph-design" class="panel-collapse collapse in panel-collapse-content-home">
+                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
                                                 <img src="content/images/Software_dev_icon.png" />
                                                 <span class="home-widget-text">software development</span>
-                                            </div>
-                                            <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                <div id="software-development" class="panel-collapse collapse in panel-collapse-content-home">
+                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
                                                 <img src="content/images/Custom_progr_icon.png" />
                                                 <span class="home-widget-text">custom programming</span>
-                                            </div>
-                                            <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
-                                                <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
+                                                <div id="custom-programming" class="panel-collapse collapse in panel-collapse-content-home">
+                                                    <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -189,7 +190,7 @@
                                         <p class="contacts-page-slogan">CONTACTS</p>
                                         <div class="gradient"></div>
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
-                                                 id="map" frameborder="0"></iframe>
+                                                 id="map" frameborder="0" class="greyscale"></iframe>
                                         <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
                                         <div id="info">
                                             <div class="contacts-info">
@@ -212,7 +213,7 @@
 
                                         <div class="row">
                                             <div class="selected-contact-item col-sm-6">
-                                                <img ng-src="{{selectedContact.image}}"/>
+                                                <img class="greyscale" ng-src="{{selectedContact.image}}"/>
                                                 <p>{{selectedContact.name}}  {{selectedContact.position}}</p>
                                             </div>
 
@@ -221,7 +222,7 @@
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
+                                                                <img class="greyscale" ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -238,7 +239,7 @@
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix">
                                                         <li class="photo-item" ng-repeat="photo in photos">
-                                                            <img ng-src="{{photo}}" />
+                                                            <img class="greyscale" ng-src="{{photo}}" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -249,6 +250,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -277,17 +279,19 @@
     <script src="src/horizontal.js"></script>
     <script src="src/testimonial.js"></script>
     <script src="src/portfolio.js"></script>
+    <script src="src/contacts.js"></script>
     
     <script src="src/background.js"></script>
     <script>
-        $(".collapsible-heading").hover(
- function (event) {
-     var href = $(event.delegateTarget).attr('href');
-     $(href).collapse('show');
- }, function (event) {
-     var href = $(event.target).attr('href');
-     $(href).collapse('hide');
- }
-);</script>
+//        $(".collapsible-heading").hover(
+// function (event) {
+//     var href = $(event.delegateTarget).attr('href');
+//     $(href).collapse('show');
+// }, function (event) {
+//     var href = $(event.target).attr('href');
+//     $(href).collapse('hide');
+// }
+//);
+    </script>
 </body>
 </html>

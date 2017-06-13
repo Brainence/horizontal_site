@@ -92,6 +92,15 @@ body {
 }
 
 
+.panel-collapse-content-home {
+    visibility: hidden;
+}
+
+.collapsible-heading:hover .panel-collapse-content-home{
+    visibility: visible;
+}
+
+
 
 
 .footer{

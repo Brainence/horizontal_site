@@ -118,15 +118,29 @@
     text-align: left;
 }
 
+#photo-frame {
+    height: 180px;
+}
+
 .photo-item {
-    width: 200px !important;
+    width: auto !important;
 }
 
 .photo-item img {
     height: 180px;
-    text-align: left;
 }
 
-.photo-frame {
-    height: 180px;
+
+
+.greyscale {
+    -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 0.5s ease;
+}
+
+.greyscale:hover {
+  -webkit-filter: grayscale(0%);
+   -moz-filter: grayscale(0%);
+   filter: grayscale(0%);
 }

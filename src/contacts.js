@@ -36,12 +36,6 @@
     });
 
 
-    $scope.SelectContact = function (index) {
-        $scope.selectedContact = $scope.contacts[index];
-    }
-
-
-
 
     var $photos_frame = $('#photo-frame');
     jQuery(function ($) {
@@ -66,10 +60,11 @@
                 dragHandle: 1,
                 dynamicHandle: 1,
                 clickBar: 1,
-                scrollTrap:1
+                scrollTrap: 1
             }).init();
         }());
     });
+
 
     $.getJSON("content/photos.json", function (data) {
         $scope.photos = data;
@@ -78,4 +73,11 @@
     });
 
 
+
+
+    $scope.SelectContact = function (index) {
+        $scope.selectedContact = $scope.contacts[index];
+    }
+
+    
 });
