@@ -7,8 +7,8 @@
             var $contacts_wrap = $contacts_frame.parent();
 
             $contacts_frame.sly({
-                horizontal: 1,
-                itemNav: 'centered',
+                horizontal:1,
+                itemNav: 'basic',
                 smart: 1,
                 activateMiddle: 1,
                 mouseDragging: 1,
@@ -71,9 +71,6 @@
         $scope.$apply();
         $photos_frame.sly('reload');
     });
-
-
-
 
     $scope.SelectContact = function (index) {
         $scope.selectedContact = $scope.contacts[index];

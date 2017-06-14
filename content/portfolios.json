@@ -2,37 +2,55 @@
   {
     "title": "Time booking Tool",
     "image": "content/images/portfolios/Img1.png",
-    "text": "Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore. Deep v twee +1, roof party narwhal Cosby salvia kitsch before they sold out High Life."
+    "text": "Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore. Deep v twee +1, roof party narwhal Cosby salvia kitsch before they sold out High Life.",
+    "tags": [ "C++"],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   }, 
 
   {
     "title": "System Senter",
     "image": "content/images/portfolios/Img2.png",
-    "text": "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha meggings pickled Marfa Blue Bottle"
+    "text": "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha meggings pickled Marfa Blue Bottle",
+    "tags": [ "C#", "EntityFramework" ],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   },
 
   {
     "title": "Health Solving ",
     "image": "content/images/portfolios/Img3.png",
-    "text": "Mauris non tempor quam, et lacinia sapien. Mauris accums eros eget libero posuere vulputate. Etiam elit elit, ementum sed varius at, adipiscin et "
+    "text": "Mauris non tempor quam, et lacinia sapien. Mauris accums eros eget libero posuere vulputate. Etiam elit elit, ementum sed varius at, adipiscin et ",
+    "tags": [ "C#", "EntityFramework" ],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   },
   
   {
     "title": "Time booking Tool",
     "image": "content/images/portfolios/Img1.png",
-    "text": "Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee chur"
+    "text": "Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee chur",
+    "tags": [ "C#", "EntityFramework" ],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   }, 
 
   {
     "title": "System Senter",
     "image": "content/images/portfolios/Img2.png",
-    "text": "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha meggings pickled Marfa Blue Bottle"
+    "text": "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha meggings pickled Marfa Blue Bottle",
+    "tags": [ "C#", "EntityFramework" ],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   }, 
 
   {
     "title": "Health Solving ",
     "image": "content/images/portfolios/Img3.png",
-    "text": "Mauris non tempor quam, et lacinia sapien. Mauris accums eros eget libero posuere vulputate. Etiam elit elit, ementum sed varius at, adipiscin et "
+    "text": "Mauris non tempor quam, et lacinia sapien. Mauris accums eros eget libero posuere vulputate. Etiam elit elit, ementum sed varius at, adipiscin et ",
+    "tags": [ "C#", "EntityFramework" ],
+    "industries": [ "Building" ],
+    "data" :  "2015-03-25"
   }
 
 ]
