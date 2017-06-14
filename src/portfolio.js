@@ -7,7 +7,8 @@ angular.module('brainenceApp').filter('cropString', function () {
 });
 
 
-angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
+angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $timeout) {
+    var portfolios_data;
 
     var $portfolio_frame = $('#portfolio-frame');
     jQuery(function ($) {
@@ -38,10 +39,20 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
     });
 
     $.getJSON("content/portfolios.json", function (data) {
+        portfolios_data = data;
         $scope.portfolios = data;
+        var technologies = new Set();
+        if (technologies.size == 0) {
+            for (var i = 0; i < $scope.portfolios.length; i++) {
+                for (var j = 0; j < $scope.portfolios[i].tags.length; j++) {
+                    technologies.add($scope.portfolios[i].tags[j]);
+                }
+            }
+        }
+        $scope.submenu = Array.from(technologies);
         $scope.$apply();
 
-        $('#portfolio-frame').sly('reload');
+        $portfolio_frame.sly('reload');
     });
 
 
@@ -58,11 +69,43 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope) {
     $scope.SelectPortfolio = function (index) {
         $scope.showList = false;
         $scope.selectedPortfolio = $scope.portfolios[index];
-        $scope.$apply();
     }
 
     $scope.SelectList = function () {
         $scope.showList = true;
+    }
+
+
+
+
+    $scope.SortByDate = function () {
+        $scope.portfolios = portfolios_data.slice();
+        $scope.portfolios.sort(
+            function (value1, value2) {
+                if (Date.parse(value1.date) > Date.parse(value2.date)) return -1;
+                if (Date.parse(value1.date) < Date.parse(value2.date)) return 1;
+                return 0;
+            });
+        $timeout(function () {
+            RefreshFrame();
+        });
+    }
+
+    $scope.ShowTechnology = function (value) {
+        $scope.portfolios = portfolios_data.slice();
+        for (var i = 0; i < $scope.portfolios.length; i++) {
+            if (!$scope.portfolios[i].tags.includes(value)) {
+                $scope.portfolios.splice(i, 1);
+                i--;
+            }
+        };
+        $timeout(function () {
+            RefreshFrame();
+        });
+    };
+
+    function RefreshFrame() {
+        $portfolio_frame.sly('reload');
     }
 
 });

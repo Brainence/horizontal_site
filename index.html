@@ -93,11 +93,22 @@
                         </li>
 
                         <li>
-                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true">
+                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; showT=false">
                                 <div class="portfolio-page-details" ng-show="showList">
                                     <div class="portfolio-header">
-                                        <p class="portfolio-page-slogan col-sm-6">PORTFOLIO</p>
-                                        <p class="portfolio-menu col-sm-6">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</p>
+                                        <div class="col-sm-5">
+                                            <span class="portfolio-page-slogan">PORTFOLIO</span>
+                                            <span class="portfolio-menu">
+                                                <a ng-click="SortByDate()">LATEST</a>  |
+                                                <a ng-click="showT=true">TECHNOLOGY</a>  |
+                                                <a>INDUSTRY</a>
+                                            </span>
+                                        </div>
+                                        <p class="portfolio-menu col-sm-7" id="portfolio-submenu">
+                                            <span ng-show="showT" ng-repeat="item in submenu">
+                                                <a ng-click="ShowTechnology(item)">{{item}}</a>
+                                            </span>
+                                        </a>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="wrap">
@@ -123,8 +134,7 @@
                                 </div>
                                 <div class="portfolio-page-details" ng-show="!showList">
                                     <div class="portfolio-header">
-                                        <p class="portfolio-page-slogan col-sm-6">{{selectedPortfolio.title}}</p>
-                                        <p class="portfolio-menu col-sm-6">LATEST  |   RESENT  |  TECHNOLOGY  |  INDUSTRY</p>
+                                        <p class="portfolio-page-slogan">{{selectedPortfolio.title}}</p>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="selected-portfolio-item row">

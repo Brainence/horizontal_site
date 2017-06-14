@@ -1,4 +1,4 @@
-﻿angular.module('brainenceApp').controller("contactsCtrl", function ($scope) {
+﻿angular.module('brainenceApp').controller("contactsCtrl", function ($scope, $timeout) {
 
     var $contacts_frame = $('#contacts-frame');
     jQuery(function ($) {
@@ -69,12 +69,13 @@
     $.getJSON("content/photos.json", function (data) {
         $scope.photos = data;
         $scope.$apply();
-        $photos_frame.sly('reload');
+        $timeout(function () {
+            $photos_frame.sly('reload');
+        });
     });
 
     $scope.SelectContact = function (index) {
         $scope.selectedContact = $scope.contacts[index];
     }
-
     
 });
