@@ -247,9 +247,9 @@
                                         <div class="photos row">
                                             <div class="wrap">
                                                 <div class="frame photo-frame" id="photo-frame">
-                                                    <ul class="clearfix" id="listPhotos">
+                                                    <ul class="clearfix">
                                                         <li class="photo-item" ng-repeat="photo in photos">
-                                                            <img class="greyscale" ng-src="{{photo}}" />
+                                                            <img class="greyscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)"/>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -273,16 +273,38 @@
                         <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
                         <p>Copyright © 2017 Brainence, Ltd.</p>
                     </div>
-                </div>
-
                 <div class="scrollbar">
                     <div class="handle">
                         <div class="mousearea"></div>
                     </div>
                 </div>
-
             </div>
-
+        </div>
+        <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
+            <div class="modal-dialog">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item carousel-photo-item" ng-repeat="photo in photos">
+                                    <div>
+                                        <img ng-src="{{photo}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                            <button type="button" class="close" id="button-close" data-dismiss="modal">&times;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="src/vendor/plugins.js"></script>
@@ -290,17 +312,7 @@
     <script src="src/testimonial.js"></script>
     <script src="src/portfolio.js"></script>
     <script src="src/contacts.js"></script>
+    <script src="src/photos.js"></script>
     <script src="src/background.js"></script>
-    <script>
-//        $(".collapsible-heading").hover(
-// function (event) {
-//     var href = $(event.delegateTarget).attr('href');
-//     $(href).collapse('show');
-// }, function (event) {
-//     var href = $(event.target).attr('href');
-//     $(href).collapse('hide');
-// }
-//);
-    </script>
 </body>
 </html>

@@ -77,5 +77,10 @@
     $scope.SelectContact = function (index) {
         $scope.selectedContact = $scope.contacts[index];
     }
+
+    $scope.OpenPhoto = function (index) {
+        $(".carousel-photo-item").removeClass('active');
+        document.getElementsByClassName('carousel-photo-item')[index].className += ' active';
+    }
     
 });
