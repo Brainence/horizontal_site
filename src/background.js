@@ -64,9 +64,9 @@ function update() {
     PRNG.setSeed(3);
 
     var r, a, v, o;
-    var count = 15;
-    var spawn = 30;
-    var offset = 70;
+    var count = 10;
+    var spawn = 15;
+    var offset = 150;
     vertices = [];
     for (var i = 0; i < count; i++) {
 

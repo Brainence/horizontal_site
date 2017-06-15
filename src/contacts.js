@@ -67,11 +67,12 @@
 
 
     $.getJSON("content/photos.json", function (data) {
+
         $scope.photos = data;
         $scope.$apply();
         $timeout(function () {
             $photos_frame.sly('reload');
-        });
+        },200);
     });
 
     $scope.SelectContact = function (index) {
