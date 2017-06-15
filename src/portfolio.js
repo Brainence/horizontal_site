@@ -49,7 +49,17 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
                 }
             }
         }
-        $scope.submenu = Array.from(technologies);
+        $scope.submenuTechnologies = Array.from(technologies);
+
+        var industries = new Set();
+        if (industries.size == 0) {
+            for (var i = 0; i < $scope.portfolios.length; i++) {
+                for (var j = 0; j < $scope.portfolios[i].industries.length; j++) {
+                    industries.add($scope.portfolios[i].industries[j]);
+                }
+            }
+        }
+        $scope.submenuIndustries = Array.from(industries);
         $scope.$apply();
 
         $portfolio_frame.sly('reload');
@@ -99,6 +109,20 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
                 i--;
             }
         };
+        $timeout(function () {
+            RefreshFrame();
+        });
+    };
+
+    $scope.ShowIndustry = function (value) {
+        $scope.portfolios = portfolios_data.slice();
+        for (var i = 0; i < $scope.portfolios.length; i++) {
+            if (!$scope.portfolios[i].industries.includes(value)) {
+                $scope.portfolios.splice(i, 1);
+                i--;
+            }
+        };
+        console.log($scope.portfolios);
         $timeout(function () {
             RefreshFrame();
         });

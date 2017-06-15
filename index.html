@@ -30,12 +30,12 @@
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="menu-button-0" href="#" onclick="activatePageNr(0)">home</a></li>
-                    <li><a id="menu-button-1" href="#" onclick="activatePageNr(1)">portfolio</a></li>
-                    <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">testimonial</a></li>
-                    <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">team</a></li>
-                    <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">contacts</a></li>
-                    <li><a href="https://twitter.com/brainence" target="_blank"><img src="content/images/Twitter_icon.png" /></a></li>
+                    <li><a id="menu-button-0" href="#" onclick="activatePageNr(0)">Home</a></li>
+                    <li><a id="menu-button-1" href="#" onclick="activatePageNr(1)">Projects</a></li>
+                    <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">Feedback</a></li>
+                    <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">About</a></li>
+                    <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">Career</a></li>
+                    <li><a id="menu-button-5" href="#" onclick="activatePageNr(4)">Partnership</a></li>
                 </ul>
             </div>
         </nav>
@@ -93,20 +93,23 @@
                         </li>
 
                         <li>
-                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; showT=false">
+                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
                                 <div class="portfolio-page-details" ng-show="showList">
                                     <div class="portfolio-header">
                                         <div class="col-sm-5">
                                             <span class="portfolio-page-slogan">PORTFOLIO</span>
                                             <span class="portfolio-menu">
-                                                <a ng-click="SortByDate()">LATEST</a>  |
-                                                <a ng-click="showT=true">TECHNOLOGY</a>  |
-                                                <a>INDUSTRY</a>
+                                                <a ng-click="SortByDate(); submenu='latest'">LATEST</a>  |
+                                                <a ng-click="submenu='technology'">TECHNOLOGY</a>  |
+                                                <a ng-click="submenu='industry'">INDUSTRY</a>
                                             </span>
                                         </div>
-                                        <p class="portfolio-menu col-sm-7" id="portfolio-submenu">
-                                            <span ng-show="showT" ng-repeat="item in submenu">
+                                        <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
+                                            <span ng-switch-when="technology" ng-repeat="item in submenuTechnologies">
                                                 <a ng-click="ShowTechnology(item)">{{item}}</a>
+                                            </span>
+                                            <span ng-switch-when="industry" ng-repeat="item in submenuIndustries">
+                                                <a ng-click="ShowIndustry(item)">{{item}}</a>
                                             </span>
                                         </a>
                                     </div>
@@ -117,8 +120,8 @@
                                                 <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
                                                     <div class="portfolio-data">
                                                         <p class="portfolio-title">{{portfolio.title}}</p>
-                                                        <img class="portfolio-image" ng-src="{{portfolio.image}}" />
-                                                        <p class="portfolio-text">{{portfolio.text | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
+                                                        <img class="portfolio-image greyscale" ng-src="{{portfolio.image}}" />
+                                                        <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -132,16 +135,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="portfolio-page-details" ng-show="!showList">
-                                    <div class="portfolio-header">
-                                        <p class="portfolio-page-slogan">{{selectedPortfolio.title}}</p>
+                                <div class="portfolio-page-details" ng-show="!showList" ng-init="selection='problem'">
+                                    <div class="portfolio-header selected-portfolio-header">
+                                        <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
+                                        <span class="portfolio-menu selected-portfolio-menu">
+                                            <a ng-click="selection='problem'">PROBLEM</a>  |
+                                            <a ng-click="selection='solution'">SOLUTION</a>  |
+                                            <a ng-click="selection='business'">BUSINESS</a>
+                                        </span>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="selected-portfolio-item row">
-                                        <img class="col-sm-4 selected-portfolio-image" ng-src="{{selectedPortfolio.image}}" />
-                                        <div class="col-sm-8 selected-portfolio-details">
-                                            <p class="selected-portfolio-menu">PROBLEM  |   SOLUTION  |  BUSSINES</p>
-                                            <p class="selected-portfolio-text">{{selectedPortfolio.text}}</p>
+                                        <img class="col-sm-4 selected-portfolio-image greyscale" ng-src="{{selectedPortfolio.image}}" />
+                                        <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
+                                            <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
+                                            <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
+                                            <p ng-switch-when="business" class="selected-portfolio-text">{{selectedPortfolio.business}}</p>
                                             <p class="selected-portfolio-back-button"><a ng-click="SelectList()">Back</a></p>
                                         </div>
                                     </div>
@@ -152,9 +161,8 @@
                         <li>
                             <div class="page-content" ng-controller="testimonialCtrl">
                                 <div class="testimonial-page-details">
-                                    <div class="testimonial-header row">
-                                        <p class="testimonial-page-slogan col-sm-6">TESTIMONIALS</p>
-                                        <p class="testimonial-menu col-sm-6">LATEST  |   RESENT</p>
+                                    <div class="testimonial-header">
+                                        <p class="testimonial-page-slogan">TESTIMONIALS</p>
                                     </div>
                                     <div class="gradient"></div>
                                     <div class="wrap">
@@ -166,7 +174,7 @@
                                                     </div>
                                                     <div class="row nomargin justify-content-between testimonial-block">
                                                         <div class="col-sm-4 testimonial-image">
-                                                            <img ng-src="{{testimonial.image}}" />
+                                                            <img class="greyscale" ng-src="{{testimonial.image}}" />
                                                         </div>
                                                         <div class="col-sm-8 testimonial-data">
                                                             <div class="row nomargin testimonial-details">
@@ -192,29 +200,55 @@
                             </div>
                         </li>
 
-                        <li>3</li>
                         <li>
                             <div class="page-content" ng-controller="contactsCtrl">
                                 <div class="contacts-page-details row">
                                     <div class="col-sm-4 contacts">
-                                        <p class="contacts-page-slogan">CONTACTS</p>
+                                        <div class="contacts-header row">
+                                            <p class="contacts-page-slogan col-sm-6">CONTACTS</p>
+                                            <div class="col-sm-6">
+                                                <a href="https://twitter.com/brainence" target="_blank"> 
+                                                    <img id="imageTwitter" src="content/images/contacts/Twitter grey.png" 
+                                                         onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')" 
+                                                         onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')"/>
+                                                </a>
+                                                <a href="https://www.facebook.com/brainence/" target="_blank"> 
+                                                    <img id="imageFacebook"  src="content/images/contacts/facebook grey.png" 
+                                                         onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')" 
+                                                         onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')"/> 
+                                                </a>
+                                                <a href="https://www.linkedin.com/company/brainence" target="_blank"> 
+                                                    <img id="imageLinkedin" src="content/images/contacts/Linledin grey.png" 
+                                                         onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')" 
+                                                         onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')"/>
+                                                </a>
+                                                <a href="https://www.instagram.com/brainence/" target="_blank"> 
+                                                    <img id="imageInstagram"  src="content/images/contacts/Instagram grey.png" 
+                                                         onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')" 
+                                                         onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')"/>
+                                                </a>
+                                            </div>
+                                        </div>
                                         <div class="gradient"></div>
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
                                                  id="map" frameborder="0" class="greyscale"></iframe>
                                         <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
                                         <div id="info">
-                                            <div class="contacts-info">
-                                                <p>Phone # +1 (847) 868 0980</p>
-                                                <div class="gradient"></div>
-                                            </div>
-                                            <div class="contacts-info">
-                                                <p>Email: info@brainence.com</p>
-                                                <div class="gradient"></div>
-                                            </div>
-                                            <div class="contacts-info">
-                                                <p>Skype: andrew.valenko</p>
-                                                <div class="gradient"></div>
-                                            </div>
+                                            <a href="skype:akornytskyi?call">
+                                                <img id="imageSkype" src="content/images/contacts/Skype grey.png"
+                                                     onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
+                                                     onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
+                                            </a>
+                                            <a href="tel:023322323">
+                                                <img id="imageCall" src="content/images/contacts/Call Grey.png"
+                                                     onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
+                                                     onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
+                                            </a>
+                                            <a href="mailto:info@brainence.com">
+                                                <img id="imageMail" src="content/images/contacts/Mail Grey.png"
+                                                     onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
+                                                     onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="col-sm-8 team">
@@ -264,6 +298,10 @@
                                 </div>
                             </div>
                         </li>
+
+                        <li>4</li>
+
+                        <li>5</li>
                     </ul>
                     <div class="footer">
                         <a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
@@ -271,6 +309,7 @@
                         <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
                         <a href="#"><img id="bullet-3" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(3)" /></a>
                         <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
+                        <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>
                         <p>Copyright © 2017 Brainence, Ltd.</p>
                     </div>
                 <div class="scrollbar">
@@ -285,15 +324,13 @@
                 <div class="modal-content"> 
                     <div class="modal-body">
                         <div id="photoCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item carousel-photo-item" ng-repeat="photo in photos">
                                     <div>
                                         <img ng-src="{{photo}}">
-                                    </div>
+                                    </div>  
                                 </div>
                             </div>
-                            <!-- Left and right controls -->
                             <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
@@ -314,5 +351,10 @@
     <script src="src/contacts.js"></script>
     <script src="src/photos.js"></script>
     <script src="src/background.js"></script>
+    <script>
+        function ChangeImage(id, path) {
+            $("#"+id).attr('src', path);
+        }
+    </script>
 </body>
 </html>

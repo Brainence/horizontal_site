@@ -29,6 +29,7 @@
 
 .nav > li > a {
     color: white;
+    font-weight: bold;
 }
 
     .nav > li > a:active, .nav > li > a:hover {

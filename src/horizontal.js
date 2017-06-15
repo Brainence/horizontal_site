@@ -43,7 +43,7 @@ var activatePageNr = function (index) {
 }
 
 var clearmenuclass = function() {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 6; i++) {
         $("#menu-button-" + i).removeClass('menu-active');
         $("#bullet-" + i).removeClass('bullet-active');
     }
