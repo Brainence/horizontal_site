@@ -311,23 +311,23 @@
                     <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>
                     <p>Copyright © 2017 Brainence, Ltd.</p>
                 </div>
-            <div class="scrollbar">
-                <div class="handle">
-                    <div class="mousearea"></div>
-                </div>
+        </div>
+        <div class="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
             </div>
         </div>
     </div>
         <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
             <div class="modal-dialog">
-                <div class="modal-content"> 
+                <div class="modal-content">
                     <div class="modal-body">
                         <div id="photoCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="item carousel-photo-item active" ng-repeat="photo in photos">
                                     <div>
                                         <img ng-src="{{photo}}">
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#photoCarousel" data-slide="prev">

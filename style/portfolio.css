@@ -1,12 +1,14 @@
 ﻿
+.portfolio-page-details {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .portfolio-header{
     display: flex;
     font-family: Roboto;
     font-stretch: condensed;
     justify-content: space-between;
-    margin-top:10%;
-    margin-bottom: 0px;
     color: #ffffff;
 }
 
@@ -77,7 +79,7 @@
 
 .portfolio-frame{
     height: auto !important;
-    width: 1150px !important;
+    max-width: 1150px !important;
     margin: 0px;
 }
 
@@ -144,21 +146,8 @@
 }
 
 
+@media (max-width: 1320px) {
+    .portfolio-frame {
 
-@media (max-height: 900px) {
-    .portfolio-header{
-        margin-top:7%;
-    }
-}
-
-@media (max-height: 850px) {
-    .portfolio-header{
-        margin-top:4%;
-    }
-}
-
-@media (max-height: 800px) {
-    .portfolio-header{
-        margin-top:3%;
     }
 }

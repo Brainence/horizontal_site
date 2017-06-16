@@ -9,10 +9,10 @@
 
 
 .contacts-page-details{
-    margin-top:10%;
-    margin-bottom: 0px;
     color: #ffffff;
     font-size: 24px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .contacts-header div {
@@ -217,28 +217,3 @@
     outline:none !important;
 }
 
-
-
-
-
-
-
-
-
-@media (max-height: 900px) {
-    .contacts-page-details{
-        margin-top:7%;
-    }
-}
-
-@media (max-height: 850px) {
-    .contacts-page-details{
-        margin-top:4%;
-    }
-}
-
-@media (max-height: 800px) {
-    .contacts-page-details{
-        margin-top:3%;
-    }
-}

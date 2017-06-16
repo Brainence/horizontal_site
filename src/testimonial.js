@@ -31,7 +31,6 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
     $.getJSON("content/testimonials.json", function (data) {
         $scope.testimonials = data;
         $scope.$apply();
-
         $('#testimonial-frame').sly('reload');
     });
 

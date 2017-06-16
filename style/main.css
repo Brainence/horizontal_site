@@ -41,13 +41,17 @@
     max-width: 1150px;
     min-height: 768px;
     height: calc(100vh - 63px);
+    display: table;
+}
+
+.page-content:not(.home-page-content){
+    padding-bottom:120px;
 }
 
 .page-slogan {
     font-size: 52px;
     color: #ffffff;
     letter-spacing: 3.1px;
-    margin-top: 30%;
 }
 
 
@@ -61,6 +65,9 @@ body {
 
 .homepage-details {
     font-family: 'Roboto' !important;
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
 }
 
 .home-widget-text {
@@ -154,38 +161,22 @@ body {
 
 
 
-@media (max-height: 900px) {
-    .page-slogan {
-        margin-top: 25%;
-    }
-    .footer{
-        bottom:6%;
-    }
-}
-
-@media (max-height: 850px) {
-    .page-slogan {
-        margin-top: 22%;
-    }
+@media (max-height: 1000px) {
     .footer{
         bottom:6%;
     }
 }
 
 @media (max-height: 800px) {
-    .page-slogan {
-        margin-top: 20%;
-    }
     .footer{
-        bottom:3%;
+        bottom:4%;
     }
 }
 
-
-
-    /*.page-content:not(.home-page-content) {
-        max-width: 1050px;
+@media (max-width: 1320px) {
+    .page-content {
+        margin-left: 100px;
+        margin-right: 100px;
+        width:auto;
     }
-    .main-header .container {
-        max-width: 1070px;
-    }*/
+}
