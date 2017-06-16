@@ -98,7 +98,7 @@
     height: auto !important;
     margin: 0px;
     margin-top: 60px;
-    width: 1150px !important;
+    max-width: 1150px !important;
 }
 
 .selected-portfolio-menu {
@@ -141,4 +141,24 @@
 .selected-portfolio-back-button a:hover {
     cursor:pointer;
     color: #6ed2ff;
+}
+
+
+
+@media (max-height: 900px) {
+    .portfolio-header{
+        margin-top:7%;
+    }
+}
+
+@media (max-height: 850px) {
+    .portfolio-header{
+        margin-top:4%;
+    }
+}
+
+@media (max-height: 800px) {
+    .portfolio-header{
+        margin-top:3%;
+    }
 }

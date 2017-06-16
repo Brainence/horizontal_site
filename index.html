@@ -41,291 +41,290 @@
         </nav>
     </header>
     <div id="main">
-        <div>
-            <div class="wrap">
-                <div class="frame oneperframe" id="oneperframe">
-                    <ul class="clearfix">
-                        <li id="home">
-                            <div class="page-content">
-                                <div class="homepage-details">
-                                    <p class="page-slogan" style="vertical-align: middle;">LEADING EDGE STRATEGIES FOR YOUR BUSINESS</p>
-                                    <div class="gradient"></div>
-                                    <div class="row nomargin">
-                                        <div class="col-sm-3 panel">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
-                                                <img src="content/images/Web_app_Icon.png" />
-                                                <span class="home-widget-text">web | app development</span>
-                                                <div id="web-app-dev" class="panel-collapse collapse in panel-collapse-content-home">
-                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                                </div>
+        <div class="wrap">
+            <div class="frame oneperframe" id="oneperframe">
+                <ul class="clearfix">
+                    <li id="home">
+                        <div class="page-content home-page-content">
+                            <div class="homepage-details">
+                                <p class="page-slogan" style="vertical-align: middle;">LEADING EDGE STRATEGIES FOR YOUR BUSINESS</p>
+                                <div class="gradient"></div>
+                                <div class="row nomargin">
+                                    <div class="col-sm-3 panel">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
+                                            <img src="content/images/Web_app_Icon.png" />
+                                            <span class="home-widget-text">web | app development</span>
+                                            <div id="web-app-dev" class="panel-collapse collapse in panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
-                                                <img src="content/images/website_grafic_icon.png" />
-                                                <span class="home-widget-text">website and grafics design</span>
-                                                <div id="website-graph-design" class="panel-collapse collapse in panel-collapse-content-home">
-                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                                </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
+                                            <img src="content/images/website_grafic_icon.png" />
+                                            <span class="home-widget-text">website and grafics design</span>
+                                            <div id="website-graph-design" class="panel-collapse collapse in panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
-                                                <img src="content/images/Software_dev_icon.png" />
-                                                <span class="home-widget-text">software development</span>
-                                                <div id="software-development" class="panel-collapse collapse in panel-collapse-content-home">
-                                                    <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                                </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
+                                            <img src="content/images/Software_dev_icon.png" />
+                                            <span class="home-widget-text">software development</span>
+                                            <div id="software-development" class="panel-collapse collapse in panel-collapse-content-home">
+                                                <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
-                                                <img src="content/images/Custom_progr_icon.png" />
-                                                <span class="home-widget-text">custom programming</span>
-                                                <div id="custom-programming" class="panel-collapse collapse in panel-collapse-content-home">
-                                                    <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
-                                                </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
+                                            <img src="content/images/Custom_progr_icon.png" />
+                                            <span class="home-widget-text">custom programming</span>
+                                            <div id="custom-programming" class="panel-collapse collapse in panel-collapse-content-home">
+                                                <span class="details-home-page">Brainence is commited to the Microsoft stack , the most ____programming language on the internet. Our programmers are all Microsoft Certified Engineers  in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we also provide HTML5, Javascript and AngularJS.</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li>
-                            <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
-                                <div class="portfolio-page-details" ng-show="showList">
-                                    <div class="portfolio-header">
-                                        <div class="col-sm-5">
-                                            <span class="portfolio-page-slogan">PORTFOLIO</span>
-                                            <span class="portfolio-menu">
-                                                <a ng-click="SortByDate(); submenu='latest'">LATEST</a>  |
-                                                <a ng-click="submenu='technology'">TECHNOLOGY</a>  |
-                                                <a ng-click="submenu='industry'">INDUSTRY</a>
-                                            </span>
-                                        </div>
-                                        <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
-                                            <span ng-switch-when="technology" ng-repeat="item in submenuTechnologies">
-                                                <a ng-click="ShowTechnology(item)">{{item}}</a>
-                                            </span>
-                                            <span ng-switch-when="industry" ng-repeat="item in submenuIndustries">
-                                                <a ng-click="ShowIndustry(item)">{{item}}</a>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="gradient"></div>
-                                    <div class="wrap">
-                                        <div class="frame portfolio-frame row" id="portfolio-frame">
-                                            <ul class="clearfix">
-                                                <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
-                                                    <div class="portfolio-data">
-                                                        <p class="portfolio-title">{{portfolio.title}}</p>
-                                                        <img class="portfolio-image greyscale" ng-src="{{portfolio.image}}" />
-                                                        <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/switch_button_triangle.png" />
-                                            <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
-                                        </div>
-                                        <div class="portfolio-scrollbar">
-                                            <div class="portfolio-handle">
-                                                <div class="portfolio-mousearea"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="portfolio-page-details" ng-show="!showList" ng-init="selection='problem'">
-                                    <div class="portfolio-header selected-portfolio-header">
-                                        <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
-                                        <span class="portfolio-menu selected-portfolio-menu">
-                                            <a ng-click="selection='problem'">PROBLEM</a>  |
-                                            <a ng-click="selection='solution'">SOLUTION</a>  |
-                                            <a ng-click="selection='business'">BUSINESS</a>
+                    <li>
+                        <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
+                            <div class="portfolio-page-details" ng-show="showList">
+                                <div class="portfolio-header">
+                                    <div class="col-sm-5">
+                                        <span class="portfolio-page-slogan">PORTFOLIO</span>
+                                        <span class="portfolio-menu">
+                                            <a ng-click="SortByDate(); submenu='latest'">LATEST</a>  |
+                                            <a ng-click="submenu='technology'">TECHNOLOGY</a>  |
+                                            <a ng-click="submenu='industry'">INDUSTRY</a>
                                         </span>
                                     </div>
-                                    <div class="gradient"></div>
-                                    <div class="selected-portfolio-item row">
-                                        <img class="col-sm-4 selected-portfolio-image greyscale" ng-src="{{selectedPortfolio.image}}" />
-                                        <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
-                                            <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
-                                            <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
-                                            <p ng-switch-when="business" class="selected-portfolio-text">{{selectedPortfolio.business}}</p>
-                                            <p class="selected-portfolio-back-button"><a ng-click="SelectList()">Back</a></p>
+                                    <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
+                                        <span ng-switch-when="technology" ng-repeat="item in submenuTechnologies">
+                                            <a ng-click="ShowTechnology(item)">{{item}}</a>
+                                        </span>
+                                        <span ng-switch-when="industry" ng-repeat="item in submenuIndustries">
+                                            <a ng-click="ShowIndustry(item)">{{item}}</a>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="gradient"></div>
+                                <div class="wrap">
+                                    <div class="frame portfolio-frame row" id="portfolio-frame">
+                                        <ul class="clearfix">
+                                            <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
+                                                <div class="portfolio-data">
+                                                    <p class="portfolio-title">{{portfolio.title}}</p>
+                                                    <img class="portfolio-image greyscale" ng-src="{{portfolio.image}}" />
+                                                    <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
+                                    </div>
+                                    <div class="portfolio-scrollbar">
+                                        <div class="portfolio-handle">
+                                            <div class="portfolio-mousearea"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                            <div class="portfolio-page-details" ng-show="!showList" ng-init="selection='problem'">
+                                <div class="portfolio-header selected-portfolio-header">
+                                    <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
+                                    <span class="portfolio-menu selected-portfolio-menu">
+                                        <a ng-click="selection='problem'">PROBLEM</a>  |
+                                        <a ng-click="selection='solution'">SOLUTION</a>  |
+                                        <a ng-click="selection='business'">BUSINESS</a>
+                                    </span>
+                                </div>
+                                <div class="gradient"></div>
+                                <div class="selected-portfolio-item row">
+                                    <img class="col-sm-4 selected-portfolio-image greyscale" ng-src="{{selectedPortfolio.image}}" />
+                                    <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
+                                        <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
+                                        <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
+                                        <p ng-switch-when="business" class="selected-portfolio-text">{{selectedPortfolio.business}}</p>
+                                        <p class="selected-portfolio-back-button"><a ng-click="SelectList()">Back</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                         
-                        <li>
-                            <div class="page-content" ng-controller="testimonialCtrl">
-                                <div class="testimonial-page-details">
-                                    <div class="testimonial-header">
-                                        <p class="testimonial-page-slogan">TESTIMONIALS</p>
-                                    </div>
-                                    <div class="gradient"></div>
-                                    <div class="wrap">
-                                        <div class="frame testimonial-frame" id="testimonial-frame">
-                                            <ul class="clearfix">
-                                                <li class="testimonial-item" ng-repeat="testimonial in testimonials">
-                                                    <div class="row nomargin testimonial-author">
-                                                        <p>{{testimonial.author}}</p>
-                                                    </div>
-                                                    <div class="row nomargin justify-content-between testimonial-block">
-                                                        <div class="col-sm-4 testimonial-image">
-                                                            <img class="greyscale" ng-src="{{testimonial.image}}" />
-                                                        </div>
-                                                        <div class="col-sm-8 testimonial-data">
-                                                            <div class="row nomargin testimonial-details">
-                                                                <p>{{testimonial.details}}</p>
-                                                            </div>
-                                                            <div class="row nomargin testimonial-position">
-                                                                <p>{{testimonial.position}}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" />
-                                            <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
-                                        </div>
-                                        <div class="testimonial-scrollbar">
-                                            <div class="testimonial-handle">
-                                                <div class="testimonial-mousearea"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <li>
+                        <div class="page-content" ng-controller="testimonialCtrl">
+                            <div class="testimonial-page-details">
+                                <div class="testimonial-header">
+                                    <p class="testimonial-page-slogan">TESTIMONIALS</p>
                                 </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="page-content" ng-controller="contactsCtrl">
-                                <div class="contacts-page-details row">
-                                    <div class="col-sm-4 contacts">
-                                        <div class="contacts-header row">
-                                            <p class="contacts-page-slogan col-sm-6">CONTACTS</p>
-                                            <div class="col-sm-6">
-                                                <a href="https://twitter.com/brainence" target="_blank"> 
-                                                    <img id="imageTwitter" src="content/images/contacts/Twitter grey.png" 
-                                                         onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')" 
-                                                         onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')"/>
-                                                </a>
-                                                <a href="https://www.facebook.com/brainence/" target="_blank"> 
-                                                    <img id="imageFacebook"  src="content/images/contacts/facebook grey.png" 
-                                                         onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')" 
-                                                         onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')"/> 
-                                                </a>
-                                                <a href="https://www.linkedin.com/company/brainence" target="_blank"> 
-                                                    <img id="imageLinkedin" src="content/images/contacts/Linledin grey.png" 
-                                                         onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')" 
-                                                         onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')"/>
-                                                </a>
-                                                <a href="https://www.instagram.com/brainence/" target="_blank"> 
-                                                    <img id="imageInstagram"  src="content/images/contacts/Instagram grey.png" 
-                                                         onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')" 
-                                                         onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="gradient"></div>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
-                                                 id="map" frameborder="0" class="greyscale"></iframe>
-                                        <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
-                                        <div id="info">
-                                            <a href="skype:akornytskyi?call">
-                                                <img id="imageSkype" src="content/images/contacts/Skype grey.png"
-                                                     onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
-                                                     onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
-                                            </a>
-                                            <a href="tel:023322323">
-                                                <img id="imageCall" src="content/images/contacts/Call Grey.png"
-                                                     onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
-                                                     onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
-                                            </a>
-                                            <a href="mailto:info@brainence.com">
-                                                <img id="imageMail" src="content/images/contacts/Mail Grey.png"
-                                                     onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
-                                                     onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-8 team">
-                                        <p class="contacts-page-slogan">OUR TEAM</p>
-                                        <div class="gradient"></div>
-
-                                        <div class="row">
-                                            <div class="selected-contact-item col-sm-6">
-                                                <img class="greyscale" ng-src="{{selectedContact.image}}"/>
-                                                <p>{{selectedContact.name}}  {{selectedContact.position}}</p>
-                                            </div>
-
-                                            <div class="contacts-items col-sm-6">
-                                                <div class="wrap">
-                                                    <div class="frame contacts-frame" id="contacts-frame">
-                                                        <ul class="clearfix">
-                                                            <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img class="greyscale" ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
-                                                            </li>
-                                                        </ul>
+                                <div class="gradient"></div>
+                                <div class="wrap">
+                                    <div class="frame testimonial-frame" id="testimonial-frame">
+                                        <ul class="clearfix">
+                                            <li class="testimonial-item" ng-repeat="testimonial in testimonials">
+                                                <div class="row nomargin testimonial-author">
+                                                    <p>{{testimonial.author}}</p>
+                                                </div>
+                                                <div class="row nomargin justify-content-between testimonial-block">
+                                                    <div class="col-sm-4 testimonial-image">
+                                                        <img class="greyscale" ng-src="{{testimonial.image}}" />
                                                     </div>
-                                                    <div class="contacts-scrollbar">
-                                                        <div class="contacts-handle">
-                                                            <div class="contacts-mousearea"></div>
+                                                    <div class="col-sm-8 testimonial-data">
+                                                        <div class="row nomargin testimonial-details">
+                                                            <p>{{testimonial.details}}</p>
+                                                        </div>
+                                                        <div class="row nomargin testimonial-position">
+                                                            <p>{{testimonial.position}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </li>
+                                        </ul>
+                                        <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" style="transform:rotate(180deg)" />
+                                    </div>
+                                    <div class="testimonial-scrollbar">
+                                        <div class="testimonial-handle">
+                                            <div class="testimonial-mousearea"></div>
                                         </div>
-                                        <div class="photos row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="page-content" ng-controller="contactsCtrl">
+                            <div class="contacts-page-details row">
+                                <div class="col-sm-4 contacts">
+                                    <div class="contacts-header row">
+                                        <p class="contacts-page-slogan col-sm-6">CONTACTS</p>
+                                        <div class="col-sm-6">
+                                            <a href="https://twitter.com/brainence" target="_blank"> 
+                                                <img id="imageTwitter" src="content/images/contacts/Twitter grey.png" 
+                                                        onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')" 
+                                                        onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')"/>
+                                            </a>
+                                            <a href="https://www.facebook.com/brainence/" target="_blank"> 
+                                                <img id="imageFacebook"  src="content/images/contacts/facebook grey.png" 
+                                                        onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')" 
+                                                        onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')"/> 
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/brainence" target="_blank"> 
+                                                <img id="imageLinkedin" src="content/images/contacts/Linledin grey.png" 
+                                                        onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')" 
+                                                        onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')"/>
+                                            </a>
+                                            <a href="https://www.instagram.com/brainence/" target="_blank"> 
+                                                <img id="imageInstagram"  src="content/images/contacts/Instagram grey.png" 
+                                                        onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')" 
+                                                        onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="gradient"></div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
+                                                id="map" frameborder="0" class="greyscale"></iframe>
+                                    <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
+                                    <div id="info">
+                                        <a href="skype:akornytskyi?call">
+                                            <img id="imageSkype" src="content/images/contacts/Skype grey.png"
+                                                    onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
+                                                    onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
+                                        </a>
+                                        <a href="tel:16465830070">
+                                            <img id="imageCall" src="content/images/contacts/Call Grey.png"
+                                                    onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
+                                                    onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
+                                        </a>
+                                        <a href="mailto:info@brainence.com">
+                                            <img id="imageMail" src="content/images/contacts/Mail Grey.png"
+                                                    onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
+                                                    onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 team">
+                                    <p class="contacts-page-slogan">OUR TEAM</p>
+                                    <div class="gradient"></div>
+
+                                    <div class="row">
+                                        <div class="selected-contact-item col-sm-6">
+                                            <img class="greyscale" ng-src="{{selectedContact.image}}"/>
+                                            <p>{{selectedContact.name}}  {{selectedContact.position}}</p>
+                                        </div>
+
+                                        <div class="contacts-items col-sm-6">
                                             <div class="wrap">
-                                                <div class="frame photo-frame" id="photo-frame">
+                                                <div class="frame contacts-frame" id="contacts-frame">
                                                     <ul class="clearfix">
-                                                        <li class="photo-item" ng-repeat="photo in photos">
-                                                            <img class="greyscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)"/>
+                                                        <li class="contacts-item" ng-repeat="contact in contacts">
+                                                            <img class="greyscale" ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="photo-scrollbar">
-                                                    <div class="photo-handle">
-                                                        <div class="photo-mousearea"></div>
+                                                <div class="contacts-scrollbar">
+                                                    <div class="contacts-handle">
+                                                        <div class="contacts-mousearea"></div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="photos row">
+                                        <div class="wrap">
+                                            <div class="frame photo-frame" id="photo-frame">
+                                                <ul class="clearfix">
+                                                    <li class="photo-item" ng-repeat="photo in photos">
+                                                        <img class="greyscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)"/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="photo-scrollbar">
+                                                <div class="photo-handle">
+                                                    <div class="photo-mousearea"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li>4</li>
+                    <li>4</li>
 
-                        <li>5</li>
-                    </ul>
-                    <div class="footer">
-                        <a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
-                        <a href="#"><img id="bullet-1" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(1)" /></a>
-                        <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
-                        <a href="#"><img id="bullet-3" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(3)" /></a>
-                        <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
-                        <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>
-                        <p>Copyright © 2017 Brainence, Ltd.</p>
-                    </div>
-                <div class="scrollbar">
-                    <div class="handle">
-                        <div class="mousearea"></div>
-                    </div>
+                    <li>5</li>
+                </ul>
+                <div class="footer">
+                    <a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
+                    <a href="#"><img id="bullet-1" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(1)" /></a>
+                    <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
+                    <a href="#"><img id="bullet-3" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(3)" /></a>
+                    <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
+                    <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>
+                    <p>Copyright © 2017 Brainence, Ltd.</p>
+                </div>
+            <div class="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
                 </div>
             </div>
         </div>
+    </div>
         <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
             <div class="modal-dialog">
                 <div class="modal-content"> 
                     <div class="modal-body">
                         <div id="photoCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="item carousel-photo-item" ng-repeat="photo in photos">
+                                <div class="item carousel-photo-item active" ng-repeat="photo in photos">
                                     <div>
                                         <img ng-src="{{photo}}">
                                     </div>  
@@ -352,6 +351,14 @@
     <script src="src/photos.js"></script>
     <script src="src/background.js"></script>
     <script>
+        window.onresize = function(event) {
+            $('#oneperframe').sly('reload');
+            $('#portfolio-frame').sly('reload');
+            $('#testimonial-frame').sly('reload');
+            $('#contacts-frame').sly('reload');
+            $('#photo-frame').sly('reload');
+        };
+
         function ChangeImage(id, path) {
             $("#"+id).attr('src', path);
         }

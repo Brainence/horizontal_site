@@ -71,3 +71,21 @@
 
 
 
+
+@media (max-height: 900px) {
+    .testimonial-header{
+        margin-top:11%;
+    }
+}
+
+@media (max-height: 850px) {
+    .testimonial-header{
+        margin-top:8%;
+    }
+}
+
+@media (max-height: 800px) {
+    .testimonial-header{
+        margin-top:6%;
+    }
+}

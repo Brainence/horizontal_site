@@ -9,7 +9,7 @@
 
 
 .contacts-page-details{
-    margin-top:8%;
+    margin-top:10%;
     margin-bottom: 0px;
     color: #ffffff;
     font-size: 24px;
@@ -63,10 +63,7 @@
     margin: 0px;
     margin-top: 45px;
     text-align:right !important;
-    width:350px;
-}
-
-.contacts-frame .clearfix {
+    overflow: hidden !important;
 }
 
 .contacts-item {
@@ -117,6 +114,7 @@
 
 #photo-frame {
     height: 105px;
+    overflow: hidden;
 }
 
 .photo-item {
@@ -126,6 +124,7 @@
 .photo-item img {
     height: 105px;
 }
+
 
 
 
@@ -218,3 +217,28 @@
     outline:none !important;
 }
 
+
+
+
+
+
+
+
+
+@media (max-height: 900px) {
+    .contacts-page-details{
+        margin-top:7%;
+    }
+}
+
+@media (max-height: 850px) {
+    .contacts-page-details{
+        margin-top:4%;
+    }
+}
+
+@media (max-height: 800px) {
+    .contacts-page-details{
+        margin-top:3%;
+    }
+}
