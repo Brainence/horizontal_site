@@ -2,14 +2,13 @@
 .testimonial-page-details {
     display: table-cell;
     vertical-align: middle;
-    width:1050px;
+    max-width:1150px;
 }
 
 .testimonial-header{
     display: flex;
     font-family: Roboto;
     font-stretch: condensed;   
-    justify-content: space-between;
     margin-bottom: 0px;
     color: #ffffff;
 }
@@ -17,12 +16,6 @@
 .testimonial-page-slogan {
     font-size: 27px;
     text-align: left;
-}
-
-.testimonial-menu {
-    font-size: 14px; 
-    align-self: flex-end;
-    text-align: right !important;
 }
 
 
@@ -49,10 +42,8 @@
 
 .testimonial-position {
     font-size: 14px;
-    line-height: 1.36;
     text-align: left;
-    position: absolute;
-    bottom: 0;
+    margin-top:15px;
 }
 
 
@@ -63,14 +54,28 @@
 
 .testimonial-data {
     padding-top:14px;
+    padding-left:40px;
     padding-right:0px;
 }
 
 .testimonial-item{
-    width:1150px !important;
+    max-width:1150px !important;
 }
 
 .testimonial-frame {
     height: auto !important;
-    width: 1150px !important;
+    max-width: 1150px !important;
+}
+
+
+@media (max-width: 1320px) {
+    .testimonial-page-details {
+        width: calc(100vw - 200px);
+    }
+    .testimonial-item {
+        width: calc(100vw - 200px) !important;
+    }
+    .testimonial-frame{
+        width: calc(100vw - 200px);
+    }
 }

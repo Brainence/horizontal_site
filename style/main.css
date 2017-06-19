@@ -102,17 +102,6 @@ body {
 }
 
 
-.panel-collapse-content-home {
-    visibility: hidden;
-}
-
-.collapsible-heading:hover .panel-collapse-content-home{
-    visibility: visible;
-}
-
-
-
-
 .footer{
     text-align:center;
     position:absolute;
@@ -150,11 +139,24 @@ body {
     cursor: pointer; 
 }
 
+.button-slide-left:hover {
+    transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+}
+
+.button-slide-right:hover {
+    transform: scale(1.5, 1.5) rotate(180deg);
+    -ms-transform: scale(1.5, 1.5) rotate(180deg);
+    -webkit-transform: scale(1.5, 1.5) rotate(180deg);
+}
+
 .button-slide-left {
     left:-65px;
 }
 
 .button-slide-right {
+    transform:rotate(180deg);
     right:-65px;
 }
 
@@ -177,6 +179,6 @@ body {
     .page-content {
         margin-left: 100px;
         margin-right: 100px;
-        width:auto;
+        width: calc(100vw - 200px);
     }
 }

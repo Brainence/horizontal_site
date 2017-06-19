@@ -132,4 +132,18 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
         $portfolio_frame.sly('reload');
     }
 
+    $scope.ActivateMenu = function (index) {
+        $(".portfolio-menu-item").removeClass('portfolio-menu-item-active');
+        document.getElementsByClassName('portfolio-menu-item')[index].className += ' portfolio-menu-item-active';
+    }
+
+    $scope.ActivateSubmenu = function (index) {
+        $(".portfolio-submenu-item").removeClass('portfolio-submenu-item-active');
+        document.getElementsByClassName('portfolio-submenu-item')[index].className += ' portfolio-submenu-item-active';
+    }
+
+    $scope.ActivateSelectedMenu = function (index) {
+        $(".selected-portfolio-menu").removeClass('selected-portfolio-menu-active');
+        document.getElementsByClassName('selected-portfolio-menu')[index].className += ' selected-portfolio-menu-active';
+    }
 });
