@@ -266,8 +266,12 @@
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img class="greyscale" ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
+                                                                <img class="greyscale" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
+                                                                <img class="greyscale" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
                                                             </li>
+                                                            <!--<li class="contacts-item" ng-repeat="contact in contacts">
+                                                                <img class="greyscale" ng-src="{{contact.image}}" ng-click="SelectContact($index)" />
+                                                            </li>-->
                                                         </ul>
                                                     </div>
                                                     <div class="contacts-scrollbar">

@@ -29,10 +29,15 @@
     });
 
     $.getJSON("content/contacts.json", function (data) {
-        $scope.contacts = data;
-        $scope.selectedContact = $scope.contacts[0];
+        $scope.contacts = [];
+        for (i = 0; i < data.length; i += 2) {
+            $scope.contacts.push([data[i], (i + 1 != data.length ? data[i + 1] : null)]);
+        }
+        $scope.selectedContact = $scope.contacts[0][0];
         $scope.$apply();
-        $contacts_frame.sly('reload');
+        $timeout(function () {
+            $contacts_frame.sly('reload');
+        }, 100);
     });
 
 
@@ -75,8 +80,8 @@
         },200);
     });
 
-    $scope.SelectContact = function (index) {
-        $scope.selectedContact = $scope.contacts[index];
+    $scope.SelectContact = function (index1, index2) {
+        $scope.selectedContact = $scope.contacts[index1][index2];
     }
 
     $scope.OpenPhoto = function (index) {
