@@ -71,7 +71,7 @@
 }
 
 .contacts-frame {
-    height: 292px !important;
+    max-height: 292px !important;
     margin: 0px;
     margin-top: 45px;
     text-align:right !important;
@@ -81,15 +81,15 @@
 .contacts-item {
     padding: 0px;
     text-align:right !important;
-    max-width: 175px !important;
-    height: 146px !important;
+    max-width: 175px;
+    max-height:292px;
     padding:0px;
-    margin:0px;
+    margin:0px !important;
 }
 
 .contacts-item img {
     max-width: 175px;
-    height: 146px;
+    max-height: 146px;
 }
 
 
@@ -241,10 +241,26 @@
     #location {
         font-size: 1.1vw;
     }
+    .contacts-frame {
+        height: 22vw !important;
+    }
     .contacts-page-slogan {
         font-size: 1.7vw;
     }
     .selected-contact-item p {
         font-size: 1.5vw;
+    }
+    .contacts-item {
+        height:22vw !important;
+        max-width: 13.2vw;
+    }
+    .contacts-item img {
+        width: 13.2vw;
+    }
+    .contacts-href {
+        width:2vw;
+    }
+    #map {
+        height: 22vw;
     }
 }

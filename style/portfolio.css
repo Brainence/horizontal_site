@@ -78,7 +78,7 @@
 
 .portfolio-text {
     font-family: BauhausC !important;
-    font-size: 14px !important;
+    font-size: 14px;
     font-weight: 300 !important;
     line-height: 1.36 !important;
     text-align: left;
@@ -98,10 +98,9 @@
 .portfolio-item {
     padding: 0px;
     text-align:left !important;
-    width: 350px !important;
+    max-width: 350px;
     margin-right:50px !important;
 }
-
 
 .selected-portfolio-header {
     display:block;
@@ -173,6 +172,7 @@
 
     .portfolio-page-slogan{
         font-size:1.85vw;
+        margin-right:1vw;
     }
     .portfolio-menu {
         font-size:1.2vw;
@@ -188,5 +188,27 @@
     }
     .selected-portfolio-details {
         padding-left: 2.5vw;
+    }
+    .selected-portfolio-menu, .portfolio-menu-item, .portfolio-submenu-item {
+        font-size:1.0vw;
+    }
+    .selected-portfolio-menu-active, .portfolio-menu-item-active, .portfolio-submenu-item-active {
+        font-size:1.3vw;
+    }
+    .portfolio-title {
+        font-size: 1.5vw;
+    }
+    .portfolio-text {
+        font-size: 1vw;
+    }
+    .portfolio-item {
+        max-width: 27vw;
+        margin-right:2vw !important;
+    }
+    .portfolio-image {
+        width: 27vw;
+    }
+    .portfolio-data {
+        width: 27vw;
     }
 }

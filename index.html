@@ -115,7 +115,7 @@
                                 <div class="gradient"></div>
                                 <div class="wrap">
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
-                                        <ul class="clearfix">
+                                        <ul class="clearfix" id="portfolio-clearfix">
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
                                                 <div class="portfolio-data">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
@@ -205,25 +205,25 @@
                                 <div class="contacts-data row">
                                     <div class="col-sm-4 contacts">
                                         <div class="contacts-header row">
-                                            <p class="contacts-page-slogan col-sm-5">CONTACTS</p>
-                                            <div class="col-sm-7">
+                                            <p class="contacts-page-slogan col-sm-4">CONTACTS</p>
+                                            <div class="col-sm-8">
                                                 <a href="https://twitter.com/brainence" target="_blank">
-                                                    <img id="imageTwitter" src="content/images/contacts/Twitter grey.png"
+                                                    <img class="contacts-href" id="imageTwitter" src="content/images/contacts/Twitter grey.png"
                                                             onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')"
                                                             onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')" />
                                                 </a>
                                                 <a href="https://www.facebook.com/brainence/" target="_blank">
-                                                    <img id="imageFacebook" src="content/images/contacts/facebook grey.png"
+                                                    <img class="contacts-href" id="imageFacebook" src="content/images/contacts/facebook grey.png"
                                                             onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')"
                                                             onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')" />
                                                 </a>
                                                 <a href="https://www.linkedin.com/company/brainence" target="_blank">
-                                                    <img id="imageLinkedin" src="content/images/contacts/Linledin grey.png"
+                                                    <img class="contacts-href" id="imageLinkedin" src="content/images/contacts/Linledin grey.png"
                                                             onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')"
                                                             onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')" />
                                                 </a>
                                                 <a href="https://www.instagram.com/brainence/" target="_blank">
-                                                    <img id="imageInstagram" src="content/images/contacts/Instagram grey.png"
+                                                    <img class="contacts-href" id="imageInstagram" src="content/images/contacts/Instagram grey.png"
                                                             onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')"
                                                             onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')" />
                                                 </a>
@@ -264,7 +264,7 @@
                                             <div class="contacts-items col-sm-6">
                                                 <div class="wrap">
                                                     <div class="frame contacts-frame" id="contacts-frame">
-                                                        <ul class="clearfix">
+                                                        <ul class="clearfix" id="contacts-clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
                                                                 <img class="greyscale" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
                                                                 <img class="greyscale" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
@@ -357,13 +357,21 @@
     <script src="src/photos.js"></script>
     <script src="src/background.js"></script>
     <script>
-        window.onresize = function(event) {
+        window.onresize = function (event) {
+            
             $('#oneperframe').sly('reload');
             $('#portfolio-frame').sly('reload');
             $('#testimonial-frame').sly('reload');
             $('#contacts-frame').sly('reload');
             $('#photo-frame').sly('reload');
+            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
+            $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
+            
         };
+        window.onload = function (event) {
+            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
+            $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
+        }
 
         function ChangeImage(id, path) {
             $("#" + id).attr('src', path);

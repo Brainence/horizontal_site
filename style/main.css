@@ -181,4 +181,21 @@ body {
         margin-right: 100px;
         width: calc(100vw - 200px);
     }
+    .page-slogan {
+        font-size: 3.5vw;
+    }
+    .home-widget-text {
+        font-size: 1.2vw;
+    }
+    .details-home-page {
+        font-size:1.1vw;
+        line-height:0px;
+    }
+    .collapsible-heading {
+        margin-top: 10px;
+        line-height:1vw !important;
+    }
+    .nav li {
+        font-size: 1.1vw;
+    }
 }
