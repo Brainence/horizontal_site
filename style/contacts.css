@@ -63,7 +63,7 @@
 
 
 .contacts-items{
-    padding-left: 50px;
+    padding-left: 25px;
     text-align: right;
     text-align: -webkit-right;
     text-align: -moz-right;
@@ -104,6 +104,7 @@
 
 .selected-contact-item img {
     max-height:292px;
+    max-width: 350px;
     width:100%;
 }
 
@@ -144,14 +145,14 @@
 
 
 
-.greyscale {
+.grayscale {
     -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    filter: grayscale(100%);
    transition: all 0.5s ease;
 }
 
-.greyscale:hover {
+.grayscale:hover {
   -webkit-filter: grayscale(0%);
    -moz-filter: grayscale(0%);
    filter: grayscale(0%);
