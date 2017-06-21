@@ -1,44 +1,44 @@
 ﻿[
   {
-    "name": "Name1",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img1.png"
+    "name": "Andrii",
+    "position": "CEO",
+    "image": "content/images/team/akornytskyi.png"
   }, 
 
   {
-    "name": "Name2",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Ivan",
+    "position": "CTO",
+    "image": "content/images/team/idochynets.png"
   }, 
 
   {
-    "name": "Name3",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Iryna",
+    "position": "HR, Sales Assistant",
+    "image": "content/images/team/ishyman.png"
   }, 
 
   {
-    "name": "Name4",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Volodymyr",
+    "position": "QA",
+    "image": "content/images/team/vpavlovych.png"
   }, 
 
   {
-    "name": "Name5",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Roman",
+    "position": "Software engineer",
+    "image": "content/images/team/rvevdiuk.png"
   }, 
 
   {
-    "name": "Name6",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Valentyn",
+    "position": "Software engineer",
+    "image": "content/images/team/vstepanov.png"
   }, 
 
   {
-    "name": "Name7",
-    "position": "Position1",
-    "image": "content/images/portfolios/Img2.png"
+    "name": "Andrii",
+    "position": "Head of BD",
+    "image": "content/images/team/AV.png"
   }
 
 ]
