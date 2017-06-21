@@ -111,7 +111,7 @@
                                         <span ng-switch-when="industry" ng-repeat="item in submenuIndustries">
                                             <a class="portfolio-submenu-item portfolio-submenu-item-active" ng-click="ActivateSubmenu($index); ShowIndustry(item)">{{item}}</a>
                                         </span>
-                                    </a>
+                                        </a>
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="wrap">
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                     </li>
-                        
+
                     <li>
                         <div class="page-content" ng-controller="testimonialCtrl">
                             <div class="testimonial-page-details">
@@ -188,7 +188,7 @@
                                             </li>
                                         </ul>
                                         <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png"/>
+                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" />
                                     </div>
                                     <div class="testimonial-scrollbar">
                                         <div class="testimonial-handle">
@@ -210,23 +210,23 @@
                                             <div class="col-sm-8">
                                                 <a href="https://twitter.com/brainence" target="_blank">
                                                     <img class="contacts-href" id="imageTwitter" src="content/images/contacts/Twitter grey.png"
-                                                            onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')"
-                                                            onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')" />
+                                                         onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')"
+                                                         onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')" />
                                                 </a>
                                                 <a href="https://www.facebook.com/brainence/" target="_blank">
                                                     <img class="contacts-href" id="imageFacebook" src="content/images/contacts/facebook grey.png"
-                                                            onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')"
-                                                            onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')" />
+                                                         onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')"
+                                                         onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')" />
                                                 </a>
                                                 <a href="https://www.linkedin.com/company/brainence" target="_blank">
                                                     <img class="contacts-href" id="imageLinkedin" src="content/images/contacts/Linledin grey.png"
-                                                            onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')"
-                                                            onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')" />
+                                                         onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')"
+                                                         onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')" />
                                                 </a>
                                                 <a href="https://www.instagram.com/brainence/" target="_blank">
                                                     <img class="contacts-href" id="imageInstagram" src="content/images/contacts/Instagram grey.png"
-                                                            onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')"
-                                                            onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')" />
+                                                         onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')"
+                                                         onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')" />
                                                 </a>
                                             </div>
                                         </div>
@@ -237,18 +237,18 @@
                                         <div id="info">
                                             <a href="skype:akornytskyi?call">
                                                 <img id="imageSkype" src="content/images/contacts/Skype grey.png"
-                                                        onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
-                                                        onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
+                                                     onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
+                                                     onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
                                             </a>
                                             <a href="tel:16465830070">
                                                 <img id="imageCall" src="content/images/contacts/Call Grey.png"
-                                                        onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
-                                                        onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
+                                                     onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
+                                                     onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
                                             </a>
                                             <a href="mailto:info@brainence.com">
                                                 <img id="imageMail" src="content/images/contacts/Mail Grey.png"
-                                                        onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
-                                                        onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
+                                                     onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
+                                                     onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
                                             </a>
                                         </div>
                                     </div>
@@ -306,24 +306,65 @@
                     </li>
 
                     <li>
-                        <div class="page-content" ng-controller="careerCtrl">
-                            <div class="career-page-details">
+                        <div class="page-content" ng-controller="careerCtrl" ng-init="showList=true">
+                            <div class="career-page-details" ng-show="showList">
                                 <div class="career-header">
-                                    <p class="career-page-slogan">CAREER</p>
+                                    <span class="career-page-slogan">CAREER</span>
+                                    <span class="career-menu">
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>  |
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>  |
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>  |
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a> |
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
+                                    </span>
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="wrap">
-                                    <div class="frame testimonial-frame" id="testimonial-frame">
+                                    <div class="frame career-frame" id="career-frame">
                                         <ul class="clearfix">
-                                            <li class="testimonial-item" ng-repeat="testimonial in testimonials">
-                                                
+                                            <li class="career-item greyscale" ng-repeat="career in careers" ng-click="SelectCareer($index)">
+                                                <div>
+                                                    <p class="position-key">
+                                                        {{career.positionKey}}
+                                                    </p>
+                                                    <p class="position-value">
+                                                        {{career.positionValue}}
+                                                    </p>
+                                                </div>
                                             </li>
                                         </ul>
+                                        <img class="button-slide button-slide-left" ng-click="PrevCareer()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-right" ng-click="NextCareer()" src="content/images/switch_button_triangle.png" />
                                     </div>
-                                    <div class="testimonial-scrollbar">
-                                        <div class="testimonial-handle">
-                                            <div class="testimonial-mousearea"></div>
+                                    <div class="career-scrollbar">
+                                        <div class="career-handle">
+                                            <div class="career-mousearea"></div>
                                         </div>
+                                    </div>
+                                </div>
+                                <p id="our-career">
+                                    Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore. Deep v twee +1, roof party narwhal Cosby salvia kitsch before they sold out High Life.
+                                </p>
+                            </div>
+                            <div class="career-page-details" ng-show="!showList">
+                                <div class="career-header">
+                                    <span class="career-page-slogan">CAREER</span>
+                                </div>
+                                <div class="gradient"></div>
+                                <div class="selected-career-item row">
+                                    <div class="career-item greyscale col-sm-4 nomargin" id="selected-career-image">
+                                        <div>
+                                            <p class="position-key">
+                                                {{selectedCareer.positionKey}}
+                                            </p>
+                                            <p class="position-value">
+                                                {{selectedCareer.positionValue}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 selected-career-details nopadding-right">
+                                        <div id="selectedCareer"></div>
+                                        <p class="selected-career-back-button"><a ng-click="SelectList()">Back</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -341,13 +382,13 @@
                     <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>-->
                     <p>Copyright © 2017 Brainence, Ltd.</p>
                 </div>
-        </div>
-        <div class="scrollbar">
-            <div class="handle">
-                <div class="mousearea"></div>
+            </div>
+            <div class="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
             </div>
         </div>
-    </div>
         <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -383,7 +424,7 @@
     <script src="src/background.js"></script>
     <script>
         window.onresize = function (event) {
-            
+
             $('#oneperframe').sly('reload');
             $('#portfolio-frame').sly('reload');
             $('#testimonial-frame').sly('reload');
@@ -391,7 +432,7 @@
             $('#photo-frame').sly('reload');
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            
+
         };
         window.onload = function (event) {
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
