@@ -144,14 +144,14 @@
 
 
 
-.greyscale {
+.grayscale {
     -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    filter: grayscale(100%);
    transition: all 0.5s ease;
 }
 
-.greyscale:hover {
+.grayscale:hover {
   -webkit-filter: grayscale(0%);
    -moz-filter: grayscale(0%);
    filter: grayscale(0%);
