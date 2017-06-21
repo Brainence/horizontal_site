@@ -122,12 +122,50 @@ body {
     color: #f0f0f0;
 }
 
-.gradient {
-    width: 100%; 
-    height: 3px; 
-    background-image: radial-gradient(circle at 128% 3448%, #7511cd, #d54a08 81%, #d85b05);
+@-webkit-keyframes'slide' {
+	0%{
+		background-position-x:200%;
+	}
+	100% {
+		background-position-x:0%;
+	}
 }
 
+.gradient {
+    background-color: #a52e6b;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZDU0YTA4IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM3NTExY2QiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjZDU0YTA4IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0, rgb(213, 74, 8)),color-stop(0.5, rgb(117, 17, 205)),color-stop(1, rgb(213, 74, 8)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(left,rgb(213, 74, 8) 0%,rgb(117, 17, 205) 50%,rgb(213, 74, 8) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to right,rgb(213, 74, 8) 0%,rgb(117, 17, 205) 50%,rgb(213, 74, 8) 100%);
+    background-image: -ms-repeating-linear-gradient(left,rgb(213, 74, 8) 0%,rgb(117, 17, 205) 50%,rgb(213, 74, 8) 100%);
+ 
+    background-position-x:50%;
+    background-size: 2300px;
+
+
+    width: 100%; 
+    height: 3px; 
+    -webkit-animation:'slide' 5s infinite linear forwards;
+}
+
+
+.gradient-13 {
+    background-size: 700px !important;
+}
+
+.gradient-23 {
+    background-size: 1400px !important;
+}
+    
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd54a08",endColorstr="#ff7511cd",GradientType=1);
+    }
+}
 
 .footer{
     text-align:center;
