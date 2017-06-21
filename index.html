@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/testimonials.css" />
     <link rel="stylesheet" href="style/portfolio.css" />
     <link rel="stylesheet" href="style/contacts.css" />
+    <link rel="stylesheet" href="style/career.css" />
 
     <link rel="icon" href="content/images/wsi-imageoptim-cropped-Brain1Small-1-150x150.png">
 
@@ -35,7 +36,7 @@
                     <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">Feedback</a></li>
                     <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">About</a></li>
                     <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">Career</a></li>
-                    <li><a id="menu-button-5" href="#" onclick="activatePageNr(4)">Partnership</a></li>
+                    <li><a id="menu-button-5" href="#" onclick="activatePageNr(5)">Partnership</a></li>
                 </ul>
             </div>
         </nav>
@@ -304,11 +305,34 @@
                         </div>
                     </li>
 
-                    <li>4</li>
+                    <li>
+                        <div class="page-content" ng-controller="careerCtrl">
+                            <div class="career-page-details">
+                                <div class="career-header">
+                                    <p class="career-page-slogan">CAREER</p>
+                                </div>
+                                <div class="gradient"></div>
+                                <div class="wrap">
+                                    <div class="frame testimonial-frame" id="testimonial-frame">
+                                        <ul class="clearfix">
+                                            <li class="testimonial-item" ng-repeat="testimonial in testimonials">
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-scrollbar">
+                                        <div class="testimonial-handle">
+                                            <div class="testimonial-mousearea"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <li>5</li>
                 </ul>
-                <div class="footer">
+                <!--<div class="footer">
                     <a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
                     <a href="#"><img id="bullet-1" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(1)" /></a>
                     <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
@@ -316,7 +340,7 @@
                     <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
                     <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>
                     <p>Copyright © 2017 Brainence, Ltd.</p>
-                </div>
+                </div>-->
         </div>
         <div class="scrollbar">
             <div class="handle">
@@ -355,6 +379,7 @@
     <script src="src/portfolio.js"></script>
     <script src="src/contacts.js"></script>
     <script src="src/photos.js"></script>
+    <script src="src/career.js"></script>
     <script src="src/background.js"></script>
     <script>
         window.onresize = function (event) {
@@ -376,18 +401,6 @@
         function ChangeImage(id, path) {
             $("#" + id).attr('src', path);
         };
-    </script>
-    <script>
-        jQuery(".collapsible-heading").hover(
-            function () {
-                var thisdiv = jQuery(this).find('.panel-collapse');
-                jQuery(thisdiv).collapse("show");
-            },
-            function () {
-                var thisdiv = jQuery(this).find('.panel-collapse');
-                jQuery(thisdiv).collapse("hide");
-            }
-        );
     </script>
 </body>
 </html>

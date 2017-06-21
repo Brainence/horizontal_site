@@ -1,0 +1,24 @@
+﻿
+.career-page-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.career-header{
+    display: flex;
+    font-family: Roboto;
+    font-stretch: condensed;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.career-header div {
+    text-align: left !important;
+    padding: 0px;
+}
+
+.career-page-slogan {
+    font-size: 27px;
+    text-align: left;
+    padding:0px;
+}
