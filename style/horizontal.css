@@ -1,5 +1,7 @@
 ﻿body {}
-.container { margin: 0 auto; }
+.container { margin: 0 auto; 
+             min-width: 400px !important;
+}
 
 /* Example wrapper */
 .wrap {
@@ -125,10 +127,16 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-height: 767px) {
     #oneperframe {
-        height:768px;
+        min-height: 575px;
     }
     body {
 	    overflow-x: hidden;
     }
 }
 
+
+@media (max-width: 1000px) {
+    #oneperframe {
+        min-height: 460px;
+    }
+}

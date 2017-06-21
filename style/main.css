@@ -39,14 +39,15 @@
 .page-content {
     margin: 0 auto;
     max-width: 1150px;
-    min-height: 768px;
+    min-height: 575px;
     height: calc(100vh - 63px);
     display: table;
 }
 
 .page-content:not(.home-page-content){
-    padding-bottom:120px;
+    padding-bottom:40px;
 }
+
 
 .page-slogan {
     font-size: 52px;
@@ -65,8 +66,7 @@ body {
 
 .homepage-details {
     font-family: 'Roboto' !important;
-    display: table-cell;
-    vertical-align: middle;
+    margin-top: 20% !important;
     text-align:center;
 }
 
@@ -85,14 +85,13 @@ body {
     background-color: transparent !important;
     border-color: transparent !important;
 }
+.panel-collapse {
+    line-height: 20px !important;
+}
 .details-home-page {
     font-family: 'BauhausC';
     font-size: 14px;
     color: #f0f0f0;
-}
-.panel-collapse-content-home {
-    text-align: left;
-    line-height: 0.5 !important;
 }
 
 @-webkit-keyframes'slide' {
@@ -157,7 +156,7 @@ body {
     margin-top:5px;
 }
 
-.bullet {
+/*.bullet {
     margin: 4px;
 }
 
@@ -167,7 +166,7 @@ body {
 
 :not(.bullet-active).bullet:hover {
    background-image: url('../content/images/Bullet_hover.png');
-}
+}*/
 
 .button-slide {
     position:absolute;
@@ -201,6 +200,7 @@ body {
 
 
 
+
 @media (max-height: 1000px) {
     .footer{
         bottom:6%;
@@ -227,13 +227,22 @@ body {
     }
     .details-home-page {
         font-size:1.1vw;
-        line-height:0px;
+        line-height: 0.1 !important;
     }
     .collapsible-heading {
         margin-top: 10px;
         line-height:1vw !important;
     }
     .nav li {
-        font-size: 1.1vw;
+        font-size: calc(0.7vw*1.5);
+    }
+}
+
+@media (max-width: 1000px) {
+    .page-content {
+        min-height: 460px;
+    }
+    .homepage-details {
+        margin-top: 15vh !important;
     }
 }
