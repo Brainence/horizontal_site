@@ -1,5 +1,5 @@
 ﻿
-angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
+angular.module('brainenceApp').controller("testimonialCtrl", function ($scope, $timeout) {
     var $testimonial_frame = $('#testimonial-frame');
     jQuery(function ($) {
         (function () {
@@ -31,7 +31,9 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope) {
     $.getJSON("content/testimonials.json", function (data) {
         $scope.testimonials = data;
         $scope.$apply();
-        $('#testimonial-frame').sly('reload');
+        $timeout(function () {
+            $testimonial_frame.sly('reload');
+        }, 100);
     });
 
 
