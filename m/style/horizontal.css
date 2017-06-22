@@ -9,9 +9,6 @@
 }
 
 /* Frame */
-.frame {
-	height: calc(100vh - 63px);
-}
 .frame ul {
 	list-style: none;
 	margin: 0;

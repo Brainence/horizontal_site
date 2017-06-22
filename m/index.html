@@ -32,16 +32,16 @@
                         <img class="logo" src="content/images/logo.png" />
                     </a>
                 </div>
-
-                <ul class="nav navbar-nav navbar-right main-menu">
-                    <li><a id="menu-button-0" href="#" onclick="activatePageNr(0)">Home</a></li>
-                    <li><a id="menu-button-1" href="#" onclick="activatePageNr(1)">Projects</a></li>
-                    <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">Feedback</a></li>
-                    <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">About</a></li>
-                    <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">Career</a></li>
-                    <li><a id="menu-button-5" href="#" onclick="activatePageNr(5)">Partnership</a></li>
-                </ul>
+                <a data-toggle="collapse" data-target="#menu">
+                    <img class="logo-menu" src="content/images/menu.png" />
+                </a>
             </div>
+            <ul id="menu" class="collapse nav navbar-right main-menu">
+                <li><a id="menu-button-0" href="#home" onclick="activatePageNr(0)">Home</a></li>
+                <li><a id="menu-button-1" href="#portfolio" onclick="activatePageNr(1)">Projects</a></li>
+                <li><a id="menu-button-2" href="#testimonials" onclick="activatePageNr(2)">Feedback</a></li>
+                <li><a id="menu-button-3" href="#contacts" onclick="activatePageNr(3)">About</a></li>
+            </ul>
         </nav>
     </header>
     <div id="main">
@@ -140,7 +140,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="portfolio">
                         <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
                             <div class="portfolio-page-details" ng-show="showList">
                                 <div class="portfolio-header">
@@ -194,7 +194,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="testimonials">
                         <div class="page-content" ng-controller="testimonialCtrl">
                             <div class="testimonial-page-details">
                                 <div class="testimonial-header">
@@ -236,7 +236,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="contacts">
                         <div class="page-content" ng-controller="contactsCtrl">
                             <div class="contacts-page-details">
                                 <div class="row"></div>
@@ -339,16 +339,10 @@
                         </div>
                     </li>
                 </ul>
-                <div class="footer">
-                    <!--<a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
-                    <a href="#"><img id="bullet-1" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(1)" /></a>
-                    <a href="#"><img id="bullet-2" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(2)" /></a>
-                    <a href="#"><img id="bullet-3" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(3)" /></a>
-                    <a href="#"><img id="bullet-4" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(4)" /></a>
-                    <a href="#"><img id="bullet-5" class="bullet" src="content/images/Bullet_passive.png" onclick="activatePageNr(5)" /></a>-->
-                    <p>Copyright © 2017 Brainence, Ltd.</p>
-                </div>
             </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2017 Brainence, Ltd.</p>
         </div>
         <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
             <div class="modal-dialog">

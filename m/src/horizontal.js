@@ -4,7 +4,6 @@
 
 
 var activatePageNr = function (index) {
-    $frame.sly('activate', index);
     clearmenuclass();
     $("#menu-button-" + index).addClass('menu-active');
     $("#bullet-" + index).addClass('bullet-active');

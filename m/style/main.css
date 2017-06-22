@@ -11,8 +11,23 @@
 }
 
 .logo {
-    height: 30px;
+    height: 80px;
     margin-top: 10px;
+}
+.logo-menu {
+    position:absolute;
+    right: 100px;
+    height: 100px;
+    top: 0px;
+}
+
+#menu {
+    margin: 0px 100px;
+}
+
+#menu li {
+    font-size: 50px;
+    text-align: right;
 }
 
 .main-menu > li > a {
@@ -27,6 +42,10 @@
 .container {
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-header {
+    margin: 0px auto !important;
 }
 
 .navbar {
@@ -194,19 +213,18 @@ body {
 
 .footer{
     text-align:center;
-    position:absolute;
-    bottom:15px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
+    background-color:darkgray;
+    height:40px !important;
 }
 
 .footer p {
-    opacity: 0.2;
+    opacity: 0.6;
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 24px;
     color: #ffffff;
     margin-bottom: 0px;
+    vertical-align:middle;
 }
 
 /*.bullet {
