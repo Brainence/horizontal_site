@@ -70,9 +70,6 @@ float: right!important;
 
 .page-content {
     margin: 0 auto;
-    max-width: 1148px;
-    min-height: 575px;
-    height: calc(100vh - 63px);
     display: table;
 }
 
@@ -91,9 +88,21 @@ float: right!important;
 }
 
 
+
+.animated-background {
+    position: fixed;
+    overflow-y: auto;
+}
+
 body {
     background-image: radial-gradient(circle at 47% 12%, #5b5959, #292929);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
+
 
 .nomargin {
     margin: 0 !important;
@@ -108,11 +117,11 @@ body {
 
 .homepage-details {
     font-family: 'Roboto' !important;
-    margin-top: 25% !important;
     text-align:center;
 }
 
 .home-widget-text {
+    text-align: left;
     font-size: 16px;
     vertical-align: middle;
 }
@@ -128,7 +137,6 @@ body {
     border-color: transparent !important;
 }
 .panel-collapse {
-    line-height: 0.5 !important;
     letter-spacing: 0.5px;
     text-align: justify;
     padding: 0;
@@ -245,61 +253,26 @@ body {
 
 
 
-
-@media (max-height: 900px) {
-    .homepage-details {
-        margin-top: 18% !important;
-    }
-}
-    
-@media (max-height: 800px) {
-    .homepage-details {
-        margin-top: 5% !important;
-    }
-}
-
 @media (max-width: 1320px) {
     .page-content {
-        margin-left: 50px;
-        margin-right: 50px;
-        width: calc(100vw - 100px);
-    }
-    .button-slide-left {
-        left:-40px;
-    }
-    .button-slide-right {
-        right:-40px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100vw - 200px);
     }
     .page-slogan {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
     .home-widget-text {
-        font-size: 1.2vw;
+        font-size: 4vw;
     }
     .details-home-page {
-        font-size:1.1vw;
-        line-height: 0.7 !important;
+        font-size:3vw;
     }
     .collapsible-heading {
-        margin-top: 10px;
-        line-height:1vw !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .nav li {
-        font-size: calc(0.7vw*1.5);
-    }
-}
-
-@media (max-width: 1000px) {
-    .page-content {
-        min-height: 460px;
-    }
-    .nav li {
-        font-size: 1.25vw;
-    }
-}
-
-@media (max-width: 700px) {
-    .nav li {
-        font-size: 1.75vw;
+        font-size: 2vw;
     }
 }

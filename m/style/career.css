@@ -1,0 +1,181 @@
+﻿
+
+.career-page-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.career-header {
+    font-family: Roboto;
+    font-stretch: condensed;
+    color: #ffffff;
+    text-align: left !important;
+    padding: 0px;
+}
+
+.career-page-slogan {
+    font-size: 27px;
+    text-align: left;
+    padding: 0px;
+    margin-right: 30px;
+}
+
+.career-menu {
+    font-size: 13px;
+    align-self: flex-end;
+    padding: 0px;
+    font-family: Roboto !important;
+    font-stretch: condensed !important;
+}
+
+.career-menu-item-active {
+    font-size: 17px;
+}
+
+.career-menu a {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+    .career-menu a:hover {
+        text-decoration: none;
+    }
+
+
+
+
+.career-frame {
+    height: auto !important;
+    max-width: 1150px !important;
+    margin: 0px;
+    margin-top: 44px;
+}
+
+.career-item {
+    padding: 0px;
+    text-align: left !important;
+    margin-right: 50px !important;
+    max-width: 350px;
+    height: 292px !important;
+    display: table;
+    cursor: pointer;
+}
+
+.career-item div {
+    display: table-cell;
+    vertical-align: middle;
+
+    font-family: Roboto;
+    text-align: center;
+    color:white;
+    text-shadow: rgba(0,0,0,0.3) 3px 4px 3px, rgba(0,0,0,0.3) -3px 4px 3px;
+}
+
+.position-key {
+    font-size:175%;
+    margin-bottom: 0px;
+}
+
+#our-career {
+    margin-top: 44px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+
+.sales_marketing {
+    background: -moz-linear-gradient(0deg, rgba(213,74,8,1) 0%, rgba(189,60,57,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(213,74,8,1)), color-stop(100%, rgba(189,60,57,1))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(213,74,8,1) 0%, rgba(189,60,57,1) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(213,74,8,1) 0%, rgba(189,60,57,1) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(213,74,8,1) 0%, rgba(189,60,57,1) 100%) !important;
+    background: linear-gradient(90deg, rgba(213,74,8,1) 0%, rgba(189,60,57,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d54a08', endColorstr='#BD3C39',GradientType=1 ) !important;
+}
+
+.hr {
+    background: -moz-linear-gradient(0deg, rgba(189,60,57,1) 0%, rgba(166,45,106,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(189,60,57,1)), color-stop(100%, rgba(166,45,106,1))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(189,60,57,1) 0%, rgba(166,45,106,1) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(189,60,57,1) 0%, rgba(166,45,106,1) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(189,60,57,1) 0%, rgba(166,45,106,1) 100%) !important;
+    background: linear-gradient(90deg, rgba(189,60,57,1) 0%, rgba(166,45,106,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd3c39', endColorstr='#A62D6A',GradientType=1 ) !important;
+}
+
+.administrative {
+    background: -moz-linear-gradient(0deg, rgba(166,45,106,1) 0%, rgba(141,31,156,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(166,45,106,1)), color-stop(100%, rgba(141,31,156,1))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(166,45,106,1) 0%, rgba(141,31,156,1) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(166,45,106,1) 0%, rgba(141,31,156,1) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(166,45,106,1) 0%, rgba(141,31,156,1) 100%) !important;
+    background: linear-gradient(90deg, rgba(166,45,106,1) 0%, rgba(141,31,156,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A62D6A', endColorstr='#8D1F9C',GradientType=1 ) !important;
+}
+
+.tech {
+    background: -moz-linear-gradient(0deg, rgba(141,31,156,1) 0%, rgba(117,17,205,1) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(141,31,156,1)), color-stop(100%, rgba(117,17,205,1))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(141,31,156,1) 0%, rgba(117,17,205,1) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(141,31,156,1) 0%, rgba(117,17,205,1) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(141,31,156,1) 0%, rgba(117,17,205,1) 100%) !important;
+    background: linear-gradient(90deg, rgba(141,31,156,1) 0%, rgba(117,17,205,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8D1F9C', endColorstr='#7511CD',GradientType=1 ) !important;
+}
+
+
+
+
+.selected-career-item {
+    max-width: 1150px;
+}
+
+ 
+
+
+.selected-career-item {
+    height: auto !important;
+    max-width: 1150px !important;
+}
+
+#selectedCareer ul, #selectedCareer li, #selectedCareer p, #selectedCareer h3{
+    font-family: BauhausC;
+    font-size: 20px;
+    line-height: 1.54;
+    text-align: justify;
+}
+
+#selectedCareer li {
+    max-width:700px;
+}
+
+#selected-career-image {
+    padding: 0px;
+    text-align: left;
+    background-size:auto;
+    cursor: auto !important;
+    margin-top: 60px !important;
+    margin-right: 0px !important;
+}
+
+.selected-career-details {
+    padding-left: 50px;
+    margin-top: 60px;
+}
+
+.selected-career-back-button {
+    font-family: BauhausC;
+    font-size: 16px;
+    text-align:left;
+}
+
+.selected-career-back-button a {
+    color: #6ed2ff;
+}
+
+.selected-career-back-button a:hover {
+    cursor:pointer;
+    color: #6ed2ff;
+}

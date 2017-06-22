@@ -51,7 +51,7 @@
 
 @media (max-width: 1320px) {
     #partnership-frame {
-        width: calc(100vw - 100px);
+        width: calc(100vw - 200px);
     }
 
     .partnership-page-slogan {
