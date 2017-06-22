@@ -6,7 +6,6 @@
 }
 
 .testimonial-header{
-    display: flex;
     font-family: 'Roboto';
     font-stretch: condensed;   
     margin-bottom: 0px;
@@ -15,7 +14,7 @@
 
 .testimonial-page-slogan {
     font-size: 27px;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -36,7 +35,7 @@
 
 .testimonial-details  p{
     font-size: 24px;
-    line-height: 1.54;
+    line-height: 1;
     text-align: justify;
 }
 
@@ -60,6 +59,7 @@
 }
 
 .testimonial-item{
+    margin-top: 15px !important;
     max-width:1150px !important;
 }
 
@@ -80,25 +80,25 @@
         width: calc(100vw - 200px);
     }
     .testimonial-page-slogan {
-        font-size:1.85vw;
+        font-size:5vw;
     }
     .testimonial-author p{
-        font-size: 1.4vw;
+        font-size: 4vw;
         padding-top:1.4vw;
         padding-bottom:0.6vw;
     }
     .testimonial-details p{
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     .testimonial-position {
-        font-size:1.1vw;
+        font-size: 2vw;
     }
     .testimonial-image img{
         height:auto;
         width:27vw;
     }
     .testimonial-data {
-        padding-top: 1vw;
+        padding-top: 0;
         padding-left: 2vw;
     }
     .testimonial-details p{

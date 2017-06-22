@@ -1,9 +1,10 @@
 ﻿
 .contacts {
-    padding-right:25px;
+    padding-right:0;
 }
 
 .team {
+    margin-top: 50px;
     padding-left:25px;
 }
 
@@ -27,11 +28,10 @@
     font-family: 'Roboto';
     font-size: 27px;
     font-stretch: condensed;
-    text-align: left;
 }
 
 #map {
-    max-height: 292px;
+    max-height: 500px;
     width: 100%;
     margin-top: 45px;
 }
@@ -42,7 +42,7 @@
     font-weight: 300;
     line-height: 1.69;
     color: #ddd;
-    text-align: left;
+    text-align: center;
     margin-bottom: 25px;
     margin-top: 5px;
     user-select: text;
@@ -89,8 +89,8 @@
 }
 
 .contacts-item img {
-    max-width: 175px;
-    max-height: 146px;
+    width: 175px;
+    height: 146px;
 }
 
 
@@ -114,6 +114,7 @@
     font-weight: 300;
     color: #ffffff;
     margin-top: 11px;
+    text-align: center;
 }
 
 
@@ -133,6 +134,7 @@
 }
 
 .photo-item {
+    margin-top: 0 !important;
     width: auto !important;
 }
 
@@ -241,28 +243,20 @@
         width: calc(100vw - 200px);
     }
     #location {
-        font-size: 1.1vw;
+        font-size: 3vw;
     }
     .contacts-frame {
-        height: 22vw !important;
     }
     .contacts-page-slogan {
-        font-size: 1.7vw;
+        font-size: 5vw;
     }
     .selected-contact-item p {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     .contacts-item {
         height:22vw !important;
-        max-width: 13.2vw;
-    }
-    .contacts-item img {
-        width: 13.2vw;
     }
     .contacts-href {
-        width:2vw;
-    }
-    #map {
-        height: 22vw;
+        width:10.8vw !important;
     }
 }
