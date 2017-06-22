@@ -21,6 +21,17 @@
     <script src="lib/sly.min.js"></script>
     <script src="src/app.js"></script>
 
+    <script type="text/javascript">
+        if (screen.width <= 1024) {
+            alert('opening mobile version');
+            location.replace("http://194.44.161.226:753/brainence_dev/m/");
+        } else
+
+            if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+                alert('opening mobile version');
+                location.replace("http://194.44.161.226:753/brainence_dev/m/");
+            }
+    </script>
 </head>
 <body>
     <div id="animated-background"></div>
