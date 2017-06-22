@@ -254,9 +254,15 @@ body {
 
 @media (max-width: 1320px) {
     .page-content {
-        margin-left: 100px;
-        margin-right: 100px;
-        width: calc(100vw - 200px);
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100vw - 100px);
+    }
+    .button-slide-left {
+        left:-40px;
+    }
+    .button-slide-right {
+        right:-40px;
     }
     .page-slogan {
         font-size: 3.5vw;

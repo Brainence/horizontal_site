@@ -320,16 +320,18 @@
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="wrap">
-                                    <div class="frame career-frame" id="career-frame">
-                                        <ul class="clearfix">
-                                            <li class="career-item grayscale" ng-repeat="career in careers" ng-click="SelectCareer($index)">
-                                                <div>
-                                                    <p class="position-key">
-                                                        {{career.positionKey}}
-                                                    </p>
-                                                    <p class="position-value">
-                                                        {{career.positionValue}}
-                                                    </p>
+                                    <div class="frame career-frame row" id="career-frame">
+                                        <ul class="clearfix" id="career-clearfix">
+                                            <li class="col-sm-4" ng-repeat="career in careers" ng-click="SelectCareer($index)">
+                                                <div class="career-item grayscale">
+                                                    <div>
+                                                        <p class="position-key">
+                                                            {{career.positionKey}}
+                                                        </p>
+                                                        <p class="position-value">
+                                                            {{career.positionValue}}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -371,113 +373,113 @@
                         </div>
                     </li>
 
-                <li>
+                    <li>
 
-                    <div class="page-content" ng-controller="partnershipCtrl">
-                        <div class="portfolio-page-details">
-                            <div class="portfolio-header">
-                                <div class="col-sm-6">
-                                    <span class="portfolio-page-slogan">PARTNERSHIP</span>
-                                    <span class="portfolio-menu">
-                                        <a class="partnership-menu-item partnership-menu-item-active" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>  |
-                                        <a class="partnership-menu-item" ng-click="showDirectCooperation(); ActivateMenu(1);">DIRECT COOPERATION</a>
-                                    </span>
+                        <div class="page-content" ng-controller="partnershipCtrl">
+                            <div class="portfolio-page-details">
+                                <div class="portfolio-header">
+                                    <div class="col-sm-6">
+                                        <span class="portfolio-page-slogan">PARTNERSHIP</span>
+                                        <span class="portfolio-menu">
+                                            <a class="partnership-menu-item partnership-menu-item-active" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>  |
+                                            <a class="partnership-menu-item" ng-click="showDirectCooperation(); ActivateMenu(1);">DIRECT COOPERATION</a>
+                                        </span>
+                                    </div>
+
                                 </div>
-                                
-                            </div>
-                            <div class="gradient"></div>
-                            <div class="wrap">
-                                <div class="frame partnership-frame row" id="partnership-frame">
-                                    <ul class="clearfix" id="allianceCooperationContent">
-                                        <li class="partnership-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                                <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png"/>
-                                                <p class="partnership-item-header">
-                                                    Alliance Cooperation
-                                                </p>
-                                                <p class="partnership-text">The coop partnership model offers a solution for small and mid-sized firms that want to remain independent. You remain in the front line as a Brand to name the price, while we become your Outsourced Tech Department! The Coop Partner can be either for one specific project only, or a continuing business relationship.</p>
-                                            </div>
-                                        </li>
-                                        <li class="partnership-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                                <img class="partnership-image grayscale" src="content/images/partnership/2_icon.png"/>
-                                                <p class="partnership-item-header">
-                                                    Potential issues:
-                                                </p>
-                                                <p class="partnership-text">
-                                                    • One partner might under-deliver due to focus on its own bottom line<br/>
-                                                    • If chosen for its expertise, the partner might take advantage of its situation<br/>
-                                                    • could become a competitor in the long run or possibly try to take over the other company<br/>
-                                                    • Possible culture barriers, ego & ideology clashes
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="partnership-item partnership-last-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                                <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png"/>
-                                                <p class="partnership-item-header">
-                                                    Benefits:
-                                                </p>
-                                                <p class="partnership-text">
-                                                    • Greater service capabilities, focus on adding value<br/>
-                                                    • Increased business opportunities and reach<br/>
-                                                    • Pooling/sharing resources and ideas<br/>
-                                                    • Common long-term strategy and goals<br/>
-                                                    • Executive and senior management exchange (BOD?)<br/>
-                                                    • High level of transparency between partners<br/>
-                                                    • Domain expertise knowledge exchange
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    
-                                    <ul class="clearfix" style="display: none;"  id="directCooperationContent">
-                                        <li class="partnership-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                                <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png"/>
-                                                <p class="partnership-item-header">
-                                                    Direct Cooperation
-                                                </p>
-                                                <p class="partnership-text">A commission based partnership model where Independent operator distributes Brainence services. Referring Partner operates their own business and is granted with a 10% commission from each invoice paid by the client to Brainence.</p>
-                                            </div>
-                                        </li>
-                                        <li class="partnership-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                               <img class="partnership-image grayscale" src="content/images/partnership/4_icon.png" />
-                                                <p class="partnership-item-header">
-                                                    Potential issues:
-                                                </p>
-                                                <p class="partnership-text">
-                                                    • Quality<br />
-                                                    • Lack of Motivation<br />
-                                                    • Keeping Secrets<br />
-                                                    • Ethical, Legal<br />
-                                                    • Who is the owner?
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="partnership-item partnership-last-item col-sm-4 nomargin">
-                                            <div class="portfolio-data">
-                                               <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png" />
-                                                <p class="partnership-item-header">
-                                                    Benefits:
-                                                </p>
-                                                <p class="partnership-text">
-                                                    • Мinimal investment required with lower risks<br />
-                                                    • Сheaper access to market than direct ownership<br />
-                                                    • Quicker new market penetration<br />
-                                                    • Processes and management practices<br />
-                                                    • First step to something more?
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="gradient"></div>
+                                <div class="wrap">
+                                    <div class="frame partnership-frame row" id="partnership-frame">
+                                        <ul class="clearfix" id="allianceCooperationContent">
+                                            <li class="partnership-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Alliance Cooperation
+                                                    </p>
+                                                    <p class="partnership-text">The coop partnership model offers a solution for small and mid-sized firms that want to remain independent. You remain in the front line as a Brand to name the price, while we become your Outsourced Tech Department! The Coop Partner can be either for one specific project only, or a continuing business relationship.</p>
+                                                </div>
+                                            </li>
+                                            <li class="partnership-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/2_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Potential issues:
+                                                    </p>
+                                                    <p class="partnership-text">
+                                                        • One partner might under-deliver due to focus on its own bottom line<br />
+                                                        • If chosen for its expertise, the partner might take advantage of its situation<br />
+                                                        • could become a competitor in the long run or possibly try to take over the other company<br />
+                                                        • Possible culture barriers, ego & ideology clashes
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="partnership-item partnership-last-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Benefits:
+                                                    </p>
+                                                    <p class="partnership-text">
+                                                        • Greater service capabilities, focus on adding value<br />
+                                                        • Increased business opportunities and reach<br />
+                                                        • Pooling/sharing resources and ideas<br />
+                                                        • Common long-term strategy and goals<br />
+                                                        • Executive and senior management exchange (BOD?)<br />
+                                                        • High level of transparency between partners<br />
+                                                        • Domain expertise knowledge exchange
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="clearfix" style="display: none;" id="directCooperationContent">
+                                            <li class="partnership-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Direct Cooperation
+                                                    </p>
+                                                    <p class="partnership-text">A commission based partnership model where Independent operator distributes Brainence services. Referring Partner operates their own business and is granted with a 10% commission from each invoice paid by the client to Brainence.</p>
+                                                </div>
+                                            </li>
+                                            <li class="partnership-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/4_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Potential issues:
+                                                    </p>
+                                                    <p class="partnership-text">
+                                                        • Quality<br />
+                                                        • Lack of Motivation<br />
+                                                        • Keeping Secrets<br />
+                                                        • Ethical, Legal<br />
+                                                        • Who is the owner?
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="partnership-item partnership-last-item col-sm-4 nomargin">
+                                                <div class="portfolio-data">
+                                                    <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png" />
+                                                    <p class="partnership-item-header">
+                                                        Benefits:
+                                                    </p>
+                                                    <p class="partnership-text">
+                                                        • Мinimal investment required with lower risks<br />
+                                                        • Сheaper access to market than direct ownership<br />
+                                                        • Quicker new market penetration<br />
+                                                        • Processes and management practices<br />
+                                                        • First step to something more?
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                </li>
+                    </li>
                 </ul>
                 <div class="footer">
                     <!--<a href="#"><img id="bullet-0" class="bullet bullet-active" src="content/images/Bullet_passive.png" onclick="activatePageNr(0)" /></a>
@@ -539,7 +541,8 @@
             $('#career-frame').sly('reload');
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
+            console.log($('.career-item').width());
+            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
 
         };
         window.onload = function (event) {
@@ -552,7 +555,8 @@
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
             $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
-        }
+            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
+        };
 
         function ChangeImage(id, path) {
             $("#" + id).attr('src', path);
