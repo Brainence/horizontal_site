@@ -10,7 +10,7 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
 
             $career_frame.sly({
                 horizontal: 1,
-                itemNav: 'basic',
+                itemNav: 'centered',
                 smart: 1,
                 activateMiddle: 1,
                 mouseDragging: 1,

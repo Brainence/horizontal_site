@@ -71,13 +71,13 @@
 
 @media (max-width: 1320px) {
     .testimonial-page-details {
-        width: calc(100vw - 200px);
+        width: calc(100vw - 100px);
     }
     .testimonial-item {
-        width: calc(100vw - 200px) !important;
+        width: calc(100vw - 100px) !important;
     }
     .testimonial-frame{
-        width: calc(100vw - 200px);
+        width: calc(100vw - 100px);
     }
     .testimonial-page-slogan {
         font-size:1.85vw;

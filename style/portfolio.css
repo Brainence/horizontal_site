@@ -164,11 +164,11 @@
 
 @media (max-width: 1320px) {
     #portfolio-frame {
-        width: calc(100vw - 200px);
+        width: calc(100vw - 100px);
     }
     
     .selected-portfolio-item {
-        width: calc(100vw - 200px);
+        width: calc(100vw - 100px);
     }
 
     .portfolio-page-slogan{

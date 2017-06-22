@@ -238,7 +238,7 @@
 
 @media (max-width: 1320px) {
     .contacts-data{
-        width: calc(100vw - 200px);
+        width: calc(100vw - 100px);
     }
     #location {
         font-size: 1.1vw;
