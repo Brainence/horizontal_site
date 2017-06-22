@@ -31,6 +31,7 @@
 
 .partnership-last-item {
     margin-right: 0px !important;
+    max-width: 349px;
 }
 
 .partnership-image {
@@ -99,7 +100,7 @@
 @media (max-width: 810px) {
     
     .partnership-item {
-        max-width: 24vw;
+        max-width: calc(24vw - 1px);
     }
 
     
