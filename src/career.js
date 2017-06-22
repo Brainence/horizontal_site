@@ -89,8 +89,11 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
         });
     }
 
+    var selectedIndex;
+
     $scope.SelectCareer = function (index) {
         $scope.showList = false;
+        selectedIndex = index;
         $scope.selectedCareer = $scope.careers[index];
         $("#selected-career-image").removeClass('sales_marketing');
         $("#selected-career-image").removeClass('hr');
@@ -101,5 +104,10 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
     }
     $scope.SelectList = function () {
         $scope.showList = true;
+        $timeout(function () {
+            RefreshFrame();
+            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
+            $career_frame.sly('activate',selectedIndex);    
+        });
     }
 });

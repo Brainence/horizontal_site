@@ -18,7 +18,7 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
 
             $portfolio_frame.sly({
                 horizontal: 1,
-                itemNav: 'centered',
+                itemNav: 'basic',
                 smart: 1,
                 activateMiddle: 1,
                 mouseDragging: 1,
@@ -83,6 +83,10 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
 
     $scope.SelectList = function () {
         $scope.showList = true;
+        $timeout(function () {
+            RefreshFrame();
+            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
+        });
     }
 
 
@@ -122,7 +126,6 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
                 i--;
             }
         };
-        console.log($scope.portfolios);
         $timeout(function () {
             RefreshFrame();
         });

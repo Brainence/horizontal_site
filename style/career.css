@@ -3,6 +3,7 @@
 .career-page-details {
     display: table-cell;
     vertical-align: middle;
+    width: 1150px !important;
 }
 
 .career-header {
@@ -137,6 +138,7 @@
 
 #selectedCareer {
     display: inline-block;
+    width: 100%;
 }
 
 #selectedCareer p, #selectedCareer h3{
@@ -223,8 +225,9 @@
     }
     .selected-career-details {
         margin-top: 2.5vw;
-        margin-left: 2vw;
-        padding-left: 1vw;
+        margin-left: 0vw;
+        padding-left: 2vw;
+        text-align: right;
     }
     .career-item {
         max-width: 30vw;
