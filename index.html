@@ -364,8 +364,8 @@
                                     <span class="career-page-slogan">CAREER</span>
                                 </div>
                                 <div class="gradient"></div>
-                                <div class="selected-career-item row nomargin">
-                                    <div class="career-item grayscale col-sm-4 nomargin" id="selected-career-image">
+                                <div class="selected-career-item row nomargin justify-content-between">
+                                    <div class="career-item grayscale col-xs-4 nomargin" id="selected-career-image">
                                         <div>
                                             <p class="position-key">
                                                 {{selectedCareer.positionKey}}
@@ -375,7 +375,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-8 selected-career-details nopadding-right">
+                                    <div class="col-xs-8 selected-career-details nopadding-right pull-right">
                                         <div id="selectedCareer"></div>
                                         <p class="selected-career-back-button"><a ng-click="SelectList()">Back</a></p>
                                     </div>
@@ -552,7 +552,7 @@
             $('#career-frame').sly('reload');
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            console.log($('.career-item').width());
+            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
             $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
 
         };
