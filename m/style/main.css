@@ -236,18 +236,6 @@ body {
     vertical-align:middle;
 }
 
-/*.bullet {
-    margin: 4px;
-}
-
-.bullet-active {
-   background-image: url('../content/images/Bullet_active.png');
-}
-
-:not(.bullet-active).bullet:hover {
-   background-image: url('../content/images/Bullet_hover.png');
-}*/
-
 .button-slide {
     position:absolute;
     top:0px;
@@ -286,20 +274,4 @@ body {
         margin-right: 100px;
         width: calc(100vw - 200px);
     }
-    /*.page-slogan {
-        font-size: 5vw;
-    }
-    .home-widget-text {
-        font-size: 4vw;
-    }
-    .details-home-page {
-        font-size:3vw;
-    }
-    .collapsible-heading {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .nav li {
-        font-size: 2vw;
-    }*/
 }

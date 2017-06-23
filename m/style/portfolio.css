@@ -172,42 +172,8 @@
     #portfolio-frame {
         width: calc(100vw - 200px);
     }
-    
+
     .selected-portfolio-item {
         width: calc(100vw - 200px);
     }
-
-    ./*portfolio-page-slogan{
-        font-size:5vw;
-    }
-    .portfolio-menu {
-        font-size:1.2vw;
-    }
-    .selected-portfolio-text {
-        font-size:3vw;
-    }
-    .selected-portfolio-back-button{
-        font-size:3vw;
-    }
-    .selected-portfolio-item {
-        margin-top: 3.5vw;
-    }
-    .selected-portfolio-details {
-        padding-left: 2.5vw;
-    }
-    .selected-portfolio-menu, .portfolio-menu-item, .portfolio-submenu-item {
-        font-size:2.5vw;
-    }
-    .selected-portfolio-menu-active, .portfolio-menu-item-active, .portfolio-submenu-item-active {
-        font-size:3.5vw;
-    }
-    .portfolio-title {
-        font-size: 4vw;
-    }
-    .portfolio-text {
-        font-size: 3vw;
-    }
-    .portfolio-item {
-        margin-right:2vw !important;
-    }*/
 }

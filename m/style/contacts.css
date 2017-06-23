@@ -250,16 +250,4 @@
     .contacts-data{
         width: calc(100vw - 200px);
     }
-    /*#location {
-        font-size: 3vw;
-    }
-    .contacts-page-slogan {
-        font-size: 5vw;
-    }
-    .selected-contact-item p {
-        font-size: 3vw;
-    }
-    .contacts-item {
-        height:22vw !important;
-    }*/
 }
