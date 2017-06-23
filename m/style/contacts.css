@@ -1,4 +1,11 @@
 ﻿
+
+#contacts{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+
 .contacts {
     padding-right:0;
 }
@@ -26,7 +33,7 @@
 
 .contacts-page-slogan {
     font-family: 'Roboto';
-    font-size: 27px;
+    font-size: 5vw;
     font-stretch: condensed;
 }
 
@@ -38,7 +45,7 @@
 
 #location {
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 3vw;
     font-weight: 300;
     line-height: 1.69;
     color: #ddd;
@@ -72,7 +79,7 @@
 }
 
 .contacts-frame {
-    max-height: 292px !important;
+    height: 292px !important;
     margin: 0px;
     margin-top: 45px;
     text-align:right !important;
@@ -84,6 +91,7 @@
     text-align:right !important;
     max-width: 175px;
     max-height:292px;
+    height:22vw !important;
     padding:0px;
     margin:0px !important;
 }
@@ -110,7 +118,7 @@
 
 .selected-contact-item p {
     font-family: 'Roboto';
-    font-size: 22px;
+    font-size: 3vw;
     font-weight: 300;
     color: #ffffff;
     margin-top: 11px;
@@ -242,10 +250,8 @@
     .contacts-data{
         width: calc(100vw - 200px);
     }
-    #location {
+    /*#location {
         font-size: 3vw;
-    }
-    .contacts-frame {
     }
     .contacts-page-slogan {
         font-size: 5vw;
@@ -255,8 +261,5 @@
     }
     .contacts-item {
         height:22vw !important;
-    }
-    .contacts-href {
-        width:10.8vw !important;
-    }
+    }*/
 }

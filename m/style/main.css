@@ -10,15 +10,19 @@
     font-weight: 200;
 }
 
+header {
+    margin-top: 2vw;
+}
+
 .logo {
-    height: 80px;
+    height: 10vw;
     margin-top: 10px;
 }
 .logo-menu {
     position:absolute;
     right: 100px;
-    height: 100px;
-    top: 0px;
+    height: 8vw;
+    top: 2.75vw;
 }
 
 #menu {
@@ -26,7 +30,7 @@
 }
 
 #menu li {
-    font-size: 50px;
+    font-size: 5vw;
     text-align: right;
 }
 
@@ -90,6 +94,8 @@ float: right!important;
 .page-content {
     margin: 0 auto;
     display: table;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .page-content:not(.home-page-content){
@@ -98,10 +104,12 @@ float: right!important;
 
 .collapsible-heading {
     cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .page-slogan {
-    font-size: 52px;
+    font-size: 5vw;
     color: #ffffff;
     letter-spacing: 3.1px;
 }
@@ -141,9 +149,10 @@ body {
 
 .home-widget-text {
     text-align: left;
-    font-size: 16px;
+    font-size: 4vw;
     vertical-align: middle;
 }
+
 
 .menu-active {
     color: #ff6b00 !important;
@@ -162,7 +171,7 @@ body {
 }
 .details-home-page {
     font-family: 'Roboto';
-    font-size: 14px;
+    font-size: 3vw;
     color: #f0f0f0;
 }
 
@@ -215,13 +224,13 @@ body {
     text-align:center;
     margin: 0 auto;
     background-color:darkgray;
-    height:40px !important;
+    height:4.2vw !important;
 }
 
 .footer p {
     opacity: 0.6;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 3vw;
     color: #ffffff;
     margin-bottom: 0px;
     vertical-align:middle;
@@ -277,7 +286,7 @@ body {
         margin-right: 100px;
         width: calc(100vw - 200px);
     }
-    .page-slogan {
+    /*.page-slogan {
         font-size: 5vw;
     }
     .home-widget-text {
@@ -292,5 +301,5 @@ body {
     }
     .nav li {
         font-size: 2vw;
-    }
+    }*/
 }

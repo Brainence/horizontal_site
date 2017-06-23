@@ -1,4 +1,9 @@
 ﻿
+#portfolio{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
 .portfolio-page-details {
     display: table-cell;
     vertical-align: middle;
@@ -17,7 +22,7 @@
 }
 
 .portfolio-page-slogan {
-    font-size: 27px;
+    font-size: 5vw;
     text-align: left;
     padding:0px;
     text-transform: uppercase;
@@ -64,7 +69,7 @@
 
 .portfolio-title{
     font-family: 'Roboto';
-    font-size: 22px;
+    font-size: 4vw;
     font-weight: 300;
     padding-bottom: 20px;
     margin:0px;
@@ -78,7 +83,7 @@
 
 .portfolio-text {
     font-family: 'Roboto' !important;
-    font-size: 14px;
+    font-size: 3vw;
     font-weight: 300 !important;
     line-height: 1.36 !important;
     text-align: left;
@@ -100,7 +105,7 @@
     padding: 0px;
     text-align:left !important;
     max-width: 350px;
-    margin-right:50px !important;
+    margin-right:3vw !important;
 }
 
 .selected-portfolio-header {
@@ -112,12 +117,12 @@
     height: auto !important;
     text-align: left;
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 3.5vw;
     max-width: 1150px !important;
 }
 
 .selected-portfolio-menu {
-    font-size: 13px;
+    font-size:2.5vw;
     text-align: left;
     font-family: 'Roboto';
     color: #ffffff;
@@ -126,12 +131,12 @@
 }
 
 .selected-portfolio-menu-active {
-    font-size: 17px;
+    font-size:3.5vw;
 }
 
 .selected-portfolio-text {
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size:3vw;
     line-height: 1.54;
     text-align: justify;
 }
@@ -144,12 +149,12 @@
 
 .selected-portfolio-details {
     padding-right:0px;
-    padding-left:50px;
+    padding-left: 2.5vw;
 }
 
 .selected-portfolio-back-button {
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size:3vw;
     text-align:left;
 }
 
@@ -172,7 +177,7 @@
         width: calc(100vw - 200px);
     }
 
-    .portfolio-page-slogan{
+    ./*portfolio-page-slogan{
         font-size:5vw;
     }
     .portfolio-menu {
@@ -204,5 +209,5 @@
     }
     .portfolio-item {
         margin-right:2vw !important;
-    }
+    }*/
 }

@@ -1,4 +1,9 @@
 ﻿
+#testimonials{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
 .testimonial-page-details {
     display: table-cell;
     vertical-align: middle;
@@ -13,7 +18,7 @@
 }
 
 .testimonial-page-slogan {
-    font-size: 27px;
+    font-size:5vw;
     text-align: center;
 }
 
@@ -26,23 +31,28 @@
 
 .testimonial-author p{
     font-family: 'Roboto';
-    font-size: 22px;
-    padding-top: 44px;
-    padding-bottom: 20px;
+    font-size: 4vw;
+    padding-top:1.4vw;
+    padding-bottom:0.6vw;
     margin:0px;
     text-align: left;
 }
 
 .testimonial-details  p{
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 1;
     text-align: justify;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 .testimonial-position {
-    font-size: 14px;
     text-align: left;
     margin-top:15px;
+}
+
+.testimonial-position p {
+    font-size: 2vw;
 }
 
 
@@ -51,11 +61,17 @@
     text-align: left;
 }
 
+.testimonial-image img{
+    height:auto;
+    width:27vw;
+    max-width:350px;
+}
+
 .testimonial-data {
     vertical-align:text-top;
     padding-top:14px;
-    padding-left:40px;
     padding-right:0px;
+    padding-left: 2vw;
 }
 
 .testimonial-item{
@@ -79,7 +95,7 @@
     .testimonial-frame{
         width: calc(100vw - 200px);
     }
-    .testimonial-page-slogan {
+    /*.testimonial-page-slogan {
         font-size:5vw;
     }
     .testimonial-author p{
@@ -93,10 +109,6 @@
     .testimonial-position {
         font-size: 2vw;
     }
-    .testimonial-image img{
-        height:auto;
-        width:27vw;
-    }
     .testimonial-data {
         padding-top: 0;
         padding-left: 2vw;
@@ -104,6 +116,6 @@
     .testimonial-details p{
         padding-top: 0px;
         padding-left: 0px;
-    }
+    }*/
 }
 
