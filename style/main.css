@@ -10,6 +10,13 @@
     font-weight: 200;
 }
 
+
+#home{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+
 .logo {
     height: 30px;
     margin-top: 10px;
@@ -71,6 +78,7 @@ float: right!important;
 .page-content {
     margin: 0 auto;
     max-width: 1150px;
+    width: calc(100vw - 100px);
     min-height: 575px;
     height: calc(100vh - 63px);
     display: table;

@@ -1,4 +1,9 @@
 ﻿
+#testimonials{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
 .testimonial-page-details {
     display: table-cell;
     vertical-align: middle;

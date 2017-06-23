@@ -226,12 +226,12 @@
     -webkit-transform: scale(4, 4);
     transform: scale(4, 4);
     position: absolute;
-    top:30px;
-    right:100px;
+    top: 3vw;
+    right:5vw;
     color: #888; 
     opacity: 1;
     text-shadow:none;
-    padding: 20px 30px 20px 35px;
+    padding: 2vw 2vw 2vw 2vw;
 }
 
 #button-close:hover {

@@ -78,14 +78,13 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
 
     $scope.SelectPortfolio = function (index) {
         $scope.showList = false;
-        $scope.selectedPortfolio = $scope.portfolios[index];
+        $scope.selectedPortfolio = $scope.portfolios[index];    
     }
 
     $scope.SelectList = function () {
         $scope.showList = true;
         $timeout(function () {
             RefreshFrame();
-            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
         });
     }
 
@@ -133,6 +132,7 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
 
     function RefreshFrame() {
         $portfolio_frame.sly('reload');
+        $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
     }
 
     $scope.ActivateMenu = function (index) {

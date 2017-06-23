@@ -1,7 +1,13 @@
 ﻿
+#portfolio{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
 .portfolio-page-details {
     display: table-cell;
     vertical-align: middle;
+    max-width: calc(100vw - 100px);
 }
 
 .portfolio-header{

@@ -106,7 +106,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="portfolio">
                         <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
                             <div class="portfolio-page-details" ng-show="showList">
                                 <div class="portfolio-header">
@@ -172,7 +172,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="testimonials">
                         <div class="page-content" ng-controller="testimonialCtrl">
                             <div class="testimonial-page-details">
                                 <div class="testimonial-header">
@@ -214,14 +214,14 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="contacts">
                         <div class="page-content" ng-controller="contactsCtrl">
                             <div class="contacts-page-details">
                                 <div class="contacts-data row">
-                                    <div class="col-sm-4 contacts nopadding">
+                                    <div class="col-xs-4 col-sm-4 contacts nopadding">
                                         <div class="contacts-header row">
-                                            <p class="contacts-page-slogan col-sm-4">CONTACTS</p>
-                                            <div class="col-sm-8">
+                                            <p class="contacts-page-slogan col-sm-4 col-xs-4">CONTACTS</p>
+                                            <div class="col-sm-8 col-xs-8">
                                                 <a href="https://twitter.com/brainence" target="_blank">
                                                     <img class="contacts-href" id="imageTwitter" src="content/images/contacts/Twitter grey.png"
                                                          onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')"
@@ -266,17 +266,17 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-sm-8 team nopadding-right">
+                                    <div class="col-xs-8 col-sm-8 team nopadding-right">
                                         <p class="contacts-page-slogan">OUR TEAM</p>
                                         <div class="gradient gradient-23"></div>
 
                                         <div class="row">
-                                            <div class="selected-contact-item col-sm-6">
+                                            <div class="selected-contact-item col-sm-6 col-xs-6">
                                                 <img class="grayscale" ng-src="{{selectedContact.image}}" />
                                                 <p>{{selectedContact.name}}, {{selectedContact.position}}</p>
                                             </div>
 
-                                            <div class="contacts-items col-sm-6">
+                                            <div class="contacts-items col-sm-6 col-xs-6">
                                                 <div class="wrap">
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix" id="contacts-clearfix">
@@ -316,17 +316,17 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="career">
                         <div class="page-content" ng-controller="careerCtrl" ng-init="showList=true">
                             <div class="career-page-details" ng-show="showList">
                                 <div class="career-header">
                                     <span class="career-page-slogan">CAREER</span>
                                     <span class="career-menu">
                                         <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>  |
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>  |
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>  |
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a> |
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>  |
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>  |
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a> |
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
                                     </span>
                                 </div>
                                 <div class="gradient"></div>
@@ -384,7 +384,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="partnership">
 
                         <div class="page-content" ng-controller="partnershipCtrl">
                             <div class="portfolio-page-details">
@@ -400,10 +400,10 @@
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="wrap">
-                                    <div class="frame partnership-frame row" id="partnership-frame">
+                                    <div class="frame partnership-frame row justify-content-between" id="partnership-frame">
                                         <ul class="clearfix" id="allianceCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Alliance Cooperation
@@ -412,7 +412,7 @@
                                                 </div>
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/2_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Potential issues:
@@ -426,7 +426,7 @@
                                                 </div>
                                             </li>
                                             <li class="partnership-item partnership-last-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Benefits:
@@ -446,7 +446,7 @@
 
                                         <ul class="clearfix" style="display: none;" id="directCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Direct Cooperation
@@ -455,7 +455,7 @@
                                                 </div>
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/4_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Potential issues:
@@ -470,7 +470,7 @@
                                                 </div>
                                             </li>
                                             <li class="partnership-item partnership-last-item col-sm-4 nomargin">
-                                                <div class="portfolio-data">
+                                                <div class="partnership-data">
                                                     <img class="partnership-image grayscale" src="content/images/partnership/3_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Benefits:
@@ -550,10 +550,10 @@
             $('#contacts-frame').sly('reload');
             $('#photo-frame').sly('reload');
             $('#career-frame').sly('reload');
-            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
+            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
             $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
-            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
+            $('#career-clearfix').width($('#career-clearfix').width() +100+ 2 * $('.career-item').length);
 
         };
         window.onload = function (event) {
@@ -563,10 +563,10 @@
             $('#contacts-frame').sly('reload');
             $('#photo-frame').sly('reload');
             $('#career-frame').sly('reload');
-            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
+            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
             $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
-            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
+            $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
         };
 
         function ChangeImage(id, path) {

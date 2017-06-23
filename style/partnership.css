@@ -1,4 +1,10 @@
-﻿.partnership-page-slogan {
+﻿
+#partnership{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.partnership-page-slogan {
     font-size: 1.85vw;
     margin-right: 1vw;
 }
@@ -73,24 +79,23 @@
 
     .partnership-text {
         font-size: 1vw;
-        max-width: 24vw;
+        max-width: 27vw;
     }
 
     .partnership-item {
-        max-width: 25vw;
-        margin-right: 2vw !important;
+        max-width: 27vw;
+        margin-right: 3vw !important;
     }
-
-    .partnership-item {
+    .partnership-item:last-child {
         margin-right: 0px !important;
     }
 
     .partnership-image {
-        height: 15vw;
+        max-height: 15vw;
     }
 
     .partnership-data {
-        width: 24vw;
+        max-width: 27vw;
     }
     .partnership-item-header {
         font-size: 1.5vw;
@@ -98,23 +103,25 @@
 }
 
 @media (max-width: 810px) {
-    
     .partnership-item {
-        max-width: calc(24vw - 1px);
-    }
-
-    
-    .partnership-text {
-        font-size: 1vw;
-        max-width: 20vw;
+        max-width: 26vw;
     }
 }
 
-
-@media (max-width: 725px) {
-    
+@media (max-width: 650px) {
     .partnership-item {
-        max-width: 21vw;
+        max-width: 25vw;
     }
 }
 
+@media (max-width: 550px) {
+    .partnership-item {
+        max-width: 23vw !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .partnership-item {
+        max-width: 18vw !important;
+    }
+}

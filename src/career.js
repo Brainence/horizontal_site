@@ -49,6 +49,7 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
 
     function RefreshFrame() {
         $career_frame.sly('reload');
+        $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
     }
 
     function UpdateTagClasses() {
@@ -89,11 +90,8 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
         });
     }
 
-    var selectedIndex;
-
     $scope.SelectCareer = function (index) {
         $scope.showList = false;
-        selectedIndex = index;
         $scope.selectedCareer = $scope.careers[index];
         $("#selected-career-image").removeClass('sales_marketing');
         $("#selected-career-image").removeClass('hr');
@@ -101,13 +99,12 @@ angular.module('brainenceApp').controller("careerCtrl", function ($scope, $timeo
         $("#selected-career-image").removeClass('tech');
         $('#selected-career-image').addClass($scope.selectedCareer.tag);
         $("#selectedCareer").html($scope.selectedCareer.details);
+        $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
     }
     $scope.SelectList = function () {
         $scope.showList = true;
         $timeout(function () {
             RefreshFrame();
-            $('#career-clearfix').width($('#career-clearfix').width() + 2 * $('.career-item').length);
-            $career_frame.sly('activate',selectedIndex);    
         });
     }
 });

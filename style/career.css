@@ -1,9 +1,14 @@
 ﻿
+#career{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
 
 .career-page-details {
     display: table-cell;
     vertical-align: middle;
-    width: 1150px !important;
+    max-width: calc(100vw - 100px);
 }
 
 .career-header {
@@ -194,7 +199,7 @@
 
 
 @media (max-width: 1320px) {
-    #career-frame {
+    .career-frame {
         width: calc(100vw - 100px);
         margin-top: 2.5vw;
     }
