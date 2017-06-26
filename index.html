@@ -298,8 +298,8 @@
                                             <div class="wrap">
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix" id="photo-clearfix">
-                                                        <li class="photo-item" ng-repeat="photo in photos">
-                                                            <img class="grayscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
+                                                        <li ng-repeat="photo in photos">
+                                                            <img class="grayscale photo-item" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -552,7 +552,7 @@
             $('#career-frame').sly('reload');
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
+            $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
             $('#career-clearfix').width($('#career-clearfix').width() +100+ 2 * $('.career-item').length);
 
         };
@@ -565,7 +565,7 @@
             $('#career-frame').sly('reload');
             $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
             $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
+            $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
             $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
         };
 

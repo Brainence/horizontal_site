@@ -77,6 +77,7 @@
         $scope.$apply();
         $timeout(function () {
             $photos_frame.sly('reload');
+            $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
         },200);
     });
 
