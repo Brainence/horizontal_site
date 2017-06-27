@@ -31,7 +31,26 @@ jQuery(function ($) {
 
 
 function changePage(eventName) {
+    var url;
     activatePageNr(this.rel.activeItem);
+    switch(this.rel.activeItem) {
+        case 0: url = 'home'; break;
+        case 1: url = 'portfolio'; break;
+        case 2: url = 'testimonials'; break;
+        case 3: url = 'contacts'; break;
+        case 4: url = 'career'; break;
+        case 5: url = 'partnership'; break;
+    }
+    window.history.pushState(null, null, "#" + url);
+    switch (url) {
+        case 'home': $('#oneperframe').sly('activate', 0); break;
+        case 'portfolio': $('#oneperframe').sly('activate', 1); break;
+        case 'testimonials': $('#oneperframe').sly('activate', 2); break;
+        case 'contacts': $('#oneperframe').sly('activate', 3); break;
+        case 'career': $('#oneperframe').sly('activate', 4); break;
+        case 'partnership': $('#oneperframe').sly('activate', 5); break;
+        default: $('#oneperframe').sly('activate', 0);
+    }
 }
 
 

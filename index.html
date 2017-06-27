@@ -45,12 +45,12 @@
                 </div>
 
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li><a id="menu-button-0" href="#" onclick="activatePageNr(0)">Home</a></li>
-                    <li><a id="menu-button-1" href="#" onclick="activatePageNr(1)">Projects</a></li>
-                    <li><a id="menu-button-2" href="#" onclick="activatePageNr(2)">Feedback</a></li>
-                    <li><a id="menu-button-3" href="#" onclick="activatePageNr(3)">About</a></li>
-                    <li><a id="menu-button-4" href="#" onclick="activatePageNr(4)">Career</a></li>
-                    <li><a id="menu-button-5" href="#" onclick="activatePageNr(5)">Partnership</a></li>
+                    <li><a id="menu-button-0" href="#home" onclick="activatePageNr(0)" class="menu-active">Home</a></li>
+                    <li><a id="menu-button-1" href="#portfolio" onclick="activatePageNr(1)">Projects</a></li>
+                    <li><a id="menu-button-2" href="#testimonials" onclick="activatePageNr(2)">Feedback</a></li>
+                    <li><a id="menu-button-3" href="#contacts" onclick="activatePageNr(3)">About</a></li>
+                    <li><a id="menu-button-4" href="#career" onclick="activatePageNr(4)">Career</a></li>
+                    <li><a id="menu-button-5" href="#partnership" onclick="activatePageNr(5)">Partnership</a></li>
                 </ul>
             </div>
         </nav>
@@ -571,6 +571,20 @@
 
         function ChangeImage(id, path) {
             $("#" + id).attr('src', path);
+        };
+
+        window.onpopstate = function (event) {
+            var url = window.location.href;
+            url = url.substr(url.indexOf("#") + 1);
+            switch(url) {
+                case 'home': $('#oneperframe').sly('activate', 0); break;
+                case 'portfolio': $('#oneperframe').sly('activate', 1); break;
+                case 'testimonials': $('#oneperframe').sly('activate', 2); break;
+                case 'contacts': $('#oneperframe').sly('activate', 3); break;
+                case 'career': $('#oneperframe').sly('activate', 4); break;
+                case 'partnership': $('#oneperframe').sly('activate', 5); break;
+                default: $('#oneperframe').sly('activate', 0);
+            }
         };
     </script>
 </body>
