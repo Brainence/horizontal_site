@@ -557,6 +557,20 @@
 
         };
         window.onload = function (event) {
+            var url = window.location.href;
+            url = url.substr(url.indexOf("#") + 1);
+            status = 1;
+            switch (url) {
+                case 'home': $('#oneperframe').sly('activate', 0); activatePageNr(0); break;
+                case 'portfolio': $('#oneperframe').sly('activate', 1); activatePageNr(1); break;
+                case 'testimonials': $('#oneperframe').sly('activate', 2); activatePageNr(2); break;
+                case 'contacts': $('#oneperframe').sly('activate', 3); activatePageNr(3); break;
+                case 'career': $('#oneperframe').sly('activate', 4); activatePageNr(4); break;
+                case 'partnership': $('#oneperframe').sly('activate', 5); activatePageNr(5); break;
+                default: $('#oneperframe').sly('activate', 0); activatePageNr(0);
+            }
+            status = 0;
+
             $('#oneperframe').sly('reload');
             $('#portfolio-frame').sly('reload');
             $('#testimonial-frame').sly('reload');
@@ -576,15 +590,17 @@
         window.onpopstate = function (event) {
             var url = window.location.href;
             url = url.substr(url.indexOf("#") + 1);
+            status = 1;
             switch(url) {
-                case 'home': $('#oneperframe').sly('activate', 0); break;
-                case 'portfolio': $('#oneperframe').sly('activate', 1); break;
-                case 'testimonials': $('#oneperframe').sly('activate', 2); break;
-                case 'contacts': $('#oneperframe').sly('activate', 3); break;
-                case 'career': $('#oneperframe').sly('activate', 4); break;
-                case 'partnership': $('#oneperframe').sly('activate', 5); break;
-                default: $('#oneperframe').sly('activate', 0);
+                case 'home': $('#oneperframe').sly('activate', 0); activatePageNr(0); break;
+                case 'portfolio': $('#oneperframe').sly('activate', 1); activatePageNr(1); break;
+                case 'testimonials': $('#oneperframe').sly('activate', 2); activatePageNr(2); break;
+                case 'contacts': $('#oneperframe').sly('activate', 3); activatePageNr(3); break;
+                case 'career': $('#oneperframe').sly('activate', 4); activatePageNr(4); break;
+                case 'partnership': $('#oneperframe').sly('activate', 5); activatePageNr(5); break;
+                default: $('#oneperframe').sly('activate', 0); activatePageNr(0);
             }
+            status = 0;
         };
     </script>
 </body>
