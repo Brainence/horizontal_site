@@ -21,51 +21,41 @@ jQuery(function ($) {
             easing: 'swing',
             dragHandle: 1,
             dynamicHandle: 1,
-            clickBar: 1
+            clickBar: 1,
+            scrollTrap: 1
         }, {
             change: changePage
         }).init();
     }());
 });
 
-
 var status = 0; //0-uninizialize, 1-menu button click or onpopstate
+var state = 0;
 
 
 function changePage(eventName) {
-    if (status == 0) {
-        var url;
-        switch (this.rel.activeItem) {
-            case 0: url = 'home'; break;
-            case 1: url = 'portfolio'; break;
-            case 2: url = 'testimonials'; break;
-            case 3: url = 'contacts'; break;
-            case 4: url = 'career'; break;
-            case 5: url = 'partnership'; break;
-        }
-        activatePageNr(this.rel.activeItem);
-        window.history.pushState(url, 'Brainence', "#" + url);
-        switch (url) {
-            case 'home': $('#oneperframe').sly('activate', 0); break;
-            case 'portfolio': $('#oneperframe').sly('activate', 1); break;
-            case 'testimonials': $('#oneperframe').sly('activate', 2); break;
-            case 'contacts': $('#oneperframe').sly('activate', 3); break;
-            case 'career': $('#oneperframe').sly('activate', 4); break;
-            case 'partnership': $('#oneperframe').sly('activate', 5); break;
-            default: $('#oneperframe').sly('activate', 0);
-        }
+    if (status != 1) {
+        openPage(this.rel.activeItem);
+        window.history.pushState(this.rel.activeItem, 'Brainence', null);
+        $('#oneperframe').sly('activate', this.rel.activeItem);
     }
     status = 0;
 }
 
 
 var activatePageNr = function (index) {
+    openPage(index);
+    window.history.pushState(index, 'Brainence', null);
+}
+
+var openPage = function (index) {
     status = 1;
-    //$frame.sly('activate', index);
+    $frame.sly('activate', index);
     clearmenuclass();
     $("#menu-button-" + index).addClass('menu-active');
     status = 0;
 }
+
 
 var clearmenuclass = function () {
     for (i = 0; i < 6; i++) {
