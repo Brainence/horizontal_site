@@ -113,9 +113,11 @@
                                     <div class="col-sm-5">
                                         <span class="portfolio-page-slogan">PORTFOLIO</span>
                                         <span class="portfolio-menu">
-                                            <a class="portfolio-menu-item portfolio-menu-item-active" ng-click="SortByDate(); ActivateMenu(0); submenu='latest'">LATEST</a>  |
-                                            <a class="portfolio-menu-item portfolio-menu-item-active" ng-click="ActivateMenu(1); submenu='technology'">TECHNOLOGY</a>  |
-                                            <a class="portfolio-menu-item portfolio-menu-item-active" ng-click="ActivateMenu(2); submenu='industry'">INDUSTRY</a>
+                                            <a class="portfolio-menu-item portfolio-menu-item-active" ng-click="SortByDate(); ActivateMenu(0); submenu='latest'">LATEST</a>
+                                            <span class="menu-divider"> | </span>
+                                            <a class="portfolio-menu-item" ng-click="ActivateMenu(1); submenu='technology'">TECHNOLOGY</a>
+                                            <span class="menu-divider"> | </span>
+                                            <a class="portfolio-menu-item" ng-click="ActivateMenu(2); submenu='industry'">INDUSTRY</a>
                                         </span>
                                     </div>
                                     <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
@@ -132,10 +134,10 @@
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
                                         <ul class="clearfix" id="portfolio-clearfix">
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
-                                                <div class="portfolio-data">
+                                                <div class="portfolio-data" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
                                                     <img class="portfolio-image grayscale" ng-src="{{portfolio.image}}" />
-                                                    <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a></p>
+                                                    <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="">...read more...</a></p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -153,8 +155,10 @@
                                 <div class="portfolio-header selected-portfolio-header">
                                     <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
                                     <span class="portfolio-menu">
-                                        <a class="selected-portfolio-menu selected-portfolio-menu-active" ng-click="ActivateSelectedMenu(0); selection='problem'">PROBLEM</a>  |
-                                        <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(1); selection='solution'">SOLUTION</a>  |
+                                        <a class="selected-portfolio-menu selected-portfolio-menu-active" ng-click="ActivateSelectedMenu(0); selection='problem'">PROBLEM</a>
+                                        <span class="menu-divider"> | </span>
+                                        <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(1); selection='solution'">SOLUTION</a>
+                                        <span class="menu-divider"> | </span>
                                         <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(2); selection='business'">BUSINESS</a>
                                     </span>
                                 </div>
@@ -322,10 +326,14 @@
                                 <div class="career-header">
                                     <span class="career-page-slogan">CAREER</span>
                                     <span class="career-menu">
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>  |
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>  |
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>  |
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a> |
+                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>
+                                        <span class="menu-divider"> | </span>
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>
+                                        <span class="menu-divider"> | </span>
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>
+                                        <span class="menu-divider"> | </span>
+                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a>
+                                        <span class="menu-divider"> | </span>
                                         <a class="career-menu-item" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
                                     </span>
                                 </div>
@@ -392,7 +400,8 @@
                                     <div class="col-sm-6">
                                         <span class="portfolio-page-slogan">PARTNERSHIP</span>
                                         <span class="portfolio-menu">
-                                            <a class="partnership-menu-item partnership-menu-item-active" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>  |
+                                            <a class="partnership-menu-item partnership-menu-item-active" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>
+                                            <span class="menu-divider"> | </span>
                                             <a class="partnership-menu-item" ng-click="showDirectCooperation(); ActivateMenu(1);">DIRECT COOPERATION</a>
                                         </span>
                                     </div>

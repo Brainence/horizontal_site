@@ -60,6 +60,8 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
             }
         }
         $scope.submenuIndustries = Array.from(industries);
+
+        $scope.SortByDate();
         $scope.$apply();
 
         $portfolio_frame.sly('reload');

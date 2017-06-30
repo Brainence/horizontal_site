@@ -72,7 +72,6 @@
     font-family: 'Roboto';
     font-size: 22px;
     font-weight: 300;
-    padding-top: 44px;
     padding-bottom: 20px;
     margin:0px;
     text-align: left;
@@ -107,6 +106,7 @@
     text-align:left !important;
     max-width: 350px;
     margin-right:50px !important;
+    margin-top: 44px !important;
 }
 
 .selected-portfolio-header {
@@ -167,6 +167,14 @@
     color: #6ed2ff;
 }
 
+.portfolio-data:hover {
+    cursor:pointer;
+}
+
+.menu-divider {
+    padding: 0px 4px;
+}
+
 
 @media (max-width: 1320px) {
     #portfolio-frame {
@@ -211,6 +219,7 @@
     .portfolio-item {
         max-width: 27vw;
         margin-right:2vw !important;
+        margin-top:1.8vw !important;
     }
     .portfolio-image {
         width: 27vw;
