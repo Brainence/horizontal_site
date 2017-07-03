@@ -124,7 +124,7 @@ angular.module('brainenceApp').controller("portfolioCtrl", function ($scope, $ti
         for (var i = 0; i < $scope.portfolios.length; i++) {
             if (!$scope.portfolios[i].industries.includes(value)) {
                 $scope.portfolios.splice(i, 1);
-                i--;
+                i--; 
             }
         };
         $timeout(function () {

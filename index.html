@@ -66,7 +66,7 @@
                                 <div class="gradient"></div>
                                 <div class="row nomargin">
                                     <div class="col-sm-3 panel">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
                                             <img src="content/images/Web_app_Icon.png" />
                                             <span class="home-widget-text">WEB & MOBILE APP DESIGN</span>
                                             <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
@@ -75,7 +75,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
                                             <img src="content/images/website_grafic_icon.png" />
                                             <span class="home-widget-text">WEBSITE & GRAPHICS DESIGN</span>
                                             <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
@@ -84,7 +84,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)">
                                             <img src="content/images/Software_dev_icon.png" />
                                             <span class="home-widget-text">DEVELOPER RESOURCES</span>
                                             <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
                                             <img src="content/images/Custom_progr_icon.png" />
                                             <span class="home-widget-text">CUSTOM DEVELOPMENT</span>
                                             <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
@@ -596,6 +596,13 @@
             openPage(state);
             status = 0;
         };
+
+        function collapseInItem(index) {
+            $(".panel-collapse-content-home").each(function (i) {
+                if(i!=index)
+                    $(this).removeClass('in');
+            });
+        }
     </script>
 </body>
 </html>
