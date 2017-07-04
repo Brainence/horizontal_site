@@ -15,6 +15,9 @@
     margin: 0px;
 }
 
+.partnership-menu-item:hover:not(.partnership-menu-item-active)  {
+    color: #aaa;
+}
 
 .partnership-menu-item-active {
     font-size: 17px;

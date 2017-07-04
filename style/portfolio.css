@@ -39,6 +39,10 @@
     font-stretch: condensed !important;
 }
 
+.portfolio-menu-item:hover:not(.portfolio-menu-item-active) {
+    color: #aaa;
+}
+
 .portfolio-menu-item-active {
     font-size: 17px;
 }
@@ -58,6 +62,10 @@
 }
 .portfolio-submenu-item {
     font-size: 13px;
+}
+
+.portfolio-submenu-item:hover:not(.portfolio-submenu-item-active) {
+    color: #aaa;
 }
 
 .portfolio-submenu-item-active {
