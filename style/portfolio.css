@@ -138,6 +138,10 @@
     align-self: flex-end;
 }
 
+.selected-portfolio-menu:hover:not(.selected-portfolio-menu-active) {
+    color: #aaa;
+}
+
 .selected-portfolio-menu-active {
     font-size: 17px;
 }
