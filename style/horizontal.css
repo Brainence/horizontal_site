@@ -11,7 +11,7 @@
 
 /* Frame */
 .frame {
-	height: calc(100vh - 63px);
+	height: calc(100vh - 57px);
 	overflow: hidden;
 }
 .frame ul {
@@ -37,8 +37,8 @@
 
 .scrollbar {
 	margin: 0px;
-	height: 10px;
-	background: #5b5959;
+	height: 5px;
+	background: #7e7e7f;
 	line-height: 0;
 }
 .scrollbar .handle {
@@ -52,7 +52,7 @@
 	top: -9px;
 	left: 0;
 	width: 100%;
-	height: 20px;
+	height: 10px;
 }
 
 /* Pages */
@@ -94,26 +94,6 @@
 .crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
 .crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
 
-
-.scrollbar {
-	margin: 0px;
-	height: 10px;
-	background: #5b5959;
-	line-height: 0;
-}
-.scrollbar .handle {
-	width: 100px;
-	height: 100%;
-	background: #FF6B00;
-	cursor: pointer;
-}
-.scrollbar .handle .mousearea {
-	position: absolute;
-	top: -9px;
-	left: 0;
-	width: 100%;
-	height: 20px;
-}
 
 
 

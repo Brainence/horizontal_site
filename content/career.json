@@ -1,5 +1,12 @@
 ﻿[
   {
+    "positionKey": "Sales",
+    "positionValue": "Assistant",
+    "tag": "sales_marketing",
+    "details": "<p>If you are passionate about IT Sales and interested in starting your career in this direction, then you are at the right place. We are looking for young and ambitious person to join Brainence Sales Dream team. Key responsibilities include: driving Brainence online marketing activities and driving established lead generation process, as well as assist in the planning, execution and measuring marketing campaigns across all online channels.</p><h3><strong>Main Responsibilities:</strong></h3><p>• Create and execute lead generation strategies to drive online traffic to the website and landing pages</p><p>• Plan, and execute email campaigns</p><p>• Create, test (A/B split) and run landing pages</p><p>• Optimize conversion across all funnels</p><p>• Track and report performance of all digital marketing campaigns</p><p>• Develop and maintain Social Media channels</p><p>• Closely cooperate with development team</p><p>• Identify trends and market needs for best product offering.</p>"
+  },
+
+  {
     "positionKey" :  "Recruiter",
     "positionValue": "HR Manager",
     "tag": "hr",
@@ -18,12 +25,5 @@
     "positionValue": "Desktop developer",
     "tag": "tech",
     "details": "<h3><strong>General requirements:</strong></h3><p>• 2+ years of industrial experience</p><p>• Strong knowledge of .NET Framework</p><p>• WPF</p><p>• DevExpress WPF (nice to have)</p><p>• Good English (intermediate)</p><h3><strong>Main Responsibilities:</strong></h3><p>• Design and implementation of the products</p><p>• Participation on development of various aspects of the product (business logic, user interface)</p><p>• Collaborate with testing, documentation and product management</p><p>If you meet these requirements, please email your CV to<strong><a style=\"color: #ff6b00 !important;\" href=\"mailto:jobs@brainence.com\"> jobs@brainence.com</a></strong></p>"
-  },
-
-  {
-    "positionKey" :  "Sales",
-    "positionValue": "Assistant",
-    "tag": "sales_marketing",
-    "details": "<p>If you are passionate about IT Sales and interested in starting your career in this direction, then you are at the right place. We are looking for young and ambitious person to join Brainence Sales Dream team. Key responsibilities include: driving Brainence online marketing activities and driving established lead generation process, as well as assist in the planning, execution and measuring marketing campaigns across all online channels.</p><h3><strong>Main Responsibilities:</strong></h3><p>• Create and execute lead generation strategies to drive online traffic to the website and landing pages</p><p>• Plan, and execute email campaigns</p><p>• Create, test (A/B split) and run landing pages</p><p>• Optimize conversion across all funnels</p><p>• Track and report performance of all digital marketing campaigns</p><p>• Develop and maintain Social Media channels</p><p>• Closely cooperate with development team</p><p>• Identify trends and market needs for best product offering.</p>"
   }
 ]

@@ -1,18 +1,20 @@
 ﻿[
   {
     "title": "Internal Operations Management",
-    "image": "content/images/portfolios/Img1.png",
+    "image": "content/images/portfolios/om.png",
+    "description": "A scalable product designed for the business specific operations, with a set of custom modules (Accounting, Employee Management and Billing)  where each to support one's specific business objective and sync data across each other. Brainence business operations centric approach allowed the client to start the development of main application and add new modules developed later as we go",
     "problem": "The client needed a solution developed with an intent to eliminate the number of 3rd party tools business used in the day-to-day activities. The pain point was not so the number of tools, but them being not in sync, not cross-integrated.",
     "solution": "In support to the given business objectives Brainence team has developed a system for internal accounting, employee managment and billing, with an approach in mind, having a one-stop-shop system which is scalable. Modules that have been developed: Time Tracking & Forecasting; Accounting: Billing and Invoicing; Human Resources: Absense and Vacations; Travel & Expences",
     "business" :  "All-in-one system for internal accounting, employee managment and billing. The system consists of the set of business modules, where each to support ones specific business objectives and sync data with each other. Brainence approach allowed client to start the development of the scalable core system and add new modules developed later as we go.",
     "tags": [ "C#" ],
     "industries": [ "B2B Services, Business Operations" ],
-    "date" :  "2015-05-25"
+    "date": "2015-05-25"
   }, 
 
   {
     "title": "Field Service Managment",
-    "image": "content/images/portfolios/Img2.png",
+    "image": "content/images/portfolios/fsm.png",
+    "description": "A fully cloud hosted, multi-tenant, access anywhere solution that brings together all employee, job, customer and billing information in a single platform, that allows to focus on customer service orientated business. From sales and service through to billing and job management",
     "problem": "The client needed a custom job and workforce managment solution that would leverage business units operation capabilities. Therefore, eliminate paper by automating work order documentation, track technician payroll, and perform inspections.",
     "solution": "Brainence has developed a set of enterprise level solutions for the customer, including job dispatch and processing solution, as well as the mobile app to receive and submit order info straight from/to the back office accounting systems to start the billing process. Personalised setup experience + Rugged devices + GPS tracking + Integration with accounts software + Customer portal = a complete service software solution.",
     "business" :  "- Manage jobs more effectively in regards to charge out times, job sheet completion and parts management. - All paperwork is collected electronically onsite, thus enabling administrative staff to simply verify the details and with just one click, email them straight to the client. - Photographic, signature and GPS coordinate evidence can be collected onsite to ensure that client disputes are kept to a minimum. - Predictive stock and accurate ordering enables to reduce stock overhead and right offs. .",
@@ -23,7 +25,8 @@
 
   {
     "title": "Data Center Marketplace ",
-    "image": "content/images/portfolios/Img3.png",
+    "image": "content/images/portfolios/dcm.png",
+    "description": "Marketplace built in support of the service offering variety by the Web Services provider , a market leader within Hosting service & support, Domain name registration, Virtual and Custom Servers",
     "problem": "Consulting and service company specialized in IT tech data security standards, Domain, Servers and Hosting Services was in need of the clientfacing marketplace with ones service offerings to be developed and maintained,",
     "solution": "Brainence team has developed and delivered a web data center hosting services marketplace that provides its users with the variety of custom server options to choose from, including the pre-configured hosting packages, and options where end-user is to configure custom virtual or dedicated servers, purchase other services like Domain, URL monitoring, end-to-end email testing. ",
     "business" :  "With the given business objectives, Brainence team developed a web hosting marketplace with a custom purchase module to provide business with the differential benefits and revenue opportunities by widening Pay options for the service users and prospects. It allows users to pay at once, pay i portions, and most important receive a creadit that allows to pay for all at once while the end-user payment will be based on monthly increments. ",
@@ -34,7 +37,8 @@
   
   {
     "title": "Health Check Analyzing",
-    "image": "content/images/portfolios/Img1.png",
+    "image": "content/images/portfolios/health.png",
+    "description": "Server health status check and analyzing solution based on System Center Configuration Manager",
     "problem": "Business objectives given were to provide ones customers with a detailed overview of their software distribution using the System Center Configuration Manager. ",
     "solution": "Brainence developed an enterprise level envirounment with a toolset that enables to analyze the individual areas of Configuration Manager environment. The developed server healtch check analyzing application provides a deep analysis of users Configuration Manager environment based on current manufacturer's recommendations and current best practices.",
     "business" :  "Solution offers technical analysis of:OS Configuration, Driver versions, Page file, Memory dump, Service packs and recommended hotfixes, Antivirus Exclusion, Firewall settings, Proper Page File Sizing, General SQL Practices, Health Check Analyzing Program © - Large Table Information, Networking Best Practices, Configuration Manager hotfixes, Site Boundaries, Site Status Messages Virtualization basic configuration, Collections, Packages, Site Configuration including Site Summary Client Assessment, Client status, Software Inventory and Hardware Inventory and Heartbeating Analysis.",
@@ -45,7 +49,8 @@
 
   {
     "title": "WHAT'S 4 DINNER",
-    "image": "content/images/portfolios/Img2.png",
+    "image": "content/images/portfolios/dinner.png",
+    "description": "Mobile application that represents the online/offline cooking recipe database  with a custom search engine and filters implemented to support the project needs requirement",
     "problem": "A Startup idea, not all about What's for dinner?, but is more about what comes next once you are here, standing by  your fridge with the door open thinking OK. What do We have? ",
     "solution": "We have built a cross-platform mobile application that allows it users to look for all available cooking reciepes that match given criteria, and the most important, that criteria is based on the ingridients pre-selected by the user (ingridients available in one's fridge :) .",
     "business" :  "You get something cooked for dinner, right? :) Try this app for yourself to really find out that there is more you can do with what you have than you have imagined. The app also has reciepies to advise where a little as few more ingridients are required to save you a dollar penny at the groceries.",
@@ -56,7 +61,8 @@
   
     {
     "title": "WEB PORTAL",
-    "image": "content/images/portfolios/Img2.png",
+    "image": "content/images/portfolios/cp1.png",
+    "description": "Online portal for the given business customers, which grants an access and ability to operate jobs, worksheets, asset details, and much more. ",
     "problem": "As Business grows with the customer base, the more and more request from your customers you get, means more time spent on customers support  Having the given business customers loyalty and will to have access and manage their data, schedule other activities and interactions to be taken or see ones already took place within their business operations. With this idea in mind Brainence was requested Frontend and backend development of the Web Customer Portal. ",
     "solution": "Brainence developed, delivered and currently maintains online portal for the customers, which grants an access and ability to operate jobs, worksheets, asset details, and much more.",
     "business" :  "Substantial benefits for the business and its customers, making everyone feel much more comfortable and in control of what is going on whereever you are. Business personal and support team experienced they having less hassle eliminating manual work process and basically allowing them to keep more focused on what's important, while the Customer less hassling to double their quantity base! ",
@@ -68,7 +74,8 @@
    
     {
     "title": "Cross-Platform Application ",
-    "image": "content/images/portfolios/Img2.png",
+    "image": "content/images/portfolios/cp2.png",
+    "description": "Mobile Application to be used by service staff in the field to receive the job dispatched and sync its progress with the back office",
     "problem": "Our Client was in need of a mobile application to help and support ones employees in the field who provide the service itself.  Mobile app should be giving them an ability to use the most important functions of business core platform. The client asked to Provide them with the full  Front and backend development, + cross-communication with the core platform. ",
     "solution": "Brainence built a cross-platform (iOS, Android, Windows Mobile) mobile application that has all the most important functions of the core platform, and provides its users with usability features, expesially for the ones who ares in the field so could, but nto limited to, plan and schedule work, see job details, mark job as in progress, complete and more. ",
     "business" :  "The Field service company has doubled their personal and the customer base as of now. The most important aspect of the innovation brought in the field was the opportunity for the company to hire new and younger tech-savvy workers who are comfortable with mobile technology that helps them succeed. ",
@@ -79,7 +86,8 @@
 
   {
     "title": "ENRICHED NOTIFICATION",
-    "image": "content/images/portfolios/Img3.png",
+    "image": "content/images/portfolios/notif.png",
+    "description": "Multi-channel and cross-platform alert notifications delivery system to support business requirement: Message MUST be Delivered: ANYHOW, ANYWHERE, ANYONE",
     "problem": "Internal communication messages and alerts deliverability were crucial for the given business, which ultimetly required to be 100% sure the message was sent, delivered and further actions required were taken. ",
     "solution": "Brainence built a solution for alert enrichment in SCOM environment. ASP.NET MVC - based web application, integrated with MS System Center Operations Manager. The solution allows to alert people (users, user groups, users fetched from active directory, tag users) in many ways, through different channels (phone calls, text messages, Email, Mobile app) and message types, as well to understand, audit and log all behaviour interactions with the target audience. Scope of Work: Engines architecture, Frontend/Backend development, DB improvements, etc.??? what etc",
     "business" :  "Client received a Mass Multi-Channel Notification Platform that allows to alert people in all possiblly ways within their business instance and operations: phone call, text message, Email, Push notifications, etc. as well as to gather and consolidate logs / statistic reports via Audit Module ",
