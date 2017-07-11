@@ -11,7 +11,7 @@
 
 /* Frame */
 .frame {
-	height: calc(100vh - 57px);
+	height: calc(100vh - 66px);
 	overflow: hidden;
 }
 .frame ul {
@@ -37,15 +37,21 @@
 
 .scrollbar {
 	margin: 0px;
-	height: 5px;
-	background: #7e7e7f;
+	height: 14px;
+	background: #888888;
 	line-height: 0;
+    background-image: linear-gradient(to left, #434242 0%, #434242 3px, transparent 3px, transparent 100%);
+    background-size: 320px 100%;
+    border-top: solid #434242 2px;
+    border-bottom: solid #434242 2px;
 }
 .scrollbar .handle {
 	width: 100px;
 	height: 100%;
-	background: #FF6B00;
+	background: #d8d8d8;
 	cursor: pointer;
+    border-left: solid #434242 2px;
+    border-right: solid #434242 3px;
 }
 .scrollbar .handle .mousearea {
 	position: absolute;
