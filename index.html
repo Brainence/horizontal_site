@@ -64,8 +64,8 @@
                             <div class="homepage-details">
                                 <!--<p class="page-slogan" style="vertical-align: middle; word-spacing: 15px">CUSTOM SOFTWARE DEVELOPMENT SERVICES</p>-->
                                 <p class="page-slogan" style="vertical-align: middle">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
-                                <div class="gradient"></div>
-                                <div class="row nomargin" style="margin-top: 10px !important;">
+                                <div class="gradient homepage-gradient"></div>
+                                <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 50px !important;">
                                     <div class="col-sm-3 collapsible-item collapsible-item-active" id="collapsible-item-0">
                                         <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
                                             <div class="collapsible-heading-image col-md-3">
@@ -112,7 +112,7 @@
                                     </div>
 
                                 </div>
-                                <div class="row nomargin" style="margin-top: 26px !important;">
+                                <div class="row nomargin homepage-row" style="margin-top: 26px !important;">
                                     <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
                                         <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
                                     </div>
@@ -628,19 +628,31 @@
             if ($('#collapsible-item-' + index).hasClass('collapsible-item-active') === true && $('#collapsible-item-' + (index+(index===3?-1:1))).hasClass('collapsible-item-active') !== true) {
                 $('.collapsible-item').removeClass('collapsible-item-active');
                 $('.collapsible-item').addClass('collapsible-item-active');
+                $('.home-widget-text').removeClass('home-widget-text-active');
+                $(".collapsible-heading").css('opacity', 0.8);
             }
-            else $(".collapsible-item").each(function (i) {
+            else {
+                $(".collapsible-item").each(function (i) {
                 if (i != index)
                     $(this).removeClass('collapsible-item-active');
                 else
                     $(this).addClass('collapsible-item-active');
-            });
-            
-            //$(".home-widget-text").each(function (i) {
-            //    if (i != index)
-            //        $(this).css('in');
-            //});
+                });
 
+                $(".home-widget-text").each(function (i) {
+                    if (i != index)
+                        $(this).removeClass('home-widget-text-active');
+                    else $(this).addClass('home-widget-text-active');
+                });
+
+                $(".collapsible-heading").each(function (i) {
+                    if (i != index)
+                        $(this).css('opacity', 0.8);
+                    else {
+                        $(this).css('opacity', 1);
+                    }
+                });
+            }
             $(".homewidgetgradient").each(function (i) {
                 if (i != index)
                     $(this).hide();
