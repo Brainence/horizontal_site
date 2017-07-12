@@ -36,7 +36,7 @@
 <body>
     <div id="animated-background"></div>
     <header>
-        <nav class="navbar main-header">
+        <nav class="navbar main-header" id="main-menu">
             <div class="container">
                 <div class="navbar-header">
                     <a href="http://brainence.com">
@@ -63,56 +63,52 @@
                         <div class="page-content home-page-content">
                             <div class="homepage-details">
                                 <!--<p class="page-slogan" style="vertical-align: middle; word-spacing: 15px">CUSTOM SOFTWARE DEVELOPMENT SERVICES</p>-->
-                                <p class="page-slogan" style="vertical-align: middle">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
+                                <p class="page-slogan" style="vertical-align: middle" id="page-slogan">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
                                 <div class="gradient homepage-gradient"></div>
                                 <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 50px !important;">
-                                    <div class="col-sm-3 collapsible-item collapsible-item-active" id="collapsible-item-0">
+                                    <div class="col-sm-3 collapsible-item"  id="collapsible-item-0">
                                         <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Web_app_Icon.png" />
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">WEB & MOBILE APP DESIGN</p>
-                                                <!--<div class="gradient-home homewidgetgradient" style="display: none"></div>-->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item collapsible-item-active" id="collapsible-item-1">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/website_grafic_icon.png" />
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">WEBSITE & GRAPHICS DESIGN</p>
-                                                <!--<div class="gradient-home homewidgetgradient" style="display: none"></div>-->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item collapsible-item-active" id="collapsible-item-2">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-2">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="margin-left: 1.5vw">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Software_dev_icon.png" />
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">DEVELOPER RESOURCES</p>
-                                                <!--<div class="gradient-home homewidgetgradient" style="display: none"></div>-->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item collapsible-item-active" id="collapsible-item-3">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-3">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Custom_progr_icon.png" />
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">CUSTOM DEVELOPMENT</p>
-                                                <!--<div class="gradient-home homewidgetgradient" style="display: none"></div>-->
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="row nomargin homepage-row" style="margin-top: 26px !important;">
+                                <div class="row nomargin homepage-row" style="margin-top: 30px !important;">
                                     <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
                                         <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
                                     </div>
@@ -158,9 +154,9 @@
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
                                         <ul class="clearfix" id="portfolio-clearfix">
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
-                                                <div class="portfolio-data" ng-click="SelectPortfolio($index)">
+                                                <div class="portfolio-data  grayscale" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
-                                                    <img class="portfolio-image grayscale" ng-src="{{portfolio.image}}" />
+                                                    <img class="portfolio-image" ng-src="{{portfolio.image}}" />
                                                     <p class="portfolio-text">{{portfolio.description | cropString}} <a href="">...read more...</a></p>
                                                 </div>
                                             </li>
@@ -388,7 +384,7 @@
                                     </div>
                                 </div>
                                 <p id="our-career">
-
+                                    Bushwick meh Blue Bottle pork belly mustache skateboard 3 wolf moon. Actually beard single-origin coffee, twee 90's PBR Echo Park sartorial try-hard freegan Portland ennui. Selvage jean shorts 90's, Vice American Apparel try-hard food truck Shoreditch fap lomo Wes Anderson. Art party Thundercats High Life Tumblr, sartorial vinyl deep v fixie McSweeney's fap tousled Intelligentsia mumblecore. Deep v twee +1, roof party narwhal Cosby salvia kitsch before they sold out High Life.
                                 </p>
                             </div>
                             <div class="career-page-details" ng-show="!showList">
@@ -621,46 +617,51 @@
         };
 
         function collapseInItem(index) {
-            $(".panel-collapse-content-home").each(function (i) {
-                if (i != index)
-                    $(this).removeClass('in');
-            });
-            if ($('#collapsible-item-' + index).hasClass('collapsible-item-active') === true && $('#collapsible-item-' + (index+(index===3?-1:1))).hasClass('collapsible-item-active') !== true) {
-                $('.collapsible-item').removeClass('collapsible-item-active');
-                $('.collapsible-item').addClass('collapsible-item-active');
-                $('.home-widget-text').removeClass('home-widget-text-active');
-                $(".collapsible-heading").css('opacity', 0.8);
-            }
-            else {
-                $(".collapsible-item").each(function (i) {
-                if (i != index)
-                    $(this).removeClass('collapsible-item-active');
-                else
-                    $(this).addClass('collapsible-item-active');
-                });
-
-                $(".home-widget-text").each(function (i) {
+            if ($(".panel-collapse-content-home").hasClass('collapsing') === false) {
+                $(".panel-collapse-content-home").each(function(i) {
                     if (i != index)
-                        $(this).removeClass('home-widget-text-active');
-                    else $(this).addClass('home-widget-text-active');
+                        $(this).removeClass('in');
                 });
+                if ($('#collapsible-item-' + index).hasClass('collapsible-item-active') === true &&
+                    $('#collapsible-item-' + (index + (index === 3 ? -1 : 1))).hasClass('collapsible-item-active') !==
+                    true) {
+                    $('.collapsible-item').removeClass('collapsible-item-active');
+                    $('.collapsible-item').addClass('collapsible-item-active');
+                    $('.home-widget-text').removeClass('home-widget-text-active');
+                    $(".collapsible-heading").css('opacity', 0.8);
+                } else {
+                    $(".collapsible-item").each(function(i) {
+                        if (i != index)
+                            $(this).removeClass('collapsible-item-active');
+                        else
+                            $(this).addClass('collapsible-item-active');
+                    });
 
-                $(".collapsible-heading").each(function (i) {
+                    $(".home-widget-text").each(function(i) {
+                        if (i != index)
+                            $(this).removeClass('home-widget-text-active');
+                        else $(this).addClass('home-widget-text-active');
+                    });
+
+                    $(".collapsible-heading").each(function(i) {
+                        if (i != index)
+                            $(this).css('opacity', 0.8);
+                        else {
+                            $(this).css('opacity', 1);
+                        }
+                    });
+                }
+                $(".homewidgetgradient").each(function(i) {
                     if (i != index)
-                        $(this).css('opacity', 0.8);
+                        $(this).hide();
                     else {
-                        $(this).css('opacity', 1);
+                        $(this).show();
                     }
                 });
             }
-            $(".homewidgetgradient").each(function (i) {
-                if (i != index)
-                    $(this).hide();
-                else {
-                    $(this).show();
-                }
+            else $(".panel-collapse-content-home").each(function (i) {
+                //alert('bug');
             });
-
         }
     </script>
 </body>

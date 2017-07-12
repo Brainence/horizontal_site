@@ -1,6 +1,14 @@
 ﻿@font-face {
     font-family: 'Roboto';
     font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nBBQ_Gf4FfI8J4SYljBAylk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    font-style: normal;
     font-weight: 400;
     src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
@@ -9,7 +17,7 @@
 @font-face {
     font-family: 'BauhausC';
     src: url('../content/fonts/BauhausC-Light.ttf');
-    font-weight: 200;
+    font-weight: 100;
 }
 
 @font-face {
@@ -31,7 +39,7 @@
 }
 
 .main-menu > li > a {
-    font-family: 'Roboto' !important;
+    font-family: 'RobotoBold' !important;
     font-weight: 200 !important;
     text-transform: uppercase;
 }
@@ -100,37 +108,46 @@
 .collapsible-item {
     text-align: center;
     padding-left: 0px;
-    opacity: 0.5;
-    -webkit-animation: mymove 3s;
+    opacity: 0.8;
+    -webkit-animation: moveCollapsedItem 3s;
     -webkit-animation-play-state: running; 
-    animation: mymove 3s;
+    animation: moveCollapsedItem 3s;
     animation-play-state: running;
 }
-/*@-webkit-keyframes mymove {
-    from {bottom: -500px; opacity: 0;}
-    to {bottom: 0px;opacity: 0.8;}
-}
 
-@keyframes mymove {
-    from {bottom: -500px; opacity: 0;}
-    to {bottom: 0px;opacity: 0.8;}
-}*/
-
-@-webkit-keyframes mymove {
+@-webkit-keyframes moveCollapsedItem {
     0%   {opacity: 0;}
     50%   {opacity: 0;}
     100% {opacity: 0.8;}
 }
 
-@keyframes mymove {
+@keyframes moveCollapsedItem {
     0%   {opacity: 0;}
     50%   {opacity: 0;}
     100% {opacity: 0.8;}
 }
 
+#main-menu{
+    -webkit-animation: moveMenu 4s;
+    -webkit-animation-play-state: running; 
+    animation: moveMenu 4s;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes moveMenu {
+    0%   {opacity: 0;top: -100px;}
+    60%   {opacity: 1; top: -100px;}
+    100% {top:0px}
+}
+
+@keyframes moveMenu {
+    0%   {opacity: 0;top: -100px;}
+    60%   {opacity: 1;top: -100px;}
+    100% {top:0px}
+}
 
 .collapsible-item-active {
-    opacity: 1 !important;
+    opacity: 1;
 }
 
 .collapsible-heading {
@@ -186,17 +203,39 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background: linear-gradient(#d8d8d8, #d8d8d8), linear-gradient(to left, #b53652, #b53652 7%, #b63657 52%, #e6640a);
-    background: -webkit-linear-gradient(#d8d8d8, #d8d8d8), linear-gradient(to left, #b53652, #b53652 7%, #b63657 52%, #e6640a);
+    background: linear-gradient(#d8d8d8, #d8d8d8);
+    background: -webkit-linear-gradient(#d8d8d8, #d8d8d8);
 }
 
 
 .page-slogan {
+    font-family: 'RobotoBold';
     font-size: 50px;
     color: #ffffff;
     letter-spacing: 3.1px;
     max-width: 1150px;
+    
+    -webkit-animation: moveHeader 4s;
+    -webkit-animation-play-state: running; 
+    animation: moveHeader 4s;
+    animation-play-state: running;
 }
+
+@-webkit-keyframes moveHeader {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes moveHeader {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+
 
 .homepage-row {
     max-width: 1150px;
@@ -232,8 +271,10 @@ body {
     border-color: transparent !important;
 }
 
-.panel-collapse {
-    line-height: 0.5 !important;
+.panel-collapse {    
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 0.65 !important;
     letter-spacing: 0.5px;
     text-align: justify;
     padding: 0;
@@ -241,25 +282,16 @@ body {
 
 .details-home-page {
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
     letter-spacing: normal;
     line-height: 1px;
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 40%,rgba(0,0,0,0.2) 100%);
 }
 
-@-webkit-keyframes
-
-'slide' {
-    0%;
-
-{
-    background-position-x: 200%;
-}
-
-100% {
-    background-position-x: 0%;
-}
-
+@-webkit-keyframes 'slide' {
+    0% { background-position-x: 200%; }
+    100% { background-position-x: 0%;}
 }
 
 .gradient {
@@ -277,12 +309,9 @@ body {
     background-position-x: 50%;
     background-size: 2300px;
     width: 100%;
-    height: 3px;
+    height: 4px;
     -webkit-animation: 'slide' 5s infinite linear forwards;
-    /*-webkit-mask-image: -webkit-radial-gradient(center, ellipse farthest-corner, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);*/
     -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 75%,rgba(0,0,0,0.1) 100%);
-    /*-webkit-mask-image: -webkit-gradient(linear, left 50%, 20% 50%, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-    -webkit-mask-image: -webkit-gradient(linear, 80% 50%, right 50%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
 }
 
 .homepage-gradient {

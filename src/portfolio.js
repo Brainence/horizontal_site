@@ -2,7 +2,7 @@
 
 angular.module('brainenceApp').filter('cropString', function () {
     return function (x) {
-        return x.substring(0,250);
+        return x.substring(0,130);
     };
 });
 

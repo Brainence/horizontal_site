@@ -31,7 +31,7 @@
 }
 
 .contacts-page-slogan {
-    font-family: 'Roboto';
+    font-family: 'RobotoBold';
     font-size: 27px;
     font-stretch: condensed;
     text-align: left;
@@ -162,6 +162,7 @@
   -webkit-filter: grayscale(0%);
    -moz-filter: grayscale(0%);
    filter: grayscale(0%);
+    color: white;
 }
 
 

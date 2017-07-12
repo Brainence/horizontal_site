@@ -38,7 +38,7 @@
   {
     "title": "Health Check Analyzing",
     "image": "content/images/portfolios/health.png",
-    "description": "Server health status check and analyzing solution based on System Center Configuration Manager",
+    "description": "Server health status check and analyzing solution based on System Center Configuration Manager. Server health status check and analyzing solution based on System Center Configuration Manager",
     "problem": "Business objectives given were to provide ones customers with a detailed overview of their software distribution using the System Center Configuration Manager. ",
     "solution": "Brainence developed an enterprise level envirounment with a toolset that enables to analyze the individual areas of Configuration Manager environment. The developed server healtch check analyzing application provides a deep analysis of users Configuration Manager environment based on current manufacturer's recommendations and current best practices.",
     "business" :  "Solution offers technical analysis of:OS Configuration, Driver versions, Page file, Memory dump, Service packs and recommended hotfixes, Antivirus Exclusion, Firewall settings, Proper Page File Sizing, General SQL Practices, Health Check Analyzing Program © - Large Table Information, Networking Best Practices, Configuration Manager hotfixes, Site Boundaries, Site Status Messages Virtualization basic configuration, Collections, Packages, Site Configuration including Site Summary Client Assessment, Client status, Software Inventory and Hardware Inventory and Heartbeating Analysis.",
@@ -48,7 +48,7 @@
   }, 
 
   {
-    "title": "WHAT'S 4 DINNER",
+    "title": "What's 4 Dinner",
     "image": "content/images/portfolios/dinner.png",
     "description": "Mobile application that represents the online/offline cooking recipe database  with a custom search engine and filters implemented to support the project needs requirement",
     "problem": "A Startup idea, not all about What's for dinner?, but is more about what comes next once you are here, standing by  your fridge with the door open thinking OK. What do We have? ",
@@ -60,7 +60,7 @@
   }, 
   
     {
-    "title": "WEB PORTAL",
+    "title": "Web Portal",
     "image": "content/images/portfolios/cp1.png",
     "description": "Online portal for the given business customers, which grants an access and ability to operate jobs, worksheets, asset details, and much more. ",
     "problem": "As Business grows with the customer base, the more and more request from your customers you get, means more time spent on customers support  Having the given business customers loyalty and will to have access and manage their data, schedule other activities and interactions to be taken or see ones already took place within their business operations. With this idea in mind Brainence was requested Frontend and backend development of the Web Customer Portal. ",
@@ -85,7 +85,7 @@
   }, 
 
   {
-    "title": "ENRICHED NOTIFICATION",
+    "title": "Enriched Notification",
     "image": "content/images/portfolios/notif.png",
     "description": "Multi-channel and cross-platform alert notifications delivery system to support business requirement: Message MUST be Delivered: ANYHOW, ANYWHERE, ANYONE",
     "problem": "Internal communication messages and alerts deliverability were crucial for the given business, which ultimetly required to be 100% sure the message was sent, delivered and further actions required were taken. ",

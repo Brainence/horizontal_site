@@ -24,6 +24,7 @@
 }
 
 .portfolio-page-slogan {
+    font-family: 'RobotoBold';
     font-size: 27px;
     text-align: left;
     padding:0px;
@@ -35,7 +36,7 @@
     font-size: 13px;
     align-self: flex-end;
     padding:0px;
-    font-family: 'Roboto' !important;
+    font-family: 'RobotoBold' !important;
     font-stretch: condensed !important;
 }
 
@@ -80,7 +81,8 @@
     font-family: 'Roboto';
     font-size: 22px;
     font-weight: 300;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin:0px;
     text-align: left;
 }
@@ -96,7 +98,7 @@
     font-weight: 300 !important;
     line-height: 1.36 !important;
     text-align: left;
-    padding-top: 30px;
+    padding-top: 17px;
 }
 
 .portfolio-text a{
@@ -118,6 +120,7 @@
 }
 
 .selected-portfolio-header {
+    font-family: 'RobotoBold';
     display:block;
     text-align:left;
 }
@@ -132,7 +135,7 @@
 .selected-portfolio-menu {
     font-size: 13px;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: 'RobotoBold';
     color: #ffffff;
     font-stretch: condensed;
     align-self: flex-end;
