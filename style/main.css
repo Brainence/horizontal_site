@@ -185,15 +185,6 @@
 
 }
 
-.discover-text {
-    font-weight: 600;
-    color: #ffffff;
-}
-.discover-text:hover {
-    cursor:pointer;
-    color: #ffffff;
-}
-
 .home-widget-text {
     font-size: 16px;
     text-align: left;
