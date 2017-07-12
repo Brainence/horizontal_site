@@ -28,7 +28,7 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope, $
         }());
     });
 
-    $.getJSON("content/testimonials.json", function (data) {
+    $.getJSON("content/testimonials.txt", function (data) {
         $scope.testimonials = data;
         $scope.$apply();
         $timeout(function () {
