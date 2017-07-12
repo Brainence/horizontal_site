@@ -155,17 +155,18 @@
     display: flex;
     margin-top: 20px;
     opacity: 0.8;
+    text-align: -webkit-left;
+    max-height: 45px;
+    margin-left: 0px;
 }
 
 .collapsible-heading-image {
     padding: 0px;
     vertical-align: top;
-    max-height: 40px;
+    max-width: 60px;
 }
 
     .collapsible-heading-image img {
-        width: 42px;
-        height: 38px;
         vertical-align: top;
     }
 
@@ -184,11 +185,20 @@
 
 }
 
+.discover-text {
+    font-weight: 600;
+    color: #ffffff;
+}
+.discover-text:hover {
+    cursor:pointer;
+    color: #ffffff;
+}
+
 .home-widget-text {
     font-size: 16px;
     text-align: left;
     vertical-align: middle;
-    padding-top: 10px;
+    padding-top: 9px;
     margin-bottom: 2px;
     color: #ffffff;
     display: table;
@@ -272,8 +282,6 @@ body {
 }
 
 .panel-collapse {    
-    margin-left: 25px;
-    margin-right: 25px;
     line-height: 0.65 !important;
     letter-spacing: 0.5px;
     text-align: justify;
@@ -285,8 +293,9 @@ body {
     font-size: 17px;
     color: #ffffff;
     letter-spacing: normal;
-    line-height: 1px;
-    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 40%,rgba(0,0,0,0.2) 100%);
+    line-height: 1.5em;
+    margin-top: 25px;
+    margin-bottom: -10px;
 }
 
 @-webkit-keyframes 'slide' {

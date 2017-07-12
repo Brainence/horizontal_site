@@ -75,6 +75,9 @@
                                                 <p class="home-widget-text">WEB & MOBILE APP DESIGN</p>
                                             </div>
                                         </div>
+                                        <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
+                                            <p class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support <a class="discover-text">...read more...</a></p>
+                                        </div>
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
@@ -82,12 +85,15 @@
                                                 <img src="content/images/website_grafic_icon.png" />
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
-                                                <p class="home-widget-text">WEBSITE & GRAPHICS DESIGN</p>
+                                                <p class="home-widget-text">WEB & GRAPHICS DESIGN</p>
                                             </div>
                                         </div>
+                                        <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
+                                            <p class="details-home-page">Not sure if a professionally designed website is worth the expense? These days, you can't afford not to. With Brainence we will work within your budget and your time lines. You've come to the right place: quality and affordability are major features of all our projects. We'll help get your users right to the data you want them to read <a class="discover-text">...read more...</a></p>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-2">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="margin-left: 1.5vw">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-2" style="padding-left: 0px;">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Software_dev_icon.png" />
                                             </div>
@@ -95,8 +101,11 @@
                                                 <p class="home-widget-text">DEVELOPER RESOURCES</p>
                                             </div>
                                         </div>
+                                        <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
+                                            <p class="details-home-page">We provide a full lifecycle software development service, or we can partner with your in-house developers. Technical Leads at our development team are certified within MS technologies stack in frontend, backend and cloud storage systems such as Azure. As part of our .NET development, we are experts at HTML5, Javascript and AngularJS <a class="discover-text">...read more...</a></p>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-3">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-3" style="padding-left: 0px;">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Custom_progr_icon.png" />
@@ -105,22 +114,17 @@
                                                 <p class="home-widget-text">CUSTOM DEVELOPMENT</p>
                                             </div>
                                         </div>
+                                        <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
+                                            <p class="details-home-page">When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required.  Brainence can be your partner to bridge these gaps through custom software development and service offerings <a class="discover-text">...read more...</a></p>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <div class="row nomargin homepage-row" style="margin-top: 30px !important;">
-                                    <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
-                                        <span class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
-                                    </div>
-                                    <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
-                                        <span class="details-home-page">Not sure if a professionally designed website is worth the expense? These days, you can't afford not to. With Brainence we will work within your budget and your time lines. You've come to the right place: quality and affordability are major features of all our projects. We'll help get your users right to the data you want them to read.</span>
-                                    </div>
-                                    <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
-                                        <span class="details-home-page">We provide a full lifecycle software development service, or we can partner with your in-house developers. Technical Leads at our development team are certified within MS technologies stack in frontend, backend and cloud storage systems such as Azure. As part of our .NET development, we are experts at HTML5, Javascript and AngularJS.</span>
-                                    </div>
-                                    <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
-                                        <span class="details-home-page">When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required.  Brainence can be your partner to bridge these gaps through custom software development and service offerings.</span>
-                                    </div>
+                                    
+                                    
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -629,6 +633,8 @@
                     $('.collapsible-item').addClass('collapsible-item-active');
                     $('.home-widget-text').removeClass('home-widget-text-active');
                     $(".collapsible-heading").css('opacity', 0.8);
+                    $(".home-widget-text").css('font-weight', 300);
+                    $(".home-widget-text").css('font-size', 16);
                 } else {
                     $(".collapsible-item").each(function(i) {
                         if (i != index)
@@ -638,9 +644,15 @@
                     });
 
                     $(".home-widget-text").each(function(i) {
-                        if (i != index)
+                        if (i != index) {
                             $(this).removeClass('home-widget-text-active');
-                        else $(this).addClass('home-widget-text-active');
+                            $(this).css('font-weight', 300);
+                            $(this).css('font-size', 16);
+                        } else {
+                            $(this).addClass('home-widget-text-active');
+                            $(this).css('font-weight', 600);
+                            $(this).css('font-size', 18);
+                        }
                     });
 
                     $(".collapsible-heading").each(function(i) {
@@ -651,13 +663,6 @@
                         }
                     });
                 }
-                $(".homewidgetgradient").each(function(i) {
-                    if (i != index)
-                        $(this).hide();
-                    else {
-                        $(this).show();
-                    }
-                });
             }
             else $(".panel-collapse-content-home").each(function (i) {
                 //alert('bug');
