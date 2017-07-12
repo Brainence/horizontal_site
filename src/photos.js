@@ -4,7 +4,7 @@
 
 angular.module('brainenceApp').controller("photosCtrl", function ($scope, $timeout) {
    
-    $.getJSON("content/photos.json", function (data) {
+    $.getJSON("content/photos.txt", function (data) {
         $("#photoCarousel").carousel("pause").removeData();
         $scope.photos = data;
         $scope.$apply();
