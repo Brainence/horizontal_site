@@ -629,7 +629,7 @@
     let counter = 0
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
-            setTimeout(next, 3000)
+            setTimeout(next, 5000)
         })
         counter = (counter + 1) % phrases.length
     }
