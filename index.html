@@ -3,7 +3,7 @@
 <head>
     <title>Brainence</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style/font-awesome.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style/horizontal.css" />
     <link rel="stylesheet" href="style/main.css" />
@@ -568,7 +568,6 @@
     <script src="src/background.js"></script>
 <script>
     window.onresize = function (event) {
-        $('.scrollbar').css('background-size', $(document).width() % 6 < 3 ? ($(document).width() % 6 === 0 ? ($(document).width() / 6) : ($(document).width() / 6) + 1) : ($(document).width() / 6) + 1);
         $('#oneperframe').sly('reload');
         $('#portfolio-frame').sly('reload');
         $('#testimonial-frame').sly('reload');
@@ -579,7 +578,8 @@
         $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
         $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
         $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
-    };
+        $('.scrollbar').css('background-size', $(document).width() % 6 < 3 ? ($(document).width() % 6 === 0 ? ($(document).width() / 6) : ($(document).width() / 6) + 1) : ($(document).width() / 6) + 1);
+};
     window.onload = function (event) {
         if (history.state != undefined) {
             status = 1;
@@ -651,10 +651,9 @@
                     }
                 });
             }
+        } else {
+            $(".panel-collapse-content-home").removeClass('collapsing');
         }
-        else $(".panel-collapse-content-home").each(function (i) {
-            //alert('bug');
-        });
     }
 </script>
 </body>
