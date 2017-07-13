@@ -65,10 +65,10 @@
                                 <p class="page-slogan" style="vertical-align: middle" id="page-slogan">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
                                 <div class="gradient homepage-gradient"></div>
                                 <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 4vw !important;">
-                                    <div class="col-sm-3 collapsible-item"  id="collapsible-item-0">
+                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-0">
                                         <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)" style="padding-left: 0.5vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
-                                                <img src="content/images/Web_app_Icon.png" />
+                                                <img src="content/images/Web_app_Icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">WEB & MOBILE DEVELOPMENT</p>
@@ -81,7 +81,7 @@
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)" style="padding-left: 1.3vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
-                                                <img src="content/images/website_grafic_icon.png" />
+                                                <img src="content/images/website_grafic_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">WEB & GRAPHICS DESIGN</p>
@@ -94,7 +94,7 @@
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-2" style="padding-left: 0px;">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="padding-left: 1.3vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
-                                                <img src="content/images/Software_dev_icon.png" />
+                                                <img src="content/images/Software_dev_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">DEVELOPER RESOURCES</p>
@@ -107,14 +107,14 @@
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-3" style="padding-left: 0px;">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)" style="padding-left: 1.5vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
-                                                <img src="content/images/Custom_progr_icon.png" />
+                                                <img src="content/images/Custom_progr_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
                                                 <p class="home-widget-text">CUSTOM DEVELOPMENT</p>
                                             </div>
                                         </div>
                                         <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
-                                            <p class="details-home-page">When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required.  Brainence can be your partner to bridge these gaps through custom software development and service offerings</p>
+                                            <p class="details-home-page">When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required. Brainence can be your partner to bridge these gaps through custom software development and service offerings</p>
                                         </div>
                                     </div>
 
@@ -564,6 +564,80 @@
     <script src="src/partnership.js"></script>
     <script src="src/background.js"></script>
 <script>
+    class TextScramble {
+        constructor(el) {
+            this.el = el;
+            this.chars = '!<>-_\\/[]{}—=+*^?#________';
+            this.update = this.update.bind(this);
+        }
+        setText(newText) {
+            const oldText = this.el.innerText
+            const length = Math.max(oldText.length, newText.length)
+            const promise = new Promise((resolve) => this.resolve = resolve)
+            this.queue = []
+            for (let i = 0; i < length; i++) {
+                const from = oldText[i] || ''
+                const to = newText[i] || ''
+                const start = Math.floor(Math.random() * 40)
+                const end = start + Math.floor(Math.random() * 40)
+                this.queue.push({ from, to, start, end })
+            }
+            cancelAnimationFrame(this.frameRequest)
+            this.frame = 0
+            this.update()
+            return promise
+        }
+        update() {
+            let output = ''
+            let complete = 0
+            for (let i = 0, n = this.queue.length; i < n; i++) {
+                let { from, to, start, end, char } = this.queue[i];
+                if (this.frame >= end) {
+                    complete++
+                    output += to
+                } else if (this.frame >= start) {
+                    if (!char || Math.random() < 0.28) {
+                        char = this.randomChar()
+                        this.queue[i].char = char
+                    }
+                    output += `<span class="dud">${char}</span>`
+                } else {
+                    output += from
+                }
+            }
+            this.el.innerHTML = output
+            if (complete === this.queue.length) {
+                this.resolve()
+            } else {
+                this.frameRequest = requestAnimationFrame(this.update)
+                this.frame++
+            }
+        }
+        randomChar() {
+            return this.chars[Math.floor(Math.random() * this.chars.length)]
+        }
+    }
+    const phrases = [
+      'WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT',
+      'LEADING EDGE STRATEGIES FOR YOUR BUSINESS',
+      'BRAINS TO ADVANCE SOFTWARE DEVELOPMENT'
+    ]
+
+    const el = document.querySelector('.page-slogan')
+    const fx = new TextScramble(el)
+
+    let counter = 0
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 3000)
+        })
+        counter = (counter + 1) % phrases.length
+    }
+
+    next();
+
+
+
     window.onresize = function (event) {
         $('#oneperframe').sly('reload');
         $('#portfolio-frame').sly('reload');
@@ -576,7 +650,7 @@
         $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
         $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
         $('.scrollbar').css('background-size', $(document).width() % 6 < 3 ? ($(document).width() % 6 === 0 ? ($(document).width() / 6) : ($(document).width() / 6) + 1) : ($(document).width() / 6) + 1);
-};
+    };
     window.onload = function (event) {
         if (history.state != undefined) {
             status = 1;

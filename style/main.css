@@ -210,6 +210,10 @@
     animation-play-state: running;
 }
 
+.dud {
+    color: #757575;
+}
+
 @-webkit-keyframes moveHeader {
     0%   {opacity: 0;}
     100% {opacity: 1;}
