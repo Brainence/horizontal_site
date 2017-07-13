@@ -64,9 +64,9 @@
                             <div class="homepage-details">
                                 <p class="page-slogan" style="vertical-align: middle" id="page-slogan">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
                                 <div class="gradient homepage-gradient"></div>
-                                <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 5vw !important;">
+                                <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 4vw !important;">
                                     <div class="col-sm-3 collapsible-item"  id="collapsible-item-0">
-                                        <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
+                                        <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)" style="padding-left: 0.5vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Web_app_Icon.png" />
                                             </div>
@@ -79,7 +79,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)" style="padding-left: 1.3vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/website_grafic_icon.png" />
                                             </div>
@@ -92,7 +92,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-2" style="padding-left: 0px;">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="padding-left: 1.3vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Software_dev_icon.png" />
                                             </div>
@@ -105,7 +105,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-3" style="padding-left: 0px;">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)" style="padding-left: 1.5vw !important;">
                                             <div class="collapsible-heading-image col-md-3">
                                                 <img src="content/images/Custom_progr_icon.png" />
                                             </div>
@@ -615,45 +615,38 @@
     };
 
     function collapseInItem(index) {
-        if ($(".panel-collapse-content-home").hasClass('collapsing') === false) {
-            $(".panel-collapse-content-home").each(function(i) {
-                if (i != index)
-                    $(this).removeClass('in');
-            });
-            if ($('#collapsible-item-' + index).hasClass('collapsible-item-active') === true &&
-                $('#collapsible-item-' + (index + (index === 3 ? -1 : 1))).hasClass('collapsible-item-active') !==
-                true) {
-                $('.collapsible-item').removeClass('collapsible-item-active');
-                $('.collapsible-item').addClass('collapsible-item-active');
-                $('.home-widget-text').removeClass('home-widget-text-active');
-                $(".collapsible-heading").css('opacity', 0.8);
-            } else {
-                $(".collapsible-item").each(function(i) {
-                    if (i != index)
-                        $(this).removeClass('collapsible-item-active');
-                    else
-                        $(this).addClass('collapsible-item-active');
-                });
-
-                $(".home-widget-text").each(function(i) {
-                    if (i != index) {
-                        $(this).removeClass('home-widget-text-active');
-                    } else {
-                        $(this).addClass('home-widget-text-active');
-                    }
-                });
-
-                $(".collapsible-heading").each(function(i) {
-                    if (i != index)
-                        $(this).css('opacity', 0.8);
-                    else {
-                        $(this).css('opacity', 1);
-                    }
-                });
-            }
+        $(".panel-collapse-content-home").each(function(i) {
+            if (i != index)
+                $(this).removeClass('in');
+        });
+        if ($('#collapsible-item-' + index).hasClass('collapsible-item-active') === true &&
+            $('#collapsible-item-' + (index + (index === 3 ? -1 : 1))).hasClass('collapsible-item-active') !== true) {
+            $('.collapsible-item').addClass('collapsible-item-active');
+            $('.home-widget-text').removeClass('home-widget-text-active');
+            $(".collapsible-heading").css('opacity', 0.8);
         } else {
-            $(".panel-collapse-content-home").removeClass('collapsing');
-            $(".panel-collapse-content-home").collapse('hide');
+            $(".collapsible-item").each(function(i) {
+                if (i != index)
+                    $(this).removeClass('collapsible-item-active');
+                else
+                    $(this).addClass('collapsible-item-active');
+            });
+
+            $(".home-widget-text").each(function(i) {
+                if (i != index) {
+                    $(this).removeClass('home-widget-text-active');
+                } else {
+                    $(this).addClass('home-widget-text-active');
+                }
+            });
+
+            $(".collapsible-heading").each(function(i) {
+                if (i != index)
+                    $(this).css('opacity', 0.8);
+                else {
+                    $(this).css('opacity', 1);
+                }
+            });
         }
     }
 </script>

@@ -349,18 +349,18 @@ body {
     bottom: 0px;
     margin: auto 0px;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .button-slide-left:hover {
-    transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -webkit-transform: scale(1.5, 1.5);
+    opacity: 1;
 }
 
 .button-slide-right:hover {
-    transform: scale(1.5, 1.5) rotate(180deg);
-    -ms-transform: scale(1.5, 1.5) rotate(180deg);
-    -webkit-transform: scale(1.5, 1.5) rotate(180deg);
+    opacity: 1;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .button-slide-left {
