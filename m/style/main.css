@@ -116,6 +116,13 @@ float: right!important;
 }
 
 
+.panel-collapse-content-home .row div {
+    margin-left: 0px;
+    width: 100%;
+}
+
+
+
 
 .animated-background {
     position: fixed;
