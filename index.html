@@ -204,19 +204,16 @@
                                     <div class="frame testimonial-frame" id="testimonial-frame">
                                         <ul class="clearfix">
                                             <li class="testimonial-item" ng-repeat="testimonial in testimonials">
-                                                <div class="testimonial-author">
-                                                    <p>{{testimonial.author}}</p>
-                                                </div>
                                                 <div class="row nomargin testimonial-block">
                                                     <div class="col-sm-4 testimonial-image">
                                                         <img class="grayscale" ng-src="{{testimonial.image}}" />
                                                     </div>
                                                     <div class="col-sm-8 testimonial-data">
+                                                        <div class="testimonial-author">
+                                                            <p>{{testimonial.author}}, {{testimonial.position}}</p>
+                                                        </div>
                                                         <div class="testimonial-details">
                                                             <p>{{testimonial.details}}</p>
-                                                        </div>
-                                                        <div class="testimonial-position">
-                                                            <p>{{testimonial.position}}</p>
                                                         </div>
                                                     </div>
                                                 </div>

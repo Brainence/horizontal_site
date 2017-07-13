@@ -33,17 +33,19 @@
 
 .testimonial-author p{
     font-family: 'Roboto';
-    font-size: 22px;
-    padding-top: 44px;
-    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 44px;    
+    padding-bottom: 15px;
     margin:0px;
     text-align: left;
 }
 
 .testimonial-details  p{
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.54;
     text-align: justify;
+    padding-right: 50px;
 }
 
 .testimonial-position {
@@ -56,6 +58,7 @@
 .testimonial-image {
     padding:0px;
     text-align: left;
+    margin-top: 60px;
 }
 
 .testimonial-data {
