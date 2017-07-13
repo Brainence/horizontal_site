@@ -255,9 +255,13 @@
     }
     .contacts-frame {
         height: 22vw !important;
+        margin-top: 2.5vw;
     }
     .contacts-page-slogan {
         font-size: 1.7vw;
+    }
+    .selected-contact-item {
+        margin-top: 2.5vw;
     }
     .selected-contact-item p {
         font-size: 1.5vw;
@@ -276,5 +280,6 @@
     }
     #map {
         height: 22vw;
+        margin-top: 2.5vw;
     }
 }

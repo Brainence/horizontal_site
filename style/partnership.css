@@ -25,7 +25,7 @@
 }
 
 .partnership-item-header {
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 22px;
     text-align: left;
     padding: 0px;
@@ -45,7 +45,7 @@
 }
 
 .partnership-image {
-    margin-top: 85px;
+    margin-top: 50px;
     height: 150px;
 }
 
@@ -82,8 +82,9 @@
     }
 
     .partnership-text {
-        font-size: 1vw;
+        font-size: 1.2vw;
         max-width: 27vw;
+        padding-top: 0.8vw;
     }
 
     .partnership-item {
@@ -95,6 +96,7 @@
     }
 
     .partnership-image {
+        margin-top: 3vw;
         max-height: 15vw;
     }
 
@@ -103,6 +105,9 @@
     }
     .partnership-item-header {
         font-size: 1.5vw;
+        margin-top: 3vw;
+        margin-right: 2.2vw;
+        margin-bottom: 0.8vw;
     }
 }
 

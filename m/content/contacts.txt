@@ -33,12 +33,6 @@
     "name": "Valentyn",
     "position": "Software engineer",
     "image": "content/images/team/vstepanov.png"
-  }, 
-
-  {
-    "name": "Andrii",
-    "position": "Head of BD",
-    "image": "content/images/team/AV.png"
   }
 
 ]

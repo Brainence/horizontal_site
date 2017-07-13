@@ -1,0 +1,15 @@
+﻿[
+  "content/images/photos_full/1.jpg",
+  "content/images/photos_full/2.jpg",
+  "content/images/photos_full/3.jpg",
+  "content/images/photos_full/4.jpg",
+  "content/images/photos_full/5.jpg",
+  "content/images/photos_full/6.jpg",
+  "content/images/photos_full/7.jpg",
+  "content/images/photos_full/8.jpg",
+  "content/images/photos_full/9.jpg",
+  "content/images/photos_full/10.jpg",
+  "content/images/photos_full/11.jpg",
+  "content/images/photos_full/12.jpg",
+  "content/images/photos_full/13.jpg"
+]
