@@ -67,7 +67,7 @@
                                 <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 4vw !important;">
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-0">
                                         <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)" style="padding-left: 0.5vw !important;">
-                                            <div class="collapsible-heading-image col-md-3">
+                                            <div class="collapsible-heading-image col-md-3" >
                                                 <img src="content/images/Web_app_Icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)" style="padding-left: 1.3vw !important;">
-                                            <div class="collapsible-heading-image col-md-3">
+                                            <div class="collapsible-heading-image col-md-3"  id="collapsible-heading-image-1">
                                                 <img src="content/images/website_grafic_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-2" style="padding-left: 0px;">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="padding-left: 1.3vw !important;">
-                                            <div class="collapsible-heading-image col-md-3">
+                                            <div class="collapsible-heading-image col-md-3"  id="collapsible-heading-image-2">
                                                 <img src="content/images/Software_dev_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
@@ -106,7 +106,7 @@
                                     </div>
                                     <div class="col-sm-3 collapsible-item" id="collapsible-item-3" style="padding-left: 0px;">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)" style="padding-left: 1.5vw !important;">
-                                            <div class="collapsible-heading-image col-md-3">
+                                            <div class="collapsible-heading-image col-md-3"  id="collapsible-heading-image-3">
                                                 <img src="content/images/Custom_progr_icon.png"/>
                                             </div>
                                             <div class="collapsible-heading-text col-md-9">
@@ -629,7 +629,7 @@
     let counter = 0
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
-            setTimeout(next, 3000)
+            setTimeout(next, 5000)
         })
         counter = (counter + 1) % phrases.length
     }
