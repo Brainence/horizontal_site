@@ -5,9 +5,8 @@ angular.module('brainenceApp').controller("contactsCtrl", function ($scope, $tim
         $scope.contacts = [];
         for (i = 0; i < data.length; i += 2) { $scope.contacts.push([data[i], (i + 1 != data.length ? data[i + 1] : null)]); }
         $scope.selectedContact = Object.assign({}, data[0]);
-
+        $scope.selectedContact.image = $scope.selectedContact.image.replace('team', 'team_full');
         $scope.$apply(); $timeout(function () { $contacts_frame.sly('reload'); }, 100);
-        console.log($scope.contacts);
     });
     var $photos_frame = $('#photo-frame'); jQuery(function ($) { (function () { var $photos_wrap = $photos_frame.parent(); $photos_frame.sly({ horizontal: 1, itemNav: 'centered', smart: 1, activateMiddle: 1, mouseDragging: 1, touchDragging: 1, releaseSwing: 1, startAt: 0, scrollBar: $photos_wrap.find('.photo-scrollbar'), scrollBy: 1, speed: 1000, elasticBounds: 1, easing: 'swing', dragHandle: 1, dynamicHandle: 1, clickBar: 1, cycleBy: 'items', cycleInterval: 1500, scrollTrap: 1 }).init(); }()); }); $.getJSON("content/photos.txt", function (data) { $scope.photos = data; $scope.$apply(); $timeout(function () { $photos_frame.sly('reload'); $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length); }, 200); });
 
