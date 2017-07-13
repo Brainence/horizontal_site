@@ -97,9 +97,9 @@
     text-align: center;
     padding-left: 0px;
     opacity: 0.8;
-    -webkit-animation: moveCollapsedItem 3s;
+    -webkit-animation: moveCollapsedItem 2s;
     -webkit-animation-play-state: running; 
-    animation: moveCollapsedItem 3s;
+    animation: moveCollapsedItem 2s;
     animation-play-state: running;
 }
 
@@ -116,9 +116,9 @@
 }
 
 #main-menu{
-    -webkit-animation: moveMenu 4s;
+    -webkit-animation: moveMenu 2.2s;
     -webkit-animation-play-state: running; 
-    animation: moveMenu 4s;
+    animation: moveMenu 2.2s;
     animation-play-state: running;
 }
 
@@ -204,9 +204,9 @@
     letter-spacing: 3.1px;
     max-width: 1150px;
     
-    -webkit-animation: moveHeader 4s;
+    -webkit-animation: moveHeader 3s;
     -webkit-animation-play-state: running; 
-    animation: moveHeader 4s;
+    animation: moveHeader 3s;
     animation-play-state: running;
 }
 
@@ -324,7 +324,7 @@ body {
 
     .footer p {
         opacity: 0.2;
-        font-family: 'Harmonia';
+        font-family: 'Roboto';
         font-size: 16px;
         color: #ffffff;
         margin-bottom: 0px;
