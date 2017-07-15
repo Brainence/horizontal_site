@@ -69,7 +69,7 @@
 
 .portfolio-title{
     font-family: 'Roboto';
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 300;
     padding-bottom: 20px;
     margin:0px;
@@ -83,7 +83,7 @@
 
 .portfolio-text {
     font-family: 'Roboto' !important;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 300 !important;
     line-height: 1.36 !important;
     text-align: left;
@@ -122,7 +122,7 @@
 }
 
 .selected-portfolio-menu {
-    font-size:2.5vw;
+    font-size:3.5vw;
     text-align: left;
     font-family: 'Roboto';
     color: #ffffff;
@@ -131,12 +131,12 @@
 }
 
 .selected-portfolio-menu-active {
-    font-size:3.5vw;
+    font-size:4.5vw;
 }
 
 .selected-portfolio-text {
     font-family: 'Roboto';
-    font-size:3vw;
+    font-size:4vw;
     line-height: 1.54;
     text-align: justify;
 }
@@ -149,12 +149,12 @@
 
 .selected-portfolio-details {
     padding-right:0px;
-    padding-left: 2.5vw;
+    padding-left: 0vw;
 }
 
 .selected-portfolio-back-button {
     font-family: 'Roboto';
-    font-size:3vw;
+    font-size:4vw;
     text-align:left;
 }
 
@@ -170,11 +170,11 @@
 
 @media (max-width: 1320px) {
     #portfolio-frame {
-        width: calc(100vw - 200px);
+        width: calc(100vw - 20px);
     }
 
     .selected-portfolio-item {
-        width: calc(100vw - 200px);
+        width: calc(100vw - 20px);
     }
 }
 

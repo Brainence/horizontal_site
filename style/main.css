@@ -91,47 +91,83 @@
     .page-content:not(.home-page-content) {
         padding-bottom: 80px;
     }
-    
+
 .collapsible-item {
     display: table;
     text-align: center;
     padding-left: 0px;
     opacity: 0.8;
     -webkit-animation: moveCollapsedItem 2s;
-    -webkit-animation-play-state: running; 
+    -webkit-animation-play-state: running;
     animation: moveCollapsedItem 2s;
     animation-play-state: running;
 }
 
 @-webkit-keyframes moveCollapsedItem {
-    0%   {opacity: 0;}
-    50%   {opacity: 0;}
-    100% {opacity: 0.8;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
 }
 
 @keyframes moveCollapsedItem {
-    0%   {opacity: 0;}
-    50%   {opacity: 0;}
-    100% {opacity: 0.8;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
 }
 
-#main-menu{
+#main-menu {
     -webkit-animation: moveMenu 1.6s;
-    -webkit-animation-play-state: running; 
+    -webkit-animation-play-state: running;
     animation: moveMenu 1.6s;
     animation-play-state: running;
 }
 
 @-webkit-keyframes moveMenu {
-    0%   {opacity: 0;top: -60px;}
-    50%   {opacity: 1; top: -50px;}
-    100% {top:0px}
+    0% {
+        opacity: 0;
+        top: -60px;
+    }
+
+    50% {
+        opacity: 1;
+        top: -50px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 @keyframes moveMenu {
-    0%   {opacity: 0;top: -100px;}
-    60%   {opacity: 1;top: -100px;}
-    100% {top:0px}
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    60% {
+        opacity: 1;
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 .collapsible-item-active {
@@ -158,27 +194,70 @@
         vertical-align: top;
     }
 
-    #collapsible-item-0 .collapsible-heading{
-	-webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 0.35s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: 2;
-	-webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 5s;
-    }
+#collapsible-item-0 .collapsible-heading {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.35s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 5s;
+}
+
+
+#menu-button-6 {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.35s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 10s;
+}
+
 
 @-webkit-keyframes spaceboots {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 .collapsible-heading-text {
@@ -194,7 +273,6 @@
     text-align: center;
     text-align: -webkit-center;
     text-align: -moz-center;
-
 }
 
 .home-widget-text {
@@ -220,17 +298,26 @@
     background: -webkit-linear-gradient(#d8d8d8, #d8d8d8);
 }
 
+#menu-button-6 {
+    padding: 12px 0 0 0;
+}
 
 .page-slogan {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
     font-family: 'RobotoBold';
     font-size: 50px;
     color: #ffffff;
     letter-spacing: 3.1px;
     max-width: 1150px;
-    
-    -webkit-animation: moveHeader 3s;
-    -webkit-animation-play-state: running; 
-    animation: moveHeader 3s;
+    -webkit-animation: moveHeader 5s;
+    -webkit-animation-play-state: running;
+    animation: moveHeader 5s;
     animation-play-state: running;
 }
 
@@ -239,13 +326,23 @@
 }
 
 @-webkit-keyframes moveHeader {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes moveHeader {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -280,7 +377,7 @@ body {
     border-color: transparent !important;
 }
 
-.panel-collapse {    
+.panel-collapse {
     line-height: 0.65 !important;
     letter-spacing: 0.5px;
     text-align: justify;
@@ -296,9 +393,19 @@ body {
     margin-top: 20px;
 }
 
-@-webkit-keyframes 'slide' {
-    0% { background-position-x: 200%; }
-    100% { background-position-x: 0%;}
+@-webkit-keyframes
+
+'slide' {
+    0%;
+
+{
+    background-position-x: 200%;
+}
+
+100% {
+    background-position-x: 0%;
+}
+
 }
 
 .gradient {

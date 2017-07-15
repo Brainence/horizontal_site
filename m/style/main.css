@@ -1,14 +1,17 @@
 ﻿@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nBBQ_Gf4FfI8J4SYljBAylk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 @font-face {
-    font-family: 'BauhausC';
-    src: url('../content/fonts/BauhausC-Light.ttf');
-    font-weight: 200;
+    font-family: 'RobotoBold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 header {
@@ -17,17 +20,17 @@ header {
 
 .logo {
     height: 10vw;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .logo-menu {
     position:absolute;
-    right: 100px;
+    right: 20px;
     height: 8vw;
     top: 2.75vw;
 }
 
 #menu {
-    margin: 0px 100px;
+    margin: 0px 20px;
 }
 
 #menu li {
@@ -50,7 +53,7 @@ header {
 }
 
 .navbar-header {
-    margin: 0px auto !important;
+    margin: 0px !important;
 }
 
 .navbar {
@@ -95,12 +98,9 @@ float: right!important;
 .page-content {
     margin: 0 auto;
     display: table;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .page-content:not(.home-page-content){
-    padding-bottom:40px;
 }
 
 .collapsible-heading {
@@ -157,7 +157,7 @@ body {
 
 .home-widget-text {
     text-align: left;
-    font-size: 4vw;
+    font-size: 5vw;
     vertical-align: middle;
 }
 
@@ -173,13 +173,12 @@ body {
     border-color: transparent !important;
 }
 .panel-collapse {
-    letter-spacing: 0.5px;
     text-align: justify;
     padding: 0;
 }
 .details-home-page {
     font-family: 'Roboto';
-    font-size: 3vw;
+    font-size: 4vw;
     color: #f0f0f0;
 }
 
@@ -276,8 +275,9 @@ body {
 
 @media (max-width: 1320px) {
     .page-content {
-        margin-left: 100px;
-        margin-right: 100px;
-        width: calc(100vw - 200px);
+        width: 100vw;
+    }
+    .panel-collapse {
+        max-width: calc(100vw - 10px);
     }
 }

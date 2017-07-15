@@ -12,7 +12,7 @@
 
 .team {
     margin-top: 50px;
-    padding-left:25px;
+    padding-left: 0px !important;
 }
 
 
@@ -38,14 +38,14 @@
 }
 
 #map {
-    max-height: 500px;
+    max-height: 400px;
     width: 100%;
     margin-top: 45px;
 }
 
 #location {
     font-family: 'Roboto';
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 300;
     line-height: 1.69;
     color: #ddd;
@@ -70,7 +70,7 @@
 
 
 .contacts-items{
-    padding-left: 25px;
+    padding-left: 15px;
     text-align: right;
     text-align: -webkit-right;
     text-align: -moz-right;
@@ -107,7 +107,8 @@
     margin-top: 45px;
     margin-right:0px;
     padding-right:0px;
-    text-align: left;
+    padding-left:0px;
+
 }
 
 .selected-contact-item img {
@@ -118,7 +119,7 @@
 
 .selected-contact-item p {
     font-family: 'Roboto';
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 300;
     color: #ffffff;
     margin-top: 11px;
@@ -229,6 +230,6 @@
 
 @media (max-width: 1320px) {
     .contacts-data{
-        width: calc(100vw - 200px);
+        width: calc(100vw - 20px);
     }
 }
