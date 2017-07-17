@@ -14,19 +14,24 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+#home {
+    margin-bottom: 8vh;
+}
+
 header {
     margin-top: 2vw;
 }
 
 .logo {
-    height: 10vw;
+    height: 8vw;
     margin-top: 5px;
+    padding-left: 2vw;
 }
 .logo-menu {
-    position:absolute;
-    right: 20px;
+    position: absolute;
+    right: 4vw;
     height: 8vw;
-    top: 2.75vw;
+    top: 0.5vw;
 }
 
 #menu {
@@ -98,6 +103,7 @@ float: right!important;
 .page-content {
     margin: 0 auto;
     display: table;
+    width: 100vw;
 }
 
 .page-content:not(.home-page-content){
@@ -105,15 +111,24 @@ float: right!important;
 
 .collapsible-heading {
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 .page-slogan {
-    font-size: 5vw;
+    font-family: 'RobotoBold';
+    font-size: 12vw;
     color: #ffffff;
     letter-spacing: 3.1px;
+    line-height: 1.23em;
+    vertical-align: middle;
+    margin-bottom: 3vh;
 }
+
+.dud {
+    color: #757575;
+}
+
 
 
 .panel-collapse-content-home .row div {
@@ -153,12 +168,15 @@ body {
 .homepage-details {
     font-family: 'Roboto' !important;
     text-align:center;
+    margin-top: 8vh;
 }
 
 .home-widget-text {
     text-align: left;
     font-size: 5vw;
     vertical-align: middle;
+    font-family: 'RobotoBold';
+    line-height: 1em;
 }
 
 
@@ -180,6 +198,9 @@ body {
     font-family: 'Roboto';
     font-size: 4vw;
     color: #f0f0f0;
+    margin-left: 11%;
+    margin-right: 10%;
+    margin-top: 1vh;
 }
 
 @-webkit-keyframes'slide' {
@@ -204,7 +225,7 @@ body {
     background-image: repeating-linear-gradient(to right,rgb(255, 107, 8) 0%,#b1033c 50%,rgb(255, 107, 8) 100%);
     background-image: -ms-repeating-linear-gradient(left,rgb(255, 107, 8) 0%,#b1033c 50%,rgb(255, 107, 8) 100%);
     background-position-x: 50%;
-    background-size: 2300px;
+    background-size: calc(100%*2);
     width: 100%;
     height: 4px;
     -webkit-animation: 'slide' 5s infinite linear forwards;

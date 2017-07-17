@@ -3,6 +3,7 @@
 #contacts{
     text-align: center;
     text-align: -webkit-center;
+    margin-bottom: 4vh;
 }
 
 
@@ -32,7 +33,7 @@
 }
 
 .contacts-page-slogan {
-    font-family: 'Roboto';
+    font-family: 'RobotoBold';
     font-size: 5vw;
     font-stretch: condensed;
 }

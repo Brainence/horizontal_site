@@ -417,7 +417,7 @@ body {
     background-image: repeating-linear-gradient(to right,rgb(255, 107, 8) 0%,#b1033c 50%,rgb(255, 107, 8) 100%);
     background-image: -ms-repeating-linear-gradient(left,rgb(255, 107, 8) 0%,#b1033c 50%,rgb(255, 107, 8) 100%);
     background-position-x: 50%;
-    background-size: 2300px;
+    background-size: calc(100%*2);
     width: 100%;
     height: 4px;
     -webkit-animation: 'slide' 5s infinite linear forwards;
@@ -557,6 +557,7 @@ body {
     .collapsible-heading-image img{
         max-width: 3.5vw;
     }
+
 }
 
 @media (max-width: 1000px) {

@@ -49,8 +49,8 @@
                     <li id="home">
                         <div class="page-content home-page-content">
                             <div class="homepage-details">
-                                <p class="page-slogan" style="vertical-align: middle;">WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT</p>
-                                <div class="gradient"></div>
+                                <p class="page-slogan" style="vertical-align: middle" id="page-slogan"></p>
+                                <div class="gradient" style="margin-bottom: 3vh;"></div>
                                 <div class="row nomargin">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
@@ -67,7 +67,7 @@
                                             <div id="web-app-dev" class="panel-collapse collapse panel-collapse-content-home">
                                                 <div class="row">
                                                     <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                                        <span class="details-home-page">Our passion is in helping you create a memorable interactive customer experience. that are designed to be actionable and engaging, Internet marketing at its finest to stimulate your users to pick up the phone and call, type out an email and enquire, or visit your premises. Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</span>
+                                                        <p class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@
                                             <div id="website-graph-design" class="panel-collapse collapse panel-collapse-content-home">
                                                 <div class="row">
                                                     <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                                        <span class="details-home-page">Your website says a lot about you - make sure it communicates the right message with a unique customized design. Not sure if a professionally designed website is worth the expense? These days, you can't afford not to. With Brainence we will work within your budget and your time lines. You've come to the right place: quality and affordability are major features of all our projects.We also consult on design strategies to encourage user "stickiness" and drill through. We'll help get your users right to the data you want them to read.</span>
+                                                        <p class="details-home-page">Not sure if a professionally designed website is worth the expense? These days, you can't afford not to. With Brainence we will work within your budget and your time lines. You've come to the right place: quality and affordability are major features of all our projects. We'll help get your users right to the data you want them to read.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -107,7 +107,7 @@
                                             <div id="software-development" class="panel-collapse collapse panel-collapse-content-home">
                                                 <div class="row">
                                                     <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                                        <span class="details-home-page">We provide a full lifecycle software development service, or we can partner with your in-house developers through an on-demand coaching and consulting service. It's not a hobby for us; our success depends on your success!  Technical Leads in our development team are Microsoft Certified Solution Developers and bring with them a rich pool of experience and talent. All our developers are qualified im Microsoft Technologies stack in front end, backend and cloud storage systems such as Azure.. As part of our .NET development, we are experts at HTML5, Javascript and AngularJS.</span>
+                                                        <p class="details-home-page">We provide a full lifecycle software development service, or we can partner with your in-house developers. Technical Leads at our development team are certified within MS technologies stack in frontend, backend and cloud storage systems such as Azure. As part of our .NET development, we are experts at HTML5, Javascript and AngularJS.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,7 +127,7 @@
                                             <div id="custom-programming" class="panel-collapse collapse panel-collapse-content-home">
                                                 <div class="row">
                                                     <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                                        <span class="details-home-page">As you enhance and evolve your business information infrastructure, the software solutions requirements may not entirely be fulfilled by off-the-shelf products. When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required. Together we can answer the what, who, how, and when in order to identify the best avenues to address the gap. Brainence Professional Services can be your partner to bridge these gaps through custom software development and service offerings.</span>
+                                                        <p class="details-home-page">When products do not completely address your business needs, modifications beyond the configurable capabilities of the products are sometimes required. Brainence can be your partner to bridge these gaps through custom software development and service offerings.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@
                                 <div class="wrap">
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
                                         <ul class="clearfix" id="portfolio-clearfix">
-                                            <li class="portfolio-item col-sm-6 col-md-6" ng-repeat="portfolio in portfolios">
+                                            <li class="portfolio-item col-sm-12 col-md-12" ng-repeat="portfolio in portfolios">
                                                 <div class="portfolio-data" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
                                                     <img class="portfolio-image grayscale" ng-src="{{portfolio.image}}"/>
@@ -374,41 +374,6 @@
     <script src="src/contacts.js"></script>
     <script src="src/photos.js"></script>
     <script src="src/background.js"></script>
-    <script>
-        window.onresize = function (event) {
-            $('#oneperframe').sly('reload');
-            $('#portfolio-frame').sly('reload');
-            $('#testimonial-frame').sly('reload');
-            $('#contacts-frame').sly('reload');
-            $('#photo-frame').sly('reload');
-            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
-            $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
-
-        };
-        window.onload = function (event) {
-            $('#oneperframe').sly('reload');
-            $('#portfolio-frame').sly('reload');
-            $('#testimonial-frame').sly('reload');
-            $('#contacts-frame').sly('reload');
-            $('#photo-frame').sly('reload');
-            $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
-            $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
-            $('#photo-clearfix').width($('#photo-clearfix').width() + 1);
-        }
-
-        function ChangeImage(id, path) {
-            $("#" + id).attr('src', path);
-        };
-
-
-        function collapseInItem(index) {
-            $(".panel-collapse-content-home").each(function (i) { 
-                if (i != index)
-                    $(this).removeClass('in');
-            });
-        }
-
-    </script>
+    <script type="text/javascript" src="src/main.js"></script>
 </body>
 </html>
