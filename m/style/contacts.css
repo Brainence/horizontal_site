@@ -1,8 +1,8 @@
 ﻿
 
 #contacts{
-    text-align: center;
-    text-align: -webkit-center;
+    text-align: left;
+    text-align: -webkit-left;
     margin-bottom: 4vh;
 }
 
@@ -11,8 +11,8 @@
     padding-right:0;
 }
 
-.team {
-    margin-top: 50px;
+.team {    
+    margin-top: 4vh;
     padding-left: 0px !important;
 }
 
@@ -25,7 +25,9 @@
 }
 
 .contacts-data {
-    max-width:1150px !important;
+    width: 98vw;
+    text-align: center;
+    text-align: -webkit-center;
 }
 
 .contacts-header div {
@@ -41,7 +43,7 @@
 #map {
     max-height: 400px;
     width: 100%;
-    margin-top: 45px;
+    margin-top: 6vw;
 }
 
 #location {
@@ -71,16 +73,14 @@
 
 
 .contacts-items{
-    padding-left: 15px;
-    text-align: right;
-    text-align: -webkit-right;
-    text-align: -moz-right;
-    text-align: -o-right; 
-    text-align: -ms-right;
+    padding-left: 0px;
 }
 
 .contacts-frame {
-    height: 292px !important;
+    max-height: 292px !important;
+    max-width: 350px !important;
+    margin-left: 2vw !important;
+    width: 96vw;
     margin: 0px;
     margin-top: 45px;
     text-align:right !important;
@@ -92,30 +92,27 @@
     text-align:right !important;
     max-width: 175px;
     max-height:292px;
-    height:22vw !important;
     padding:0px;
     margin:0px !important;
 }
 
 .contacts-item img {
-    width: 175px;
-    height: 146px;
+    max-width: 175px;
+    max-height: 146px;
 }
 
 
 
 .selected-contact-item {
-    margin-top: 45px;
+    margin-top: 6vw;
     margin-right:0px;
     padding-right:0px;
     padding-left:0px;
-
 }
 
 .selected-contact-item img {
-    max-height:292px;
     max-width: 350px;
-    width:100%;
+    width: 100%;
 }
 
 .selected-contact-item p {
@@ -124,6 +121,7 @@
     font-weight: 300;
     color: #ffffff;
     margin-top: 11px;
+    margin-bottom:0px;
 }
 
 
@@ -198,6 +196,7 @@
 .carousel-photo-item img{
     margin: auto;
     max-height: 100vh;
+    max-width: 100vw;
 }
 
 .carousel-control {
@@ -223,14 +222,4 @@
 
 #button-close:focus {
     outline:none !important;
-}
-
-
-
-
-
-@media (max-width: 1320px) {
-    .contacts-data{
-        width: calc(100vw - 20px);
-    }
 }

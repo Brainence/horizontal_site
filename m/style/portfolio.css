@@ -33,7 +33,7 @@
 
 .portfolio-menu {
     text-align: left !important;
-    font-size: 13px;
+    font-size: 4vw;
     align-self: flex-end;
     padding:0px;
     font-family: 'RobotoBold' !important;
@@ -107,8 +107,8 @@
     margin-top: 20px !important;
     padding: 0px;
     text-align:left !important;
-    padding-right: 4vw !important;
-    width: calc(100vw - 2vw) !important;
+    padding-right: 2vw !important;
+    width: 100vw !important;
 }
 
 .selected-portfolio-header {
@@ -121,6 +121,7 @@
     text-align: left;
     margin: 0px;
     margin-top: 3.5vw;
+    width: 100vw;
 }
 
 .selected-portfolio-menu {
@@ -147,13 +148,13 @@
     padding: 0px;
     text-align: left;
     background-size:auto;
-    width: calc(97% - 10px);
+    width: calc(100% - 2vw);
 }
 
 .selected-portfolio-details {
     padding-right:0px;
     padding-left: 0vw;
-    width: calc(97% - 10px);
+    width: calc(100% - 2vw);
 }
 
 .selected-portfolio-back-button {
@@ -170,19 +171,6 @@
     cursor:pointer;
     color: #6ed2ff;
 }
-
-
-@media (max-width: 1320px) {
-    #portfolio-frame {
-        width: calc(100vw - 20px);
-    }
-
-    .selected-portfolio-item {
-        width: calc(100vw - 20px);
-    }
-}
-
-
 
 .grayscale {
     -webkit-filter: grayscale(100%);
