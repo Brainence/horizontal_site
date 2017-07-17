@@ -283,6 +283,11 @@ div.ui {
         text-align: center;
     }
 
+    #start-button {
+        font-weight: bold !important;
+        color: #ffffff !important;
+    }
+
         #game-panels div.ui a:hover {
             color: #ffffff;
             background-color: #000000;
