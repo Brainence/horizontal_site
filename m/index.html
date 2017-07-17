@@ -157,8 +157,6 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <!--<img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/Switch_Button_Triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/Switch_Button_Triangle.png" />-->
                                     </div>
                                     <div class="portfolio-scrollbar">
                                         <div class="portfolio-handle">
@@ -203,26 +201,21 @@
                                     <div class="frame testimonial-frame" id="testimonial-frame">
                                         <ul class="clearfix">
                                             <li class="testimonial-item" ng-repeat="testimonial in testimonials">
-                                                <div class="testimonial-author">
-                                                    <p>{{testimonial.author}}</p>
-                                                </div>
                                                 <div class="row nomargin testimonial-block">
                                                     <div class="col-sm-4 testimonial-image">
                                                         <img class="grayscale" ng-src="{{testimonial.image}}" />
                                                     </div>
                                                     <div class="col-sm-8 testimonial-data">
+                                                        <div class="testimonial-author">
+                                                            <p>{{testimonial.author}}, {{testimonial.position}}</p>
+                                                        </div>
                                                         <div class="testimonial-details">
                                                             <p>{{testimonial.details}}</p>
-                                                        </div>
-                                                        <div class="testimonial-position">
-                                                            <p>{{testimonial.position}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
-                                        <!--<img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/Switch_Button_Triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/Switch_Button_Triangle.png" />-->
                                     </div>
                                     <div class="testimonial-scrollbar">
                                         <div class="testimonial-handle">
@@ -237,11 +230,10 @@
                     <li id="contacts">
                         <div class="page-content" ng-controller="contactsCtrl">
                             <div class="contacts-page-details">
-                                <div class="row"></div>
                                 <div class="contacts-data">
                                     <div class="col-sm-12 col-md-12 col-lg-12 contacts nopadding">
-                                        <div class="contacts-header row">
-                                            <p class="contacts-page-slogan col-sm-12">CONTACTS</p>
+                                        <div class="contacts-header">
+                                            <p class="contacts-page-slogan">CONTACTS</p>
                                             
                                         </div>
                                         <div class="gradient"></div>
@@ -291,7 +283,7 @@
                                         <p class="contacts-page-slogan">OUR TEAM</p>
                                         <div class="gradient"></div>
 
-                                        <div class="row">
+                                        <div class="row nomargin">
                                             <div class="selected-contact-item col-sm-6 col-md-6 col-lg-5 col-xl-4">
                                                 <img class="grayscale" ng-src="{{selectedContact.image}}"/>
                                                 <p>{{selectedContact.name}}, {{selectedContact.position}}</p>
@@ -315,7 +307,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="photos row">
+                                        <div class="photos row nomargin">
                                             <div class="wrap">
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix" id="photo-clearfix">

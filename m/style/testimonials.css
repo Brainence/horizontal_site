@@ -72,10 +72,10 @@
 
 .testimonial-item{
     margin-top: 15px !important;
-    width: 100vw;
+    width: calc(100vw - 10px);
 }
 
 .testimonial-frame {
     height: auto !important;
-    width: 100vw;
+    width: calc(100vw - 10px);
 }
