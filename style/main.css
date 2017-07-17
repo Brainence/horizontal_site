@@ -269,7 +269,7 @@
 
 .homepage-details {
     font-family: 'Roboto' !important;
-    margin-top: 25% !important;
+    margin-top: 22% !important;
     text-align: center;
     text-align: -webkit-center;
     text-align: -moz-center;
@@ -506,7 +506,7 @@ body {
 
 @media (max-height: 800px) {
     .homepage-details {
-        margin-top: 10% !important;
+        margin-top: 12% !important;
     }
 }
 
@@ -530,11 +530,14 @@ body {
     }
 
     .page-slogan {
-        font-size: 3.8vw;
+        font-size: 3.5vw;
     }
 
     .home-widget-text {
         font-size: 1.2vw;
+        margin-left: 1vw;
+        padding-top: 1.1vw;
+        margin-bottom: 2px;
     }
 
     .details-home-page {
@@ -549,6 +552,13 @@ body {
 
     .nav li {
         font-size: calc(0.7vw*1.5);
+    }
+
+    .collapsible-heading-image {
+        max-width: 4vw;
+    }
+    .collapsible-heading-image img{
+        max-width: 3.5vw;
     }
 }
 

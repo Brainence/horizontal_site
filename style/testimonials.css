@@ -48,13 +48,6 @@
     padding-right: 50px;
 }
 
-.testimonial-position {
-    font-size: 14px;
-    text-align: left;
-    margin-top:15px;
-}
-
-
 .testimonial-image {
     padding:0px;
     text-align: left;
@@ -92,23 +85,23 @@
         font-size:1.85vw;
     }
     .testimonial-author p{
-        font-size: 1.4vw;
-        padding-top:1.4vw;
+        font-size: 1.7vw;
+        padding-top:4.2vw;
         padding-bottom:0.6vw;
     }
     .testimonial-details p{
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
-    .testimonial-position {
-        font-size:1.1vw;
+    .testimonial-image {
+        margin-top: 4.2vw;
     }
     .testimonial-image img{
         height:auto;
         width:27vw;
     }
     .testimonial-data {
-        padding-top: 1vw;
-        padding-left: 2vw;
+        padding-top: 0px;
+        padding-left: 2.5vw;
     }
     .testimonial-details p{
         padding-top: 0px;

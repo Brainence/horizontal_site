@@ -84,6 +84,7 @@
         font-size: 1.2vw;
         max-width: 27vw;
         padding-top: 0.8vw;
+        height: auto;
     }
 
     .partnership-item {
