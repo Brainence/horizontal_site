@@ -180,11 +180,13 @@ window.onload = function (event) {
     $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
     $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
 
-    if (notIE) {
-        runslogananimation();
-    } else {
-        $("#page-slogan").html("WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT");
-    }
+    //if (notIE) {
+        
+    //} else {
+    //    $("#page-slogan").html("WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT");
+    //}
+
+    runslogananimation();
 };
 
 function ChangeImage(id, path) {
