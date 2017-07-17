@@ -1,4 +1,30 @@
-﻿
+﻿//global
+var notIE = false;
+
+var ua = window.navigator.userAgent;
+
+var msie = ua.indexOf('MSIE ');
+if (msie > 0) {
+    // IE 10 or older => return version number
+    notIE = false;
+} else {
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        notIE = false;
+    } else {
+
+        var edge = ua.indexOf('Edge/');
+        if (edge > 0) {
+            // Edge (IE 12+) => return version number
+            notIE = true;
+        } else {
+            notIE = true;
+        }
+    }
+}
+//end global
 
 function runslogananimation() {
     var _createClass = function () {
@@ -34,72 +60,71 @@ function runslogananimation() {
             this.update = this.update.bind(this);
         }
 
-        _createClass(TextScramble, [
-            {
-                key: 'setText',
-                value: function setText(newText) {
-                    var _this = this;
+            _createClass(TextScramble, [
+                {
+                    key: 'setText',
+                    value: function setText(newText) {
+                        var _this = this;
 
-                    var oldText = this.el.innerText;
-                    var length = Math.max(oldText.length, newText.length);
-                    var promise = new Promise(function (resolve) {
-                        return _this.resolve = resolve;
-                    });
-                    this.queue = [];
-                    for (var i = 0; i < length; i++) {
-                        var from = oldText[i] || '';
-                        var to = newText[i] || '';
-                        var start = Math.floor(Math.random() * 40);
-                        var end = start + Math.floor(Math.random() * 40);
-                        this.queue.push({ from: from, to: to, start: start, end: end });
+                        var oldText = this.el.innerText;
+                        var length = Math.max(oldText.length, newText.length);
+                        var promise = new Promise(function(resolve) {
+                            return _this.resolve = resolve;
+                        });
+                        this.queue = [];
+                        for (var i = 0; i < length; i++) {
+                            var from = oldText[i] || '';
+                            var to = newText[i] || '';
+                            var start = Math.floor(Math.random() * 40);
+                            var end = start + Math.floor(Math.random() * 40);
+                            this.queue.push({ from: from, to: to, start: start, end: end });
+                        }
+                        cancelAnimationFrame(this.frameRequest);
+                        this.frame = 0;
+                        this.update();
+                        return promise;
                     }
-                    cancelAnimationFrame(this.frameRequest);
-                    this.frame = 0;
-                    this.update();
-                    return promise;
-                }
-            }, {
-                key: 'update',
-                value: function update() {
-                    var output = '';
-                    var complete = 0;
-                    for (var i = 0, n = this.queue.length; i < n; i++) {
-                        var _queue$i = this.queue[i],
-                            from = _queue$i.from,
-                            to = _queue$i.to,
-                            start = _queue$i.start,
-                            end = _queue$i.end,
-                            char = _queue$i.char;
+                }, {
+                    key: 'update',
+                    value: function update() {
+                        var output = '';
+                        var complete = 0;
+                        for (var i = 0, n = this.queue.length; i < n; i++) {
+                            var _queue$i = this.queue[i],
+                                from = _queue$i.from,
+                                to = _queue$i.to,
+                                start = _queue$i.start,
+                                end = _queue$i.end,
+                                char = _queue$i.char;
 
-                        if (this.frame >= end) {
-                            complete++;
-                            output += to;
-                        } else if (this.frame >= start) {
-                            if (!char || Math.random() < 0.28) {
-                                char = this.randomChar();
-                                this.queue[i].char = char;
+                            if (this.frame >= end) {
+                                complete++;
+                                output += to;
+                            } else if (this.frame >= start) {
+                                if (!char || Math.random() < 0.28) {
+                                    char = this.randomChar();
+                                    this.queue[i].char = char;
+                                }
+                                output += '<span class="dud">' + char + '</span>';
+                            } else {
+                                output += from;
                             }
-                            output += '<span class="dud">' + char + '</span>';
+                        }
+                        this.el.innerHTML = output;
+                        if (complete === this.queue.length) {
+                            this.resolve();
                         } else {
-                            output += from;
+                            this.frameRequest = requestAnimationFrame(this.update);
+                            this.frame++;
                         }
                     }
-                    this.el.innerHTML = output;
-                    if (complete === this.queue.length) {
-                        this.resolve();
-                    } else {
-                        this.frameRequest = requestAnimationFrame(this.update);
-                        this.frame++;
+                }, {
+                    key: 'randomChar',
+                    value: function randomChar() {
+                        return this.chars[Math.floor(Math.random() * this.chars.length)];
                     }
                 }
-            }, {
-                key: 'randomChar',
-                value: function randomChar() {
-                    return this.chars[Math.floor(Math.random() * this.chars.length)];
-                }
-            }
-        ]);
-
+            ]);
         return TextScramble;
     }();
 
@@ -154,6 +179,13 @@ window.onload = function (event) {
     $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
     $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
     $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
+
+    //if (notIE) {
+        
+    //} else {
+    //    $("#page-slogan").html("WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT");
+    //}
+
     runslogananimation();
 };
 

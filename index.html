@@ -28,6 +28,10 @@
     <script src="src/app.js"></script>
 
     <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"><\/script>');
+    </script>
+    <script type="text/javascript">
         if (screen.width <= 1023) {
             location.replace("http://brainence.com/m/");
         } else
@@ -592,6 +596,7 @@
             <canvas id="world"></canvas>
         </div>
     </div>
+    <script src="src/iehelpers.js"></script>
     <script src="src/vendor/plugins.js"></script>
     <script src="src/horizontal.js"></script>
     <script src="src/testimonial.js"></script>
