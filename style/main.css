@@ -204,15 +204,18 @@
 }
 
 
-#menu-button-6 {
+.shaking {
     -webkit-animation-name: spaceboots;
     -webkit-animation-duration: 0.35s;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-iteration-count: 4;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 0.5s;
 }
 
+#menu-button-6 {
+    -webkit-animation-delay: 10s;
+}
 
 @-webkit-keyframes spaceboots {
     0% {
@@ -396,16 +399,8 @@ body {
 @-webkit-keyframes
 
 'slide' {
-    0%;
-
-{
-    background-position-x: 200%;
-}
-
-100% {
-    background-position-x: 0%;
-}
-
+    0% {background-position-x: 200%;}
+    100% { background-position-x: 0%;}
 }
 
 .gradient {
@@ -493,6 +488,7 @@ body {
     transform: rotate(180deg);
     right: -65px;
 }
+
 
 
 
