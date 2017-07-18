@@ -151,13 +151,15 @@
 
 
 .grayscale {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  zoom: 1;
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
    -o-filter: grayscale(100%);
    filter: grayscale(100%);
    transition: all 0.5s ease;
-   filter: gray; /* IE6-9 */
+   filter: gray; 
 }
 
 .grayscale:hover {
@@ -167,7 +169,7 @@
    -o-filter: grayscale(0%);
    filter: grayscale(0%);
    color: white;
-   filter: gray; /* IE6-9 */
+   filter: gray;
 }
 
 #photoModal {

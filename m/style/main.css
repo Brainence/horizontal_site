@@ -113,7 +113,11 @@ float: right!important;
 .collapsible-heading {
     cursor: pointer;
     margin-top: 2vh;
-    margin-top: 2vh;
+}
+
+.collapsible-heading .row {
+    display: flex;
+    align-items: center;
 }
 
 .page-slogan {
@@ -169,7 +173,7 @@ body {
 .homepage-details {
     font-family: 'Roboto' !important;
     text-align:center;
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 
 .home-widget-text {
@@ -199,7 +203,7 @@ body {
     font-family: 'Roboto';
     font-size: 4vw;
     color: #f0f0f0;
-    margin-left: 11%;
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 1vh;
 }

@@ -160,9 +160,9 @@
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
                                         <ul class="clearfix" id="portfolio-clearfix">
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
-                                                <div class="portfolio-data  grayscale" ng-click="SelectPortfolio($index)">
+                                                <div class="portfolio-data grayscale" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
-                                                    <img class="portfolio-image" class="grayscale" ng-src="{{portfolio.image}}" />
+                                                    <img class="portfolio-image" ng-src="{{portfolio.image}}" />
                                                     <p class="portfolio-text">
                                                         {{portfolio.description | cropString}} <a href="">...read more...</a>
                                                     </p>
