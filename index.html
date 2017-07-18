@@ -73,13 +73,13 @@
                             <div class="homepage-details">
                                 <p class="page-slogan" style="vertical-align: middle" id="page-slogan">BRAINENCE</p>
                                 <div class="gradient homepage-gradient"></div>
-                                <div class="row nomargin homepage-row" style="margin-top: 10px !important; margin-left: 4vw !important;">
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-0">
-                                        <div class="collapsible-heading row" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)" style="padding-left: 0.5vw !important;">
-                                            <div class="collapsible-heading-image col-md-3">
+                                <div class="row homepage-row">
+                                    <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-0">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
+                                            <div class="collapsible-heading-image">
                                                 <img src="content/images/Web_app_Icon.png" />
                                             </div>
-                                            <div class="collapsible-heading-text col-md-9">
+                                            <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">WEB & MOBILE DEVELOPMENT</p>
                                             </div>
                                         </div>
@@ -87,12 +87,12 @@
                                             <p class="details-home-page">Our Certified Engineers and project managers will assess your needs and work with you to define your application. We can take the project from inception through to fully managed implementation and provide on-going support</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-1">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)" style="padding-left: 1.2vw !important;">
-                                            <div class="collapsible-heading-image col-md-3" id="collapsible-heading-image-1">
+                                    <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-1">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
+                                            <div class="collapsible-heading-image">
                                                 <img src="content/images/website_grafic_icon.png" />
                                             </div>
-                                            <div class="collapsible-heading-text col-md-9">
+                                            <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">WEB & GRAPHICS DESIGN</p>
                                             </div>
                                         </div>
@@ -100,12 +100,12 @@
                                             <p class="details-home-page">Not sure if a professionally designed website is worth the expense? These days, you can't afford not to. With Brainence we will work within your budget and your time lines. You've come to the right place: quality and affordability are major features of all our projects. We'll help get your users right to the data you want them to read</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-2" style="padding-left: 0px;">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)" style="padding-left: 1.2vw !important;">
-                                            <div class="collapsible-heading-image col-md-3" id="collapsible-heading-image-2">
+                                    <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-2">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)">
+                                            <div class="collapsible-heading-image">
                                                 <img src="content/images/Software_dev_icon.png" />
                                             </div>
-                                            <div class="collapsible-heading-text col-md-9">
+                                            <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">DEVELOPER RESOURCES</p>
                                             </div>
                                         </div>
@@ -113,12 +113,12 @@
                                             <p class="details-home-page">We provide a full lifecycle software development service, or we can partner with your in-house developers. Technical Leads at our development team are certified within MS technologies stack in frontend, backend and cloud storage systems such as Azure. As part of our .NET development, we are experts at HTML5, Javascript and AngularJS</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 collapsible-item" id="collapsible-item-3" style="padding-left: 0px;">
-                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)" style="padding-left: 1.3vw !important;">
-                                            <div class="collapsible-heading-image col-md-3" id="collapsible-heading-image-3">
+                                    <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-3">
+                                        <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
+                                            <div class="collapsible-heading-image">
                                                 <img src="content/images/Custom_progr_icon.png" />
                                             </div>
-                                            <div class="collapsible-heading-text col-md-9">
+                                            <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">CUSTOM DEVELOPMENT</p>
                                             </div>
                                         </div>
@@ -162,7 +162,7 @@
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
                                                 <div class="portfolio-data  grayscale" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
-                                                    <img class="portfolio-image" ng-src="{{portfolio.image}}" />
+                                                    <img class="portfolio-image" class="grayscale" ng-src="{{portfolio.image}}" />
                                                     <p class="portfolio-text">
                                                         {{portfolio.description | cropString}} <a href="">...read more...</a>
                                                     </p>
