@@ -1,0 +1,4 @@
+﻿[
+  "content/images/partners/deerada.png",
+  "content/images/partners/walltree.png"
+]

@@ -71,6 +71,13 @@
 }
 
 
+.partners-frame {
+    height: auto !important;
+    max-width: 1150px !important;
+}
+
+
+
 @media (max-width: 1320px) {
     .testimonial-page-details {
         width: calc(100vw - 100px);
