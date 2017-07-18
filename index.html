@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="brainenceApp" 
+<html ng-app="brainenceApp"
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
 <head>
@@ -9,7 +9,7 @@
     <meta property="og:description" content="Brainence is an outsourcing company engaged in the development web products and software. We are the team of specialists focused on finding the most reliable, effective and innovative solutions for transforming customer ideas into products that work for their business." />
     <meta property="og:image" content="http://brainence.com/preview.png" />
     <meta property="og:image" content="http://brainence.com/previewgame.png" />
-    
+
     <title>Brainence</title>
 
     <link rel="stylesheet" href="style/font-awesome.min.css" />
@@ -62,7 +62,12 @@
                     <li><a id="menu-button-3" href="" onclick="activatePageNr(3)">About</a></li>
                     <li><a id="menu-button-4" href="" onclick="activatePageNr(4)">Career</a></li>
                     <li><a id="menu-button-5" href="" onclick="activatePageNr(5)">Partnership</a></li>
-                    <li><a id="menu-button-6" href="" onclick="runGame()" class="shaking"><img src="content/images/game.png"/></a></li>
+                    <li><a id="menu-button-6" href="" onclick="runGame()" class="shaking"><img src="content/images/game.png" /></a></li>
+                    <script type="text/javascript">
+                        if (!/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+                            document.write('<li><a id="menu-button-7" href="" onclick="colorMode()"><img src="content/images/settings.png" /></a></li>');
+                    </script>
+                    
                 </ul>
             </div>
         </nav>
@@ -163,7 +168,7 @@
                                     <div class="frame portfolio-frame row" id="portfolio-frame">
                                         <ul class="clearfix" id="portfolio-clearfix">
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
-                                                <div class="portfolio-data grayscale" ng-click="SelectPortfolio($index)">
+                                                <div class="portfolio-data grayscale grayscale-item" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
                                                     <img class="portfolio-image" ng-src="{{portfolio.image}}" />
                                                     <p class="portfolio-text">
@@ -195,7 +200,7 @@
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="selected-portfolio-item row">
-                                    <img class="col-sm-4 selected-portfolio-image grayscale" ng-src="{{selectedPortfolio.image}}" />
+                                    <img class="col-sm-4 selected-portfolio-image grayscale grayscale-item" ng-src="{{selectedPortfolio.image}}" />
                                     <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
                                         <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
                                         <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
@@ -222,7 +227,7 @@
                                             <li class="testimonial-item" ng-repeat="testimonial in testimonials">
                                                 <div class="row nomargin testimonial-block">
                                                     <div class="col-sm-4 testimonial-image">
-                                                        <img class="grayscale" ng-src="{{testimonial.image}}" />
+                                                        <img class="grayscale grayscale-item" ng-src="{{testimonial.image}}" />
                                                     </div>
                                                     <div class="col-sm-8 testimonial-data">
                                                         <div class="testimonial-author">
@@ -280,7 +285,7 @@
                                         </div>
                                         <div class="gradient gradient-13"></div>
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
-                                                id="map" frameborder="0" class="grayscale" height="292"></iframe>
+                                                id="map" frameborder="0" class="grayscale grayscale-item" height="292"></iframe>
                                         <p id="location">Main office - 121 Bohdana Khmelnytskogo Lviv, Ukraine</p>
                                         <div id="info">
                                             <a href="skype:akornytskyi?call">
@@ -306,7 +311,7 @@
 
                                         <div class="row">
                                             <div class="selected-contact-item col-sm-6 col-xs-6">
-                                                <img class="grayscale" ng-src="{{selectedContact.image}}" />
+                                                <img class="grayscale grayscale-item" ng-src="{{selectedContact.image}}" />
                                                 <p>{{selectedContact.name}}, {{selectedContact.position}}</p>
                                             </div>
 
@@ -315,8 +320,8 @@
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix" id="contacts-clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img class="grayscale" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
-                                                                <img class="grayscale" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
+                                                                <img class="grayscale grayscale-item" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
+                                                                <img class="grayscale grayscale-item" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -333,7 +338,7 @@
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix" id="photo-clearfix">
                                                         <li ng-repeat="photo in photos">
-                                                            <img class="grayscale photo-item" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
+                                                            <img class="grayscale grayscale-item photo-item" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -372,7 +377,7 @@
                                     <div class="frame career-frame row" id="career-frame">
                                         <ul class="clearfix" id="career-clearfix">
                                             <li class="col-sm-4" ng-repeat="career in careers" ng-click="SelectCareer($index)">
-                                                <div class="career-item grayscale">
+                                                <div class="career-item grayscale grayscale-item">
                                                     <div>
                                                         <p class="position-key">
                                                             {{career.positionKey}}
@@ -403,7 +408,7 @@
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="selected-career-item row nomargin justify-content-between">
-                                    <div class="career-item grayscale col-xs-4 nomargin" id="selected-career-image">
+                                    <div class="career-item grayscale grayscale-item col-xs-4 nomargin" id="selected-career-image">
                                         <div>
                                             <p class="position-key">
                                                 {{selectedCareer.positionKey}}
@@ -445,7 +450,7 @@
                                         <ul class="clearfix" id="allianceCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Alliance Cooperation
                                                     </p>
@@ -454,7 +459,7 @@
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale" src="content/images/partnership/2_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/2_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Potential issues:
                                                     </p>
@@ -490,7 +495,7 @@
                                         <ul class="clearfix" style="display: none;" id="directCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale" src="content/images/partnership/1_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Direct Cooperation
                                                     </p>
@@ -499,7 +504,7 @@
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale" src="content/images/partnership/4_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/4_icon.png" />
                                                     <p class="partnership-item-header">
                                                         Potential issues:
                                                     </p>

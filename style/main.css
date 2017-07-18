@@ -314,6 +314,10 @@
     padding: 12px 0 0 0;
 }
 
+#menu-button-7 {
+    padding: 12px 0 0 15px;
+}
+
 .page-slogan {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

@@ -151,8 +151,6 @@
 
 
 .grayscale {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-  zoom: 1;
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);

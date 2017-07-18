@@ -246,3 +246,10 @@ var closegame = function () {
     $("#game").hide();
 }
 
+var grayscaleMode = true;
+
+var colorMode = function () {
+    if (grayscaleMode) $('.grayscale-item').removeClass('grayscale');
+    else $('.grayscale-item').addClass('grayscale');
+    grayscaleMode = !grayscaleMode;
+}
