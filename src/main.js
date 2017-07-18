@@ -246,6 +246,37 @@ var closegame = function () {
     $("#game").hide();
 }
 
+var grayscaleMode = true;
 var colorMode = function () {
+    grayscaleMode = !grayscaleMode;
     $('.grayscale-item').toggleClass('grayscale');
+    if (grayscaleMode) {
+        $('#settingButton').attr('src', 'content/images/settingscolor.png');
+        changeImage('imageTwitter', 'content/images/contacts/Twitter grey.png', "ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')", "ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')");
+        changeImage('imageFacebook', 'content/images/contacts/facebook grey.png', "ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')", "ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')");
+        changeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png', "ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')", "ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')");
+        changeImage('imageInstagram', 'content/images/contacts/Instagram grey.png', "ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')", "ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')");
+        changeImage('imageSkype', 'content/images/contacts/Skype grey.png', "ChangeImage('imageSkype', 'content/images/contacts/Skype .png')", "ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')");
+        changeImage('imageCall', 'content/images/contacts/Call Grey.png', "ChangeImage('imageCall', 'content/images/contacts/Call.png')", "ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')");
+        changeImage('imageMail', 'content/images/contacts/Mail Grey.png', "ChangeImage('imageMail', 'content/images/contacts/Mail.png')", "ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')");
+        changeImage('imageBrainence', 'content/images/partnership/3_grey.png', "ChangeImage('imageBrainence', 'content/images/partnership/3_icon.png')", "ChangeImage('imageBrainence', 'content/images/partnership/3_grey.png')");
+        changeImage('imageBrainence2', 'content/images/partnership/3_grey.png', "ChangeImage('imageBrainence', 'content/images/partnership/3_icon.png')", "ChangeImage('imageBrainence', 'content/images/partnership/3_grey.png')");
+    } else {
+        $('#settingButton').attr('src', 'content/images/settings.png');
+        changeImage('imageTwitter', 'content/images/contacts/Twitter.png', '', '');
+        changeImage('imageFacebook', 'content/images/contacts/Facebook .png', '', '');
+        changeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png', '', '');
+        changeImage('imageInstagram', 'content/images/contacts/Instagram.png', '', '');
+        changeImage('imageSkype', 'content/images/contacts/Skype .png', '', '');
+        changeImage('imageCall', 'content/images/contacts/Call.png', '', '');
+        changeImage('imageMail', 'content/images/contacts/Mail.png', '', '');
+        changeImage('imageBrainence', 'content/images/partnership/3_icon.png', '', '');
+        changeImage('imageBrainence2', 'content/images/partnership/3_icon.png', '', '');
+    }
+}
+
+var changeImage = function(id, src, onmouseover, onmouseout) {
+    $('#' + id).attr('src', src);
+    $('#' + id).attr('onmouseover', onmouseover);
+    $('#' + id).attr('onmouseout', onmouseout);
 }

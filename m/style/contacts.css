@@ -209,12 +209,12 @@
 }
 
 #button-close {
-    -ms-transform: scale(4, 4);
-    -webkit-transform: scale(4, 4);
-    transform: scale(4, 4);
+    -ms-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
     position: absolute;
-    top: 3vw;
-    right: 5vw;
+    top: 1.5vw;
+    right: 3.5vw;
     color: #888;
     opacity: 1;
     text-shadow: none;

@@ -310,12 +310,8 @@
     background: -webkit-linear-gradient(#d8d8d8, #d8d8d8);
 }
 
-#menu-button-6 {
-    padding: 12px 0 0 0;
-}
-
-#menu-button-7 {
-    padding: 12px 0 0 15px;
+#menu-button-6, #menu-button-7 {
+    padding: 12px 10px 0 10px;
 }
 
 .page-slogan {
