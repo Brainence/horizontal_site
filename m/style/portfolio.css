@@ -121,7 +121,7 @@
     text-align: left;
     margin: 0px;
     margin-top: 3.5vw;
-    width: 100vw;
+    width: calc(100vw - 10px);
 }
 
 .selected-portfolio-menu {
