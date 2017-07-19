@@ -73,7 +73,7 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope, $
                 dynamicHandle: 1,
                 clickBar: 1,
                 cycleBy: 'pages',
-                cycleInterval: 3000,
+                cycleInterval: 6000,
                 scrollTrap: 1
             }).init();
         }());

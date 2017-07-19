@@ -226,15 +226,15 @@
                                         <ul class="clearfix">
                                             <li class="testimonial-item" ng-repeat="testimonial in testimonials">
                                                 <div class="row nomargin testimonial-block">
-                                                    <div class="col-sm-4 testimonial-image">
+                                                    <div class="testimonial-image">
                                                         <img class="grayscale grayscale-item" ng-src="{{testimonial.image}}" />
                                                     </div>
-                                                    <div class="col-sm-8 testimonial-data">
+                                                    <div class="testimonial-data">
                                                         <div class="testimonial-author">
                                                             <p>{{testimonial.author}}, {{testimonial.position}}</p>
                                                         </div>
                                                         <div class="testimonial-details">
-                                                            <p>{{testimonial.details}}</p>
+                                                            <p class="nomargin">{{testimonial.details}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,6 +249,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="partners-header">
+                                    <p class="testimonial-page-slogan">PARTNERS</p>
+                                </div>
+                                <div class="gradient"></div>
                                 <div class="wrap">
                                     <div class="frame partners-frame" id="partners-frame">
                                         <ul class="clearfix" id="partners-clearfix">

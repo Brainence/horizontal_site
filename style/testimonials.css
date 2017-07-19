@@ -34,7 +34,7 @@
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: bold;
-    padding-top: 44px;    
+    padding-top: 24px;    
     padding-bottom: 15px;
     margin:0px;
     text-align: left;
@@ -51,6 +51,11 @@
     padding:0px;
     text-align: left;
     margin-top: 44px;
+    max-width: 250px;
+}
+
+.testimonial-image img {
+    max-width: 250px;
 }
 
 .testimonial-data {
@@ -69,19 +74,22 @@
     max-width: 1150px !important;
 }
 
-
 .partners-frame {
     height: auto !important;
     max-width: 1150px !important;
+    margin-top: 30px;
+}
+
+.partners-header {
     margin-top: 44px;
 }
 
 .partners-item {
-    max-height: 100px;
+    max-height: 70px;
 }
 
 .partners-item img {
-    max-height: 100px;
+    max-height: 70px;
     vertical-align: top;
 }
 
@@ -100,7 +108,7 @@
     }
     .testimonial-author p{
         font-size: 1.7vw;
-        padding-top:4.2vw;
+        padding-top:3.2vw;
         padding-bottom:0.6vw;
     }
     .testimonial-details p{
@@ -124,13 +132,18 @@
     }
     .partners-frame{
         width: calc(100vw - 100px);
+        margin-top: 2.2vw;
+    }
+    .partners-header {
         margin-top: 3.5vw;
     }
     .partners-item {
-        max-height: 8vw;
+        max-height: 6vw;
+        min-height: 30px;
     }
     .partners-item img {
-        max-height: 8vw;
+        max-height: 6vw;
+        min-height: 30px;
     }
 }
 
