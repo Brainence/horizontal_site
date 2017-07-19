@@ -79,3 +79,21 @@
     height: auto !important;
     width: calc(100vw - 10px);
 }
+
+
+
+.partners-frame {
+    height: auto !important;
+    max-width: calc(100vw - 10px) !important;
+}
+
+.partners-item {
+    max-height: 100px;
+    width: calc(100vw - 10px);
+}
+
+.partners-item img {
+    max-width: calc(100vw - 10px);
+    max-height: 100px;
+    vertical-align: top;
+}

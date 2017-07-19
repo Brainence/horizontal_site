@@ -69,8 +69,10 @@ angular.module('brainenceApp').controller("testimonialCtrl", function ($scope, $
                 dragHandle: 1,
                 dynamicHandle: 1,
                 clickBar: 1,
+                cycleBy: 'pages',
+                cycleInterval: 3000,
                 scrollTrap: 1
-            }).init();
+        }).init();
         }());
     });
 

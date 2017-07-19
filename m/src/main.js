@@ -3,6 +3,7 @@ window.onresize = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
+    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);
@@ -14,6 +15,7 @@ window.onload = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
+    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + $('.portfolio-item').length);

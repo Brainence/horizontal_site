@@ -150,6 +150,7 @@ window.onresize = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
+    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#career-frame').sly('reload');
@@ -172,6 +173,7 @@ window.onload = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
+    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#career-frame').sly('reload');
