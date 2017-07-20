@@ -2,7 +2,7 @@
 <html ng-app="brainenceApp">
 <head>
     <title>Brainence</title>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/font-awesome.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="style/contacts.css" />
     <link rel="icon" href="content/images/wsi-imageoptim-cropped-Brain1Small-1-150x150.png">
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-102852374-1', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-102852374-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
     <script src="../lib/jquery.min.js"></script>
@@ -146,7 +148,7 @@
                         <div class="page-content" ng-controller="portfolioCtrl" ng-init="showList=true; submenu=''">
                             <div class="portfolio-page-details" ng-show="showList">
                                 <div class="portfolio-header">
-                                        <div class="portfolio-page-slogan">PROJECTS</div>
+                                    <div class="portfolio-page-slogan">PROJECTS</div>
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="wrap">
@@ -155,8 +157,9 @@
                                             <li class="portfolio-item col-sm-12 col-md-12" ng-repeat="portfolio in portfolios">
                                                 <div class="portfolio-data" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
-                                                    <img class="portfolio-image grayscale" ng-src="{{portfolio.image}}"/>
-                                                    <p class="portfolio-text">{{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a>
+                                                    <img class="portfolio-image grayscale" ng-src="{{portfolio.image}}" />
+                                                    <p class="portfolio-text">
+                                                        {{portfolio.problem | cropString}} <a href="" ng-click="SelectPortfolio($index)">...read more...</a>
                                                     </p>
                                                 </div>
                                             </li>
@@ -172,7 +175,7 @@
                             <div class="portfolio-page-details" ng-show="!showList" ng-init="selection='problem'">
                                 <div class="portfolio-header selected-portfolio-header">
                                     <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
-                                    
+
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="selected-portfolio-item row">
@@ -181,12 +184,13 @@
                                         <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(1); selection='solution'">SOLUTION</a>  |
                                         <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(2); selection='business'">BUSINESS</a>
                                     </span>
-                                    <img class="col-sm-4 selected-portfolio-image grayscale" ng-src="{{selectedPortfolio.image}}"/>
+                                    <img class="col-sm-4 selected-portfolio-image grayscale" ng-src="{{selectedPortfolio.image}}" />
                                     <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
                                         <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
                                         <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
                                         <p ng-switch-when="business" class="selected-portfolio-text">{{selectedPortfolio.business}}</p>
-                                        <p class="selected-portfolio-back-button"><a ng-click="SelectList()">Back</a>
+                                        <p class="selected-portfolio-back-button">
+                                            <a ng-click="SelectList()">Back</a>
                                         </p>
                                     </div>
                                 </div>
@@ -235,7 +239,8 @@
                                     <div class="frame partners-frame" id="partners-frame">
                                         <ul class="clearfix" id="partners-clearfix">
                                             <li class="partners-item" ng-repeat="partner in partners">
-                                                <img class="grayscale grayscale-item" ng-src="{{partner}}" />
+                                                <a href="{{partner.href}}" target="_blank"><img class="grayscale grayscale-item" ng-src="{{partner.image}}" /></a>
+                                                <p>{{partner.company}}</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -256,28 +261,28 @@
                                     <div class="col-sm-12 col-md-12 col-lg-12 contacts nopadding">
                                         <div class="contacts-header">
                                             <p class="contacts-page-slogan">CONTACTS</p>
-                                            
+
                                         </div>
                                         <div class="gradient"></div>
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82329.06373523205!2d24.04948750244141!3d49.84653022746683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34889da17265ff76!2sBrainence!5e0!3m2!1suk!2sua!4v1497349331998"
                                                 id="map" frameborder="0" class="grayscale" height="500"></iframe>
                                         <p id="location">121 Bohdana Khmelnytskogo Lviv, Ukraine 79000</p>
                                         <div id="info">
-                                            
+
                                             <a href="skype:akornytskyi?call">
                                                 <img id="imageSkype" src="content/images/contacts/Skype grey.png"
                                                      onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
-                                                     onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')"/>
+                                                     onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
                                             </a>
                                             <a href="tel:16465830070">
                                                 <img id="imageCall" src="content/images/contacts/Call Grey.png"
                                                      onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
-                                                     onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')"/>
+                                                     onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
                                             </a>
                                             <a href="mailto:info@brainence.com">
                                                 <img id="imageMail" src="content/images/contacts/Mail Grey.png"
                                                      onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
-                                                     onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')"/>
+                                                     onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
                                             </a>
                                             <a href="https://twitter.com/brainence" target="_blank">
                                                 <img class="contacts-href" id="imageTwitter" src="content/images/contacts/m_Twitter grey.png"
@@ -307,7 +312,7 @@
 
                                         <div class="row nomargin">
                                             <div class="selected-contact-item col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                                                <img class="grayscale" ng-src="{{selectedContact.image}}"/>
+                                                <img class="grayscale" ng-src="{{selectedContact.image}}" />
                                                 <p>{{selectedContact.name}}, {{selectedContact.position}}</p>
                                             </div>
 
@@ -316,8 +321,8 @@
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix" id="contacts-clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img class="grayscale" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)"/>
-                                                                <img class="grayscale" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)"/>
+                                                                <img class="grayscale" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
+                                                                <img class="grayscale" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -334,7 +339,7 @@
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix" id="photo-clearfix">
                                                         <li class="photo-item" ng-repeat="photo in photos">
-                                                            <img class="grayscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)"/>
+                                                            <img class="grayscale" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -387,7 +392,7 @@
     <script src="src/portfolio.js"></script>
     <script src="src/contacts.js"></script>
     <script src="src/photos.js"></script>
-    
+
     <script type="text/javascript" src="src/main.js"></script>
 </body>
 </html>

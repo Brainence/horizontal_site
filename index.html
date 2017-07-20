@@ -547,11 +547,18 @@
                                             </li>
                                         </ul>
                                         
-                                        <div class="wrap" id="partnersContent">
+                                        <div class="wrap" style="display: none;" id="partnersContent">
                                             <div class="frame partners-frame" id="partners-frame">
                                                 <ul class="clearfix" id="partners-clearfix">
                                                     <li class="partners-item" ng-repeat="partner in partners">
-                                                        <img class="grayscale grayscale-item" ng-src="{{partner}}" />
+                                                        <!--<a href="{{partner.href}}" target="_blank"><img class="grayscale grayscale-item" ng-src="{{partner.image}}" /></a>
+                                                        <p>{{partner.company}}</p>-->
+                                                        <div class="grayscale grayscale-item">
+                                                            <div>
+                                                                <a href="{{partner.href}}" target="_blank"><img ng-src="{{partner.image}}" /></a>
+                                                                <p>{{partner.company}}</p>
+                                                            </div>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>

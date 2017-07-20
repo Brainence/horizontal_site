@@ -91,7 +91,6 @@
 }
 
 .partners-item {
-    max-height: 100px;
     width: calc(100vw - 10px);
 }
 
@@ -99,4 +98,9 @@
     max-width: calc(100vw - 10px);
     max-height: 100px;
     vertical-align: top;
+}
+
+.partners-item p {
+    font-size: 36px;
+    font-family: 'RobotoBold';
 }

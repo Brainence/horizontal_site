@@ -150,14 +150,15 @@ window.onresize = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
-    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#career-frame').sly('reload');
+    $('#partners-frame').sly('reload');
     $('#portfolio-clearfix').width($('#portfolio-clearfix').width() + 2 * $('.portfolio-item').length);
     $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
     $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
     $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
+    $('#partners-clearfix').width($('#partners-clearfix').width() + 2 * $('.partners-item').length);
     $('.scrollbar').css('background-size', $(document).width() % 6 < 3 ? ($(document).width() % 6 === 0 ? ($(document).width() / 6) : ($(document).width() / 6) + 1) : ($(document).width() / 6) + 1);
 };
 window.onload = function (event) {
@@ -173,7 +174,6 @@ window.onload = function (event) {
     $('#oneperframe').sly('reload');
     $('#portfolio-frame').sly('reload');
     $('#testimonial-frame').sly('reload');
-    $('#partners-frame').sly('reload');
     $('#contacts-frame').sly('reload');
     $('#photo-frame').sly('reload');
     $('#career-frame').sly('reload');
@@ -181,13 +181,6 @@ window.onload = function (event) {
     $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
     $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
     $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
-
-    //if (notIE) {
-        
-    //} else {
-    //    $("#page-slogan").html("WE PROVIDE CUSTOM SOFTWARE DEVELOPMENT");
-    //}
-
     runslogananimation();
 };
 
