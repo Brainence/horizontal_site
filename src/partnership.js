@@ -8,10 +8,17 @@
     $scope.showallianceCooperation = function () {
         $("#allianceCooperationContent").show();
         $("#directCooperationContent").hide();
+        $("#partnersContent").hide();
     }
     $scope.showDirectCooperation = function () {
         $("#allianceCooperationContent").hide();
         $("#directCooperationContent").show();
+        $("#partnersContent").hide();
+    }
+    $scope.showPartners = function () {
+        $("#allianceCooperationContent").hide();
+        $("#directCooperationContent").hide();
+        $("#partnersContent").show();
     }
 
 });
