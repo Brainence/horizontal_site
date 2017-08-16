@@ -26,53 +26,120 @@
 
 body {
     background-image: radial-gradient(circle at 50% 150%, #5b5959, #131313);
-    height: calc(100vh - 40px);
+    height: 100vh;
 }
 
-#table-background {
+#table, #table-background {
     position: fixed;
     width: 100%;
     height: 100%;
     transform: rotate(5deg);
 }
 
+#table {
+    z-index: 3;
+}
+
+#table-background {
+    top: 0;
+    z-index: 1;
+}
+
+.square {
+    opacity: 0;
+}
 
 .content {
-    max-width: 1100px;
     width: 100%;
     height: 100%;
     margin: auto;
 }
 
 .content h1 {
-    margin: 40px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
     text-align: center;
     font-size: 4em;
     font-family: 'RobotoBold';
+    position: relative;
+    z-index: 2;
+    background: rgba(0,0,0,0.2);
+}
+
+.content>div {
+    display: flex;
+    justify-content: space-between;    
+    margin: 4vw auto 0 auto;
+    max-width: 950px;
+}
+
+.col1 {
+    max-width: 440px;
+}
+
+.col1>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.content img {
+    width: 440px;
+    position: relative;
+    z-index: 2;
+}
+
+.link {
+    position: relative;
+    z-index: 4;
+}
+
+.link img {
+    max-width: 140px;
 }
 
 
-.tbt-info {
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.col2 {
+    padding: 0px 20px;
 }
 
 .tbt-description {
-    z-index: 2;
-    max-width: 400px;
-    padding: 60px 30px;
-    margin: 20px 30px;
+    padding: 35px 40px;
+    cursor: pointer;
+    z-index: 4;
+    position: relative;
 }
-
+.tbt-description:not(:last-child) {
+    margin-bottom: 20px;
+}
 .tbt-description:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
+}
+.tbt-description h2 {
+    font-size: 1.75em;
 }
 
-.tbt-description h2 {
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
-    margin-bottom: 1vh;
+    background: rgba(0,0,0,0.45);
+    height: 30px;
+}
+
+footer a {
+    z-index: 4;
+    position: relative;
+}
+
+footer img {
+    height: 20px;
+    width: auto;
+    padding: 5px;
 }
 
 
@@ -85,11 +152,11 @@ body {
     animation: square-background-1 2s ease both;
 }
 @keyframes square-background-1 {
-    0%   {background: rgba(194, 66, 43, 0.15);}
+    0%   {background: rgba(194, 66, 43, 0.25);}
     100% {background: rgba(194, 66, 43, 0);}
 }
 @-webkit-keyframes square-background-1 {
-    0%   {background: rgba(194, 66, 43, 0.15);}
+    0%   {background: rgba(194, 66, 43, 0.25);}
     100% {background: rgba(194, 66, 43, 0);}
 }
 
@@ -99,11 +166,11 @@ body {
     animation: square-background-2 2s ease both;
 }
 @keyframes square-background-2 {
-    0%   {background: rgba(206, 135, 22, 0.15);}
+    0%   {background: rgba(206, 135, 22, 0.25);}
     100% {background: rgba(206, 135, 22, 0);}
 }
 @-webkit-keyframes square-background-2 {
-    0%   {background: rgba(206, 135, 22, 0.15);}
+    0%   {background: rgba(206, 135, 22, 0.25);}
     100% {background: rgba(206, 135, 22, 0);}
 }
 
@@ -113,10 +180,10 @@ body {
     animation: square-background-3 2s ease both;
 }
 @keyframes square-background-3 {
-    0%   {background: rgba(206, 60, 2, 0.15);}
+    0%   {background: rgba(206, 60, 2, 0.25);}
     100% {background: rgba(206, 60, 2, 0);}
 }
 @-webkit-keyframes square-background-3 {
-    0%   {background: rgba(206, 60, 2, 0.15);}
+    0%   {background: rgba(206, 60, 2, 0.25);}
     100% {background: rgba(206, 60, 2, 0);}
 }
