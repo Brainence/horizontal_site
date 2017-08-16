@@ -8,13 +8,18 @@
   {
     "name": "Ivan",
     "position": "CTO",
-    "image": "content/images/team/idochynets.png"
+    "image": "content/images/team/idochynets2.png"
   }, 
 
   {
     "name": "Iryna",
-    "position": "HR, Sales Assistant",
+    "position": "HR, Sales Manager",
     "image": "content/images/team/ishyman.png"
+  }, 
+  {
+    "name": "Ilona",
+    "position": "Sales manager",
+    "image": "content/images/team/iazhymova.png"
   }, 
 
   {
@@ -33,6 +38,12 @@
     "name": "Valentyn",
     "position": "Software engineer",
     "image": "content/images/team/vstepanov.png"
+  }, 
+
+  {
+    "name": "Vasyl",
+    "position": "Software engineer",
+    "image": "content/images/team/vmalanii.png"
   }
 
 ]
