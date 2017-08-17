@@ -26,7 +26,7 @@
 
 body {
     background-image: radial-gradient(circle at 50% 150%, #5b5959, #131313);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #table, #table-background {
@@ -51,12 +51,12 @@ body {
 
 .content {
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 37px);
     margin: auto;
 }
 
 .content h1 {
-    padding: 40px 0px 20px 0px;
+    padding: 15px 0px 10px 0px;
     text-align: center;
     font-size: 4em;
     font-family: 'RobotoBold';
@@ -67,22 +67,25 @@ body {
 
 .content>div {
     display: flex;
-    justify-content: space-between;    
-    margin: 4vw auto 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px auto 0px auto;
+    padding: 0px 20px;
     max-width: 950px;
 }
 
 .col1 {
     max-width: 440px;
+    margin-bottom: 36px;
 }
 
 .col1>div {
     display: flex;
     justify-content: space-between;
-    margin-top: 2vh;
+    margin-top: 20px;
 }
 
-.content img {
+.col1>img {
     width: 440px;
     position: relative;
     z-index: 2;
@@ -94,41 +97,44 @@ body {
 }
 
 .link img {
-    max-width: 140px;
+    width: 140px;
 }
 
 
 
 .col2 {
-    padding: 0px 20px;
+    width: 100%;
+    max-width: 440px;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 36px;
 }
 
 .tbt-description {
-    padding: 35px 40px;
     cursor: pointer;
     z-index: 4;
     position: relative;
 }
-.tbt-description:not(:last-child) {
-    margin-bottom: 20px;
-}
 .tbt-description:hover {
     background: rgba(0, 0, 0, 0.25);
 }
-.tbt-description h2 {
+.tbt-description details {
+    padding: 0px 0px 15px 0px;
+}
+.tbt-description summary {
+    padding: 15px 20px 5px 20px;
     font-size: 1.75em;
+    outline:none;
+}
+.tbt-description details p{
+    padding: 0px 20px;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
 
-
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     background: rgba(0,0,0,0.45);
-    height: 30px;
 }
 
 footer a {
@@ -141,6 +147,109 @@ footer img {
     width: auto;
     padding: 5px;
 }
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .content>div {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    .content>div {
+        justify-content: center;
+    }
+    .col1 {
+        max-width: 600px;
+    }
+    .col1>img {
+        width: 600px;
+    }
+    .link img {
+        width: 180px;
+    }
+    .col2 {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col1>img {    
+        width: calc(100vw - 60px);
+    }
+    .link img {
+        width: calc(33vw - 24px);
+    }
+    .content h1 {
+        font-size: 3em;
+    }
+    .content>div {
+        margin-top: 24px;
+    }
+    .col1>div {
+        margin-top: 15px;
+    }
+    .col1, .col2 {
+        margin-bottom: 28px;
+    }
+    .tbt-description details {
+        padding: 0px 0px 15px 0px;
+    }
+    .tbt-description summary {
+        padding: 15px 15px 5px 15px;
+        font-size: 1.55em;
+    }
+    .tbt-description details p{
+        padding: 0px 15px;
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content h1 {
+        font-size: 2.5em;
+    }
+    .content>div {
+        margin-top: 18px;
+    }
+    .col1>div {
+        margin-top: 10px;
+    }
+    .col1, .col2 {
+        margin-bottom: 20px;
+    }
+    .tbt-description details {
+        padding: 0px 0px 5px 0px;
+    }
+    .tbt-description summary {
+        padding: 10px 10px 5px 10px;
+        font-size: 0.8em;
+        font-size: 1.35em;
+    }
+    .tbt-description details p{
+        padding: 0px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
