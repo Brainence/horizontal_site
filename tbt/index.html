@@ -6,7 +6,10 @@
     <link rel="icon" href="images/icon.ico">
 
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/component.css" />
     <script src="src/jquery-3.2.1.min.js"></script>
+    <script src="src/modernizr.custom.js"></script>
 </head>
 <body>
 <table id="table" cellspacing="0" cellpadding="0">
@@ -124,6 +127,35 @@
             <div class="tbt-description">
                 <details id="tbt-description-4">
                     <summary>Registration</summary>
+                    <form id="theForm" class="simform" autocomplete="off">
+                        <div class="simform-inner">
+                            <ol class="questions">
+                                <li>
+                                    <input id="q1" name="q1" type="text" placeholder="Full name"/>
+                                </li>
+                                <li>
+                                    <input id="q2" name="q2" type="text" placeholder="Email"/>
+                                </li>
+                                <li>
+                                    <input id="q3" name="q3" type="password" placeholder="Password"/>
+                                </li>
+                                <li>
+                                    <input id="q4" name="q4" type="password" placeholder="Confirm Password"/>
+                                </li>
+                            </ol>
+                            <button class="submit" type="submit">Send answers</button>
+                            <div class="controls">
+                                <button class="next"><img src="images/arrow.png"></button>
+                                <div class="progress"></div>
+                                <span class="number">
+                                    <span class="number-current"></span>
+                                    <span class="number-total"></span>
+                                </span>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <span class="final-message"></span>
+                    </form>
                 </details>
             </div>
         </div>
@@ -215,5 +247,19 @@
         </tr>
     </table>
 <script src="src/main.js"></script>
+<script src="src/classie.js"></script>
+<script src="src/stepsForm.js"></script>
+<script>
+    var theForm = document.getElementById( 'theForm' );
+
+    new stepsForm( theForm, {
+        onSubmit : function( form ) {
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you!';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+</script>
 </body>
 </html>
