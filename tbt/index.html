@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Booking Tool</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/icon.ico">
+
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/component.css" />
+    <script src="src/jquery-3.2.1.min.js"></script>
+    <script src="src/modernizr.custom.js"></script>
+</head>
+<body>
+<table id="table" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="square">0</td>
+        <td class="square">1</td>
+        <td class="square">2</td>
+        <td class="square">3</td>
+        <td class="square">4</td>
+        <td class="square">5</td>
+        <td class="square">6</td>
+        <td class="square">7</td>
+    </tr>
+    <tr>
+        <td class="square">8</td>
+        <td class="square">9</td>
+        <td class="square">10</td>
+        <td class="square">11</td>
+        <td class="square">12</td>
+        <td class="square">13</td>
+        <td class="square">14</td>
+        <td class="square">15</td>
+    </tr>
+    <tr>
+        <td class="square">16</td>
+        <td class="square">17</td>
+        <td class="square">18</td>
+        <td class="square">19</td>
+        <td class="square">20</td>
+        <td class="square">21</td>
+        <td class="square">22</td>
+        <td class="square">23</td>
+    </tr>
+    <tr>
+        <td class="square">24</td>
+        <td class="square">25</td>
+        <td class="square">26</td>
+        <td class="square">27</td>
+        <td class="square">28</td>
+        <td class="square">29</td>
+        <td class="square">30</td>
+        <td class="square">31</td>
+    </tr>
+    <tr>
+        <td class="square">32</td>
+        <td class="square">33</td>
+        <td class="square">34</td>
+        <td class="square">35</td>
+        <td class="square">36</td>
+        <td class="square">37</td>
+        <td class="square">38</td>
+        <td class="square">39</td>
+    </tr>
+    <tr>
+        <td class="square">40</td>
+        <td class="square">41</td>
+        <td class="square">42</td>
+        <td class="square">43</td>
+        <td class="square">44</td>
+        <td class="square">45</td>
+        <td class="square">46</td>
+        <td class="square">47</td>
+    </tr>
+    <tr>
+        <td class="square">48</td>
+        <td class="square">49</td>
+        <td class="square">50</td>
+        <td class="square">51</td>
+        <td class="square">52</td>
+        <td class="square">53</td>
+        <td class="square">54</td>
+        <td class="square">55</td>
+    </tr>
+    <tr>
+        <td class="square">56</td>
+        <td class="square">57</td>
+        <td class="square">58</td>
+        <td class="square">59</td>
+        <td class="square">60</td>
+        <td class="square">61</td>
+        <td class="square">62</td>
+        <td class="square">63</td>
+    </tr>
+</table>
+<div class="content">
+    <h1>Time Booking Tool</h1>
+    <div>
+        <div class="col1">
+            <img src="images/collage.png"/>
+            <div>
+                <a class="link" href=""><img src="images/appstore.png"/></a>
+                <a class="link" href="https://play.google.com/store/apps/details?id=brainence.tbt" target="_blank"><img src="images/googleplay.png"/></a>
+                <a class="link" href=""><img src="images/register.png"/></a>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="tbt-description">
+                <details open id="tbt-description-1">
+                    <summary>What is Time Booking Tool?</summary>
+                    <p>Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you. Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you.</p>
+                </details>
+            </div>
+            <div class="tbt-description">
+                <details id="tbt-description-2">
+                    <summary>What is Time Booking Tool?</summary>
+                    <p>Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you. Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you.</p>
+                </details>
+            </div>
+            <div class="tbt-description">
+                <details id="tbt-description-3">
+                    <summary>What is Time Booking Tool?</summary>
+                    <p>Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you. Time Booking Tool is your personal organizer which help you doesn't sleep on the work. Time Booking Tool is watching you.</p>
+                </details>
+            </div>
+            <div class="tbt-description">
+                <details id="tbt-description-4">
+                    <summary>Registration</summary>
+                    <form id="theForm" class="simform" autocomplete="off">
+                        <div class="simform-inner">
+                            <ol class="questions">
+                                <li>
+                                    <input id="q1" name="q1" type="text" placeholder="Full name"/>
+                                </li>
+                                <li>
+                                    <input id="q2" name="q2" type="text" placeholder="Email"/>
+                                </li>
+                                <li>
+                                    <input id="q3" name="q3" type="password" placeholder="Password"/>
+                                </li>
+                                <li>
+                                    <input id="q4" name="q4" type="password" placeholder="Confirm Password"/>
+                                </li>
+                            </ol>
+                            <button class="submit" type="submit">Send answers</button>
+                            <div class="controls">
+                                <button class="next"><img src="images/arrow.png"></button>
+                                <div class="progress"></div>
+                                <span class="number">
+                                    <span class="number-current"></span>
+                                    <span class="number-total"></span>
+                                </span>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <span class="final-message"></span>
+                    </form>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="http://brainence.com/"><img src="images/logo.png" /></a>
+</footer>
+<table id="table-background" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+        <tr>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+            <td class="square-background"></td>
+        </tr>
+    </table>
+<script src="src/main.js"></script>
+<script src="src/classie.js"></script>
+<script src="src/stepsForm.js"></script>
+<script>
+    var theForm = document.getElementById( 'theForm' );
+
+    new stepsForm( theForm, {
+        onSubmit : function( form ) {
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you!';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+</script>
+</body>
+</html>
