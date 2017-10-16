@@ -1,4 +1,9 @@
 ﻿[
+  "content/images/photos/croatia_1.jpg",
+  "content/images/photos/croatia_2.jpg",
+  "content/images/photos/croatia_3.jpg",
+  "content/images/photos/croatia_4.jpg",
+  "content/images/photos/budapest_1.jpg",
   "content/images/photos/1.jpg",
   "content/images/photos/2.jpg",
   "content/images/photos/3.jpg",

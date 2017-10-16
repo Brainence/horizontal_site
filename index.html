@@ -47,7 +47,6 @@
         if (screen.width <= 1023) {
             location.replace("http://brainence.com/m/");
         } else
-
             if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
                 location.replace("http://brainence.com/m/");
             }
@@ -553,7 +552,7 @@
                                                     <li class="partners-item" ng-repeat="partner in partners">
                                                         <!--<a href="{{partner.href}}" target="_blank"><img class="grayscale grayscale-item" ng-src="{{partner.image}}" /></a>
                                                         <p>{{partner.company}}</p>-->
-                                                        <div class="grayscale grayscale-item">
+                                                        <div class="grayscale grayscale-item partner-gray-item">
                                                             <div>
                                                                 <a href="{{partner.href}}" target="_blank"><img ng-src="{{partner.image}}" /></a>
                                                                 <p>{{partner.company}}</p>
@@ -649,5 +648,16 @@
     <script src="src/background.js"></script>
     <script type="text/javascript" src="lib/game.js"></script>
     <script type="text/javascript" src="src/main.js"></script>
+
+<!-- Begin Inspectlet Embed Code -->
+<script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1976220630]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+<!-- End Inspectlet Embed Code -->
 </body>
 </html>

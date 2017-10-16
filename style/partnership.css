@@ -67,7 +67,7 @@
 }
 
 .partners-item {
-    max-width: 1150px;
+    max-width: 350px;
     margin-right: 50px !important;
 }
 
@@ -196,4 +196,7 @@
     .partnership-item {
         max-width: 18vw !important;
     }
+}
+.partner-gray-item {
+    background: rgba(255,255,255,.05);
 }
