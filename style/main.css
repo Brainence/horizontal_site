@@ -589,3 +589,7 @@ body {
         font-size: 1.75vw;
     }
 }
+
+#snow {
+    position: absolute;
+}

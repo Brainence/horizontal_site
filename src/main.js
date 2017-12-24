@@ -181,7 +181,10 @@ window.onload = function (event) {
     $('#contacts-clearfix').width($('#contacts-clearfix').width() + 2 * $('.contacts-item').length);
     $('#photo-clearfix').width($('#photo-clearfix').width() + 2 * $('.photo-item').length);
     $('#career-clearfix').width($('#career-clearfix').width() + 100 + 2 * $('.career-item').length);
-    runslogananimation();
+    setTimeout(
+        function () {
+            runslogananimation();
+        }, 3000);
 };
 
 function ChangeImage(id, path) {
