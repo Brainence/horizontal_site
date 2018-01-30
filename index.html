@@ -56,9 +56,7 @@
     </script>
 </head>
 <body>
-<div id="bckfs">
     <canvas id="snow"></canvas>
-</div>
     <div id="animated-background"></div>
     <header>
         <nav class="navbar main-header" id="main-menu">
@@ -87,6 +85,7 @@
             </div>
         </nav>
     </header>
+    <div class="winter-top">  <div class="winter-inner winter-main-content"></div> <div class="winter-inner winter-finish"></div>   </div>
     <div id="main">
         <div class="wrap">
             <div class="frame oneperframe" id="oneperframe">
@@ -590,35 +589,35 @@
                 </div>
             </div>
         </div>
-        <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item carousel-photo-item active" id="firstBootstrapImage">
-                                    <div>
-                                        <img />
-                                    </div>
-                                </div>
-                                <div class="item carousel-photo-item" ng-repeat="photo in photos">
-                                    <div>
-                                        <img ng-src="{{photo}}">
-                                    </div>
+    <div id="photoModal" class="modal modal-fullscreen" role="dialog" ng-controller="photosCtrl">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item carousel-photo-item active" id="firstBootstrapImage">
+                                <div>
+                                    <img />
                                 </div>
                             </div>
-                            <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#photoCarousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                            <button type="button" class="close" id="button-close" data-dismiss="modal">&times;</button>
+                            <div class="item carousel-photo-item" ng-repeat="photo in photos">
+                                <div>
+                                    <img ng-src="{{photo}}">
+                                </div>
+                            </div>
                         </div>
+                        <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        <button type="button" class="close" id="button-close" data-dismiss="modal">&times;</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <div id="game" style="display: none">
             <div id="close_button_parrent">
                 <span><a id="close_game_button" onclick="closegame()">X</a></span>
@@ -652,7 +651,7 @@
     <script src="src/photos.js"></script>
     <script src="src/career.js"></script>
     <script src="src/partnership.js"></script>
-    <script src="src/snow.js"></script>
+    <script async src="src/snow.js"></script>
     <!--<script src="src/background.js"></script>-->
     <script type="text/javascript" src="lib/game.js"></script>
     <script type="text/javascript" src="src/main.js"></script>
