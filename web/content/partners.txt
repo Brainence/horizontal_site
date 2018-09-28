@@ -1,0 +1,18 @@
+﻿[
+	{
+		"image" : "content/images/partners/deerada.png",
+		"company" : "Deerada",
+		"href" : "https://deerada.com/"
+	},
+	{
+		"image" : "content/images/partners/walltree.png",
+		"company" : "WallTree",
+		"href" : "http://walltreesoft.com"
+	},
+	{
+		"image" : "content/images/partners/ralabs.png",
+		"company" : "Ralabs",
+		"href" : "http://ralabs.org/"
+
+	}
+]

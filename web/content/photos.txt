@@ -1,0 +1,23 @@
+﻿[
+  "content/images/photos/office_1_small.jpg",
+  "content/images/photos/office_2_small.jpg",
+  "content/images/photos/office_4_small.jpg",
+  "content/images/photos/croatia_1.jpg",
+  "content/images/photos/croatia_2.jpg",
+  "content/images/photos/croatia_3.jpg",
+  "content/images/photos/croatia_4.jpg",
+  "content/images/photos/budapest_1.jpg",
+  "content/images/photos/1.jpg",
+  "content/images/photos/2.jpg",
+  "content/images/photos/3.jpg",
+  "content/images/photos/4.jpg",
+  "content/images/photos/5.jpg",
+  "content/images/photos/6.jpg",
+  "content/images/photos/7.jpg",
+  "content/images/photos/8.jpg",
+  "content/images/photos/9.jpg",
+  "content/images/photos/10.jpg",
+  "content/images/photos/11.jpg",
+  "content/images/photos/12.jpg",
+  "content/images/photos/13.jpg"
+]

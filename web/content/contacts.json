@@ -1,0 +1,38 @@
+﻿[
+  {
+    "name": "Andrii",
+    "position": "CEO",
+    "image": "content/images/team/akornytskyi.png"
+  }, 
+
+  {
+    "name": "Ivan",
+    "position": "CTO",
+    "image": "content/images/team/idochynets.png"
+  }, 
+
+  {
+    "name": "Iryna",
+    "position": "HR, Sales Assistant",
+    "image": "content/images/team/ishyman.png"
+  }, 
+
+  {
+    "name": "Volodymyr",
+    "position": "QA",
+    "image": "content/images/team/vpavlovych.png"
+  }, 
+
+  {
+    "name": "Roman",
+    "position": "Software engineer",
+    "image": "content/images/team/rvevdiuk.png"
+  }, 
+
+  {
+    "name": "Valentyn",
+    "position": "Software engineer",
+    "image": "content/images/team/vstepanov.png"
+  }
+
+]

@@ -1,0 +1,256 @@
+﻿
+#career{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+
+.career-page-details {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: calc(100vw - 100px);
+}
+
+.career-header {
+    font-family: Roboto;
+    font-stretch: condensed;
+    color: #ffffff;
+    text-align: left !important;
+    padding: 0px;
+}
+
+.career-page-slogan {
+    font-family: 'RobotoBold';
+    font-size: 27px;
+    text-align: left;
+    padding: 0px;
+    margin-right: 30px;
+}
+
+.career-menu {
+    font-size: 13px;
+    align-self: flex-end;
+    padding: 0px;
+    font-family: 'RobotoBold' !important;
+    font-stretch: condensed !important;
+}
+
+.career-menu-item:hover:not(.career-menu-item-active)  {
+    color: #aaa;
+}
+
+.career-menu-item-active {
+    font-size: 17px;
+}
+
+.career-menu a {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+    .career-menu a:hover {
+        text-decoration: none;
+    }
+
+
+
+
+.career-frame {
+    height: auto !important;
+    max-width: 1150px !important;
+    margin: 0px;
+    margin-top: 44px;
+}
+
+.career-item {
+    padding: 0px;
+    text-align: left !important;
+    height: 292px !important;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.career-item div{
+    font-family: 'RobotoBold';
+    text-align: center;
+    color:white;
+    text-shadow: rgba(0,0,0,0.3) 3px 4px 3px, rgba(0,0,0,0.3) -3px 4px 3px;
+    margin: auto;
+}
+
+#career-clearfix li {
+    max-width:350px !important;
+    margin-right: 50px !important;
+}
+
+.position-key {
+    font-size:175%;
+    margin-bottom: 0px;
+}
+
+#our-career {
+    margin-top: 44px;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+.sales_marketing {
+    background: -moz-linear-gradient(0deg, rgba(255,107,8,0.7) 0%, rgba(236,81,21,0.7) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,107,8,0.7)), color-stop(100%, rgba(236,81,21,0.7))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(255,107,8,0.7) 0%, rgba(236,81,21,0.7) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(255,107,8,0.7) 0%, rgba(236,81,21,0.7) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(255,107,8,0.7) 0%, rgba(236,81,21,0.7) 100%) !important;
+    background: linear-gradient(90deg, rgba(255,107,8,0.7) 0%, rgba(236,81,21,0.7) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6b00', endColorstr='#ff8934',GradientType=1 ) !important;
+}
+
+.hr {
+    background: -moz-linear-gradient(0deg, rgba(236,81,21,0.7) 0%, rgba(216,55,34,0.7) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(236,81,21,0.7)), color-stop(100%, rgba(216,55,34,0.7))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(236,81,21,0.7) 0%, rgba(216,55,34,0.7) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(236,81,21,0.7) 0%, rgba(216,55,34,0.7) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(236,81,21,0.7) 0%, rgba(216,55,34,0.7) 100%) !important;
+    background: linear-gradient(90deg, rgba(236,81,21,0.7) 0%, rgba(216,55,34,0.7) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8934', endColorstr='#ffb884',GradientType=1 ) !important;
+}
+
+.administrative {
+    background: -moz-linear-gradient(0deg, rgba(216,55,34,0.7) 0%, rgba(197,29,47,0.7) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(216,55,34,0.7)), color-stop(100%, rgba(197,29,47,0.7))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(216,55,34,0.7) 0%, rgba(197,29,47,0.7) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(216,55,34,0.7) 0%, rgba(197,29,47,0.7) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(216,55,34,0.7) 0%, rgba(197,29,47,0.7) 100%) !important;
+    background: linear-gradient(90deg, rgba(216,55,34,0.7) 0%, rgba(197,29,47,0.7) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb884', endColorstr='#ffe1cb',GradientType=1 ) !important;
+}
+
+.tech {
+    background: -moz-linear-gradient(0deg, rgba(197,29,47,0.7) 0%, rgba(177,3,60,0.7) 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(197,29,47,0.7)), color-stop(100%, rgba(177,3,60,0.7))) !important;
+    background: -webkit-linear-gradient(0deg, rgba(197,29,47,0.7) 0%, rgba(177,3,60,0.7) 100%) !important;
+    background: -o-linear-gradient(0deg, rgba(197,29,47,0.7) 0%, rgba(177,3,60,0.7) 100%) !important;
+    background: -ms-linear-gradient(0deg, rgba(197,29,47,0.7) 0%, rgba(177,3,60,0.7) 100%) !important;
+    background: linear-gradient(90deg, rgba(197,29,47,0.7) 0%, rgba(177,3,60,0.7) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe1cb', endColorstr='#FFFFFF',GradientType=1 ) !important;
+}
+
+.selected-career-item {
+    height: auto !important;
+    max-width: 1150px !important;
+}
+
+#selectedCareer {
+    display: inline-block;
+    width: 100%;
+}
+
+#selectedCareer p, #selectedCareer h3{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 1.3em;
+    text-align: justify;
+    margin:0px;
+    display:block;
+    width: 100%;
+}
+
+#selectedCareer p {
+    margin-bottom: 4px;
+}
+
+#selectedCareer h3:not(:first-child) {
+    margin-top: 10px;
+}
+
+#selected-career-image {
+    padding: 0px;
+    text-align: left;
+    background-size:auto;
+    cursor: auto !important;
+    margin-top: 44px !important;
+    margin-right: 0px !important;
+    max-width: 350px;
+}
+
+.selected-career-details {
+    margin-left: 33px;
+    padding-left: 17px;
+    margin-top: 44px;
+}
+
+.selected-career-back-button {
+    font-size: 16px;
+    text-align:left;
+}
+
+.selected-career-back-button a {
+    color: #6ed2ff;
+}
+
+.selected-career-back-button a:hover {
+    cursor:pointer;
+    color: #6ed2ff;
+}
+
+
+
+
+@media (max-width: 1320px) {
+    .career-frame {
+        width: calc(100vw - 100px);
+        margin-top: 2.5vw;
+    }
+    
+    .career-page-details {
+        width: calc(100vw - 100px);
+    }
+
+    .career-page-slogan{
+        font-size:1.85vw;
+        margin-right:1vw;
+    }
+    .career-menu-item {
+        font-size:1.0vw;
+    }
+    .career-menu-item-active {
+        font-size:1.3vw;
+    }
+    #our-career {
+        font-size:1.2vw;
+        margin-top: 2.5vw;
+    }
+    .selected-career-back-button{
+        font-size:1.4vw;
+    }
+    .selected-career-item {
+        margin-top: 2.5vw;
+    }
+    .selected-career-details {
+        margin-top: 2.5vw;
+        margin-left: 0vw;
+        padding-left: 2vw;
+        text-align: right;
+    }
+    .career-item {
+        max-width: 30vw;
+        max-height: 24vw;
+        font-size: 3.2vw;
+    }
+    
+    #career-clearfix li {
+        max-width: 30vw !important;
+        max-height: 24vw;
+        margin-right: 2vw !important;
+    }
+    #selectedCareer p, #selectedCareer h3{
+        font-size: 1.2vw;
+    }
+    #selected-career-image {
+        margin-top: 2vw !important;
+    }
+}

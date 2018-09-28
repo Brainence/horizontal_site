@@ -1,0 +1,27 @@
+﻿[
+
+  {
+    "positionKey" :  ".Net",
+    "positionValue": "Full stack developer",
+    "tag": "tech",
+    "details": "<h3><strong>General requirements:</strong></h3><p>• 1+ years of industrial experience</p><p>• Strong knowledge of .NET Framework</p><p>• ASP.NET</p><p>• Web API</p><p>• .Net Core 2</p><p>• Good English (intermediate)</p><h3><strong>Main Responsibilities:</strong></h3><p>• Design and implementation of the products</p><p>• Participation on development of various aspects of the product (business logic, user interface)</p><p>• Collaborate with testing, documentation and product management</p><p>If you meet these requirements, please email your CV to<strong><a style=\"color: #ff6b00 !important;\" href=\"mailto:hr@brainence.com\"> hr@brainence.com</a></strong></p>"
+  },
+  {
+    "positionKey" :  "QA",
+    "positionValue": "Engineer",
+    "tag": "administrative",
+    "details": "<h3><strong>Position Requirements:</strong></h3><p>• Good communication skills;</p><p>• Experience in Selenium usage;</p><p>• Manual testing knowledge and experience;</p><p>• Attentiveness and willing to work with complicated business rules;</p><p>• Experience with TFS tool;</p><p>• Understanding of Agile (SCRUM) methodology;</p><p>• Experience of working with distributed teams;</p><h3><strong>Main Responsibilities:</strong></h3><p>• Create test scenarios and test cases for manual testing of Web application features, REST API;</p><p>• Perform manual testing where it is needed;</p><p>• Create, run and analyze automation tests (Selenium);</p><p>• Analyze and log defects;</p><p>If you meet these requirements, please email your CV to<strong><a style=\"color: #ff6b00 !important;\" href=\"mailto:hr@brainence.com\"> hr@brainence.com</a></strong></p>"
+  },
+  {
+    "positionKey" :  "Recruiter",
+    "positionValue": "HR Manager",
+    "tag": "hr",
+    "details": "<h3><strong>Position Requirements:</strong></h3><p>• Good written and verbal communication skills in Ukrainian and English;</p><p>• Good interpersonal skills;</p><p>• Detail oriented;</p><p>• Organization;</p><p>• Source candidates for a variety of roles across multiple departments;</p><p>• Manage communication with Hiring Managers;</p><p>• Drive the recruitment process from beginning to end.</p><h3><strong>Desired job qualifications:</strong></h3><p>• Decision making;</p><p>• Good analytical thinking;</p><p>• Result orientation;</p><p>• Flexibility;</p><p>• Responsibility;</p><p>• Good team player.</p><p>If you meet these requirements, please email your CV to<strong><a style=\"color: #ff6b00 !important;\" href=\"mailto:hr@brainence.com\"> hr@brainence.com</a></strong></p>"
+  },
+  {
+    "positionKey": "Sales",
+    "positionValue": "Assistant",
+    "tag": "sales_marketing",
+    "details": "<p>If you are passionate about IT Sales and interested in starting your career in this direction, then you are at the right place. We are looking for young and ambitious person to join Brainence Sales Dream team. Key responsibilities include: driving Brainence online marketing activities and driving established lead generation process, as well as assist in the planning, execution and measuring marketing campaigns across all online channels.</p><h3><strong>Main Responsibilities:</strong></h3><p>• Create and execute lead generation strategies to drive online traffic to the website and landing pages</p><p>• Plan, and execute email campaigns</p><p>• Create, test (A/B split) and run landing pages</p><p>• Optimize conversion across all funnels</p><p>• Track and report performance of all digital marketing campaigns</p><p>• Develop and maintain Social Media channels</p><p>• Closely cooperate with development team</p><p>• Identify trends and market needs for best product offering.</p><p>If you meet these requirements, please email your CV to<strong><a style=\"color: #ff6b00 !important;\" href=\"mailto:hr@brainence.com\"> hr@brainence.com</a></strong></p>"
+  }
+]

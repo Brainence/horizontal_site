@@ -1,0 +1,22 @@
+﻿[
+  {
+    "author": "Steve",
+    "image": "content/images/testimonials/photo1.png",
+    "details": "We were looking for a software development partner that could take on our complex needs and help us utilize technology in every aspect of our service business. Brainence team demonstrated as high dedication and attention to details as to address given business objectives, advise on and implement technology that younger tech-savvy workers are comfortable with and that helps them succeed.",
+    "position": "Owner of business, UK"
+  },
+
+  {
+    "author": "Max",
+    "image": "content/images/testimonials/photo1.png",
+    "details": "Even working remotely, Brainence experts quickly became a part of my development team, they proactively take part in product lifecycle. At every stage of our cooperation Brainence team demonstrated high professionalism and attention to the details.",
+    "position": "Owner of business, Germany"
+  },
+
+  {
+    "author": "David",
+    "image": "content/images/testimonials/photo1.png",
+    "details": "They are focused on the value in each project activity and they absolutely did not want to burn money from a client without providing value.",
+    "position": "CEO, USA"
+  }
+]
