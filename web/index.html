@@ -2,43 +2,50 @@
 <html ng-app="brainenceApp"
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
-<head>
+<head>    
     <meta charset="utf-8" />
+    <meta name="description" content="http://brainence.com/" />
     <meta property="og:url" content="http://brainence.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Brainence" />
     <meta property="og:title" content="Brainence" />
     <meta property="og:description" content="Brainence is an outsourcing company engaged in the development web products and software. We are the team of specialists focused on finding the most reliable, effective and innovative solutions for transforming customer ideas into products that work for their business." />
     <meta property="og:image" content="http://brainence.com/preview.png" />
     <meta property="og:image" content="http://brainence.com/previewgame.png" />
-
+    <meta name="twitter:site" content="Brainence"/>
+    <meta name="twitter:description" content="Brainence is an outsourcing company engaged in the development web products and software. We are the team of specialists focused on finding the most reliable, effective and innovative solutions for transforming customer ideas into products that work for their business."/>
+    <meta name="twitter:title" content="Brainence"/>
+    <meta name="twitter:image" content="http://brainence.com/preview.png"/>
+    <meta name="twitter:card" content="summary"/>
     <title>Brainence</title>
-
     <link rel="stylesheet" href="style/font-awesome.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/horizontal.css" />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/testimonials.css" />
-    <link rel="stylesheet" href="style/portfolio.css" />
-    <link rel="stylesheet" href="style/contacts.css" />
-    <link rel="stylesheet" href="style/career.css" />
-    <link rel="stylesheet" href="style/partnership.css" />
-    <link rel="stylesheet" href="style/game.css" />
+    <link rel="stylesheet" href="style/horizontal.min.css" />
+    <link rel="stylesheet" href="style/main.min.css" />
+    <link rel="stylesheet" href="style/testimonials.min.css" />
+    <link rel="stylesheet" href="style/portfolio.min.css" />
+    <link rel="stylesheet" href="style/contacts.min.css" />
+    <link rel="stylesheet" href="style/career.min.css" />
+    <link rel="stylesheet" href="style/partnership.min.css" />
+    <link rel="stylesheet" href="style/game.min.css" />
     <link rel="icon" href="content/images/wsi-imageoptim-cropped-Brain1Small-1-150x150.png">
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-102852374-1', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-102852374-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>
     <script src="lib/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="lib/sly.min.js"></script>
-    <script src="src/app.js"></script>
-
+    <script src="src/app.min.js"></script>
     <script type="text/javascript">
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
             document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"><\/script>');
@@ -59,22 +66,22 @@
         <nav class="navbar main-header" id="main-menu">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="http://brainence.com">
-                        <img class="logo" src="content/images/logo.png" />
+                    <a href="http://brainence.com" title="">
+                        <img class="logo" src="content/images/logo.png" alt="logo"/>
                     </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li><a id="menu-button-0" href="" onclick="activatePageNr(0)" class="menu-active">Home</a></li>
-                    <li><a id="menu-button-1" href="" onclick="activatePageNr(1)">Projects</a></li>
-                    <li><a id="menu-button-2" href="" onclick="activatePageNr(2)">Testimonials</a></li>
-                    <li><a id="menu-button-3" href="" onclick="activatePageNr(3)">About</a></li>
-                    <li><a id="menu-button-4" href="" onclick="activatePageNr(4)">Career</a></li>
-                    <li><a id="menu-button-5" href="" onclick="activatePageNr(5)">Partnership</a></li>
-                    <li><a id="menu-button-6" href="" onclick="runGame()" class="shaking"><img src="content/images/game.png" /></a></li>
+                    <li><a id="menu-button-0" href="" title="" onclick="activatePageNr(0)" class="menu-active">Home</a></li>
+                    <li><a id="menu-button-1" href="" title="" onclick="activatePageNr(1)">Projects</a></li>
+                    <li><a id="menu-button-2" href="" title="" onclick="activatePageNr(2)">Testimonials</a></li>
+                    <li><a id="menu-button-3" href="" title="" onclick="activatePageNr(3)">About</a></li>
+                    <li><a id="menu-button-4" href="" title="" onclick="activatePageNr(4)">Career</a></li>
+                    <li><a id="menu-button-5" href="" title="" onclick="activatePageNr(5)">Partnership</a></li>
+                    <li><a id="menu-button-6" href="" title="" onclick="runGame()" class="shaking"><img src="content/images/game.png" alt="game"/></a></li>
                     <script type="text/javascript">
                         if (!/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
-                            document.write('<li><a id="menu-button-7" href="" onclick="colorMode()"><img id="settingButton" src="content/images/settingscolor.png" /></a></li>');
+                            document.write('<li><a id="menu-button-7" href="" title="" onclick="colorMode()"><img id="settingButton" src="content/images/settingscolor.png" alt="settingscolor"/></a></li>');
                     </script>
                     
                 </ul>
@@ -94,7 +101,7 @@
                                     <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-0">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#web-app-dev" onclick="collapseInItem(0)">
                                             <div class="collapsible-heading-image">
-                                                <img src="content/images/Web_app_Icon.png" />
+                                                <img src="content/images/Web_app_Icon.png" alt="web_icon"/>
                                             </div>
                                             <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">WEB & MOBILE DEVELOPMENT</p>
@@ -107,7 +114,7 @@
                                     <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-1">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#website-graph-design" onclick="collapseInItem(1)">
                                             <div class="collapsible-heading-image">
-                                                <img src="content/images/website_grafic_icon.png" />
+                                                <img src="content/images/website_grafic_icon.png" alt="graphic_icon"/>
                                             </div>
                                             <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">WEB & GRAPHICS DESIGN</p>
@@ -120,7 +127,7 @@
                                     <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-2">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#software-development" onclick="collapseInItem(2)">
                                             <div class="collapsible-heading-image">
-                                                <img src="content/images/Software_dev_icon.png" />
+                                                <img src="content/images/Software_dev_icon.png" alt="software_icon"/>
                                             </div>
                                             <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">DEVELOPER RESOURCES</p>
@@ -133,7 +140,7 @@
                                     <div class="col-sm-3 collapsible-item nopadding nopadding-right" id="collapsible-item-3">
                                         <div class="collapsible-heading" data-toggle="collapse" href="#custom-programming" onclick="collapseInItem(3)">
                                             <div class="collapsible-heading-image">
-                                                <img src="content/images/Custom_progr_icon.png" />
+                                                <img src="content/images/Custom_progr_icon.png" alt="custom_icon"/>
                                             </div>
                                             <div class="collapsible-heading-text">
                                                 <p class="home-widget-text">CUSTOM DEVELOPMENT</p>
@@ -156,19 +163,20 @@
                                     <div class="col-sm-5">
                                         <span class="portfolio-page-slogan">PROJECTS</span>
                                         <span class="portfolio-menu">
-                                            <a class="portfolio-menu-item portfolio-menu-item-active" ng-click="SortByDate(); ActivateMenu(0); submenu='latest'">LATEST</a>
+                                            <a class="portfolio-menu-item portfolio-menu-item-active" title="" ng-click="SortByDate(); ActivateMenu(0); submenu='latest'">LATEST</a>
                                             <span class="menu-divider"> | </span>
-                                            <a class="portfolio-menu-item" ng-click="ActivateMenu(1); submenu='technology'">TECHNOLOGY</a>
+                                            <a class="portfolio-menu-item" title="" ng-click="ActivateMenu(1); submenu='technology'">TECHNOLOGY</a>
                                             <span class="menu-divider"> | </span>
-                                            <a class="portfolio-menu-item" ng-click="ActivateMenu(2); submenu='industry'">INDUSTRY</a>
+                                            <a class="portfolio-menu-item" title="" ng-click="ActivateMenu(2); submenu='industry'">INDUSTRY</a>
                                         </span>
                                     </div>
                                     <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
+                                        <h1 itemscope itemtype="http://schema.org" class="content-hide">Technology</h1>
                                         <span ng-switch-when="technology" ng-repeat="item in submenuTechnologies">
-                                            <a class="portfolio-submenu-item portfolio-submenu-item-active" ng-click="ActivateSubmenu($index); ShowTechnology(item)">{{item}}</a>
+                                            <a class="portfolio-submenu-item portfolio-submenu-item-active" title="" ng-click="ActivateSubmenu($index); ShowTechnology(item)">{{item}}</a>
                                         </span>
                                         <span ng-switch-when="industry" ng-repeat="item in submenuIndustries">
-                                            <a class="portfolio-submenu-item portfolio-submenu-item-active" ng-click="ActivateSubmenu($index); ShowIndustry(item)">{{item}}</a>
+                                            <a class="portfolio-submenu-item portfolio-submenu-item-active" title="" ng-click="ActivateSubmenu($index); ShowIndustry(item)">{{item}}</a>
                                         </span>
                                     </p>
                                 </div>
@@ -179,15 +187,15 @@
                                             <li class="portfolio-item col-sm-4" ng-repeat="portfolio in portfolios">
                                                 <div class="portfolio-data grayscale grayscale-item" ng-click="SelectPortfolio($index)">
                                                     <p class="portfolio-title">{{portfolio.title}}</p>
-                                                    <img class="portfolio-image" ng-src="{{portfolio.image}}" />
+                                                    <img class="portfolio-image" ng-src="{{portfolio.image}}" alt="portfolio"/>
                                                     <p class="portfolio-text">
-                                                        {{portfolio.description | cropString}} <a href="">...read more...</a>
+                                                        {{portfolio.description | cropString}} <a href="" title="">...read more...</a>
                                                     </p>
                                                 </div>
                                             </li>
                                         </ul>
-                                        <img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/switch_button_triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-left" ng-click="PrevPortfolio()" src="content/images/switch_button_triangle.png" alt="left_button"/>
+                                        <img class="button-slide button-slide-right" ng-click="NextPortfolio()" src="content/images/switch_button_triangle.png" alt="right_button"/>
                                     </div>
                                     <div class="portfolio-scrollbar">
                                         <div class="portfolio-handle">
@@ -200,22 +208,22 @@
                                 <div class="portfolio-header selected-portfolio-header">
                                     <span class="portfolio-page-slogan">{{selectedPortfolio.title}}</span>
                                     <span class="portfolio-menu">
-                                        <a class="selected-portfolio-menu selected-portfolio-menu-active" ng-click="ActivateSelectedMenu(0); selection='problem'">PROBLEM</a>
+                                        <a class="selected-portfolio-menu selected-portfolio-menu-active" title="" ng-click="ActivateSelectedMenu(0); selection='problem'">PROBLEM</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(1); selection='solution'">SOLUTION</a>
+                                        <a class="selected-portfolio-menu" title="" ng-click="ActivateSelectedMenu(1); selection='solution'">SOLUTION</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="selected-portfolio-menu" ng-click="ActivateSelectedMenu(2); selection='business'">BUSINESS</a>
+                                        <a class="selected-portfolio-menu" title="" ng-click="ActivateSelectedMenu(2); selection='business'">BUSINESS</a>
                                     </span>
                                 </div>
                                 <div class="gradient"></div>
                                 <div class="selected-portfolio-item row">
-                                    <img class="col-sm-4 selected-portfolio-image grayscale grayscale-item" ng-src="{{selectedPortfolio.image}}" />
+                                    <img class="col-sm-4 selected-portfolio-image grayscale grayscale-item" ng-src="{{selectedPortfolio.image}}" alt="grayscale-item"/>
                                     <div class="col-sm-8 selected-portfolio-details" ng-switch on="selection">
                                         <p ng-switch-when="problem" class="selected-portfolio-text">{{selectedPortfolio.problem}}</p>
                                         <p ng-switch-when="solution" class="selected-portfolio-text">{{selectedPortfolio.solution}}</p>
                                         <p ng-switch-when="business" class="selected-portfolio-text">{{selectedPortfolio.business}}</p>
                                         <p class="selected-portfolio-back-button">
-                                            <a ng-click="SelectList()">Back</a>
+                                            <a title="" ng-click="SelectList()">Back</a>
                                         </p>
                                     </div>
                                 </div>
@@ -230,11 +238,11 @@
                                     <span class="testimonial-page-slogan">TESTIMONIALS</span>
 
 									<div style="display: flex; justify-content: flex-end;">
-<a target="_blank" href="https://www.goodfirms.co/directory/platform/app-development/hybrid" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-hybrid-app-developers.png" alt="goodfirms"></a>
+<a target="_blank" href="https://www.goodfirms.co/directory/platform/app-development/hybrid" title="" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-hybrid-app-developers.png" alt="goodfirms"></a>
 
-<a target="_blank" href="https://www.goodfirms.co/directory/platform/app-development" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-mobile-app-developers.png" alt="goodfirms"></a>
+<a target="_blank" href="https://www.goodfirms.co/directory/platform/app-development" title="" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-mobile-app-developers.png" alt="goodfirms"></a>
 
-<a target="_blank" href="https://www.goodfirms.co/directory/languages/top-software-development-companies" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-software-development-companies.png" alt="goodfirms"></a>
+<a target="_blank" href="https://www.goodfirms.co/directory/languages/top-software-development-companies" title="" style="font-size: 30px;"><img src="https://www.goodfirms.co/img/badges/media/black/rsquare/small/top-software-development-companies.png" alt="goodfirms"></a>
 
 									<div class="clutch-widget" data-url="https://clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="78023" style="width: 200px;margin-left: 10px;"></div>
                                 </div>
@@ -246,7 +254,7 @@
                                             <li class="testimonial-item" ng-repeat="testimonial in testimonials">
                                                 <div class="row nomargin testimonial-block">
                                                     <div class="testimonial-image">
-                                                        <img class="grayscale grayscale-item" ng-src="{{testimonial.image}}" />
+                                                        <img class="grayscale grayscale-item" ng-src="{{testimonial.image}}" alt="grayscale_item"/>
                                                     </div>
                                                     <div class="testimonial-data">
                                                         <div class="testimonial-author">
@@ -259,8 +267,8 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-left" ng-click="PrevTesimonial()" src="content/images/switch_button_triangle.png" alt="left_button"/>
+                                        <img class="button-slide button-slide-right" ng-click="NextTesimonial()" src="content/images/switch_button_triangle.png" alt="right_button"/>
                                     </div>
                                     <div class="testimonial-scrollbar">
                                         <div class="testimonial-handle">
@@ -280,23 +288,23 @@
                                         <div class="contacts-header row">
                                             <p class="contacts-page-slogan col-sm-4 col-xs-4">CONTACTS</p>
                                             <div class="col-sm-8 col-xs-8">
-                                                <a href="https://twitter.com/brainence" target="_blank">
-                                                    <img class="contacts-href" id="imageTwitter" src="content/images/contacts/Twitter grey.png"
+                                                <a href="https://twitter.com/brainence" title="" target="_blank">
+                                                    <img class="contacts-href" id="imageTwitter" src="content/images/contacts/Twitter grey.png" alt="twitter"
                                                          onmouseover="ChangeImage('imageTwitter', 'content/images/contacts/Twitter.png')"
                                                          onmouseout="ChangeImage('imageTwitter', 'content/images/contacts/Twitter grey.png')" />
                                                 </a>
-                                                <a href="https://www.facebook.com/brainence/" target="_blank">
-                                                    <img class="contacts-href" id="imageFacebook" src="content/images/contacts/facebook grey.png"
+                                                <a href="https://www.facebook.com/brainence/" title="" target="_blank">
+                                                    <img class="contacts-href" id="imageFacebook" src="content/images/contacts/facebook grey.png" alt="facebook"
                                                          onmouseover="ChangeImage('imageFacebook', 'content/images/contacts/Facebook .png')"
                                                          onmouseout="ChangeImage('imageFacebook', 'content/images/contacts/facebook grey.png')" />
                                                 </a>
-                                                <a href="https://www.linkedin.com/company/brainence" target="_blank">
-                                                    <img class="contacts-href" id="imageLinkedin" src="content/images/contacts/Linledin grey.png"
+                                                <a href="https://www.linkedin.com/company/brainence" title="" target="_blank">
+                                                    <img class="contacts-href" id="imageLinkedin" src="content/images/contacts/Linledin grey.png" alt="linkedin"
                                                          onmouseover="ChangeImage('imageLinkedin', 'content/images/contacts/LinkedIN .png')"
                                                          onmouseout="ChangeImage('imageLinkedin', 'content/images/contacts/Linledin grey.png')" />
                                                 </a>
-                                                <a href="https://www.instagram.com/brainence/" target="_blank">
-                                                    <img class="contacts-href" id="imageInstagram" src="content/images/contacts/Instagram grey.png"
+                                                <a href="https://www.instagram.com/brainence/" title="" target="_blank">
+                                                    <img class="contacts-href" id="imageInstagram" src="content/images/contacts/Instagram grey.png" alt="instagram"
                                                          onmouseover="ChangeImage('imageInstagram', 'content/images/contacts/Instagram.png')"
                                                          onmouseout="ChangeImage('imageInstagram', 'content/images/contacts/Instagram grey.png')" />
                                                 </a>
@@ -308,17 +316,17 @@
                                         <p id="location">Main office - Promyslova st., 50a, Lviv, Ukraine</p>
                                         <div id="info">
                                             <a href="skype:akornytskyi?call">
-                                                <img id="imageSkype" src="content/images/contacts/Skype grey.png"
+                                                <img id="imageSkype" src="content/images/contacts/Skype grey.png" alt="skype"
                                                      onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
                                                      onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
                                             </a>
-                                            <a href="tel:+380964375079">
-                                                <img id="imageCall" src="content/images/contacts/Call Grey.png"
+                                            <a href="tel:+380964375079" title="">
+                                                <img id="imageCall" src="content/images/contacts/Call Grey.png" alt="call"
                                                      onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
                                                      onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
                                             </a>
-                                            <a href="mailto:info@brainence.com">
-                                                <img id="imageMail" src="content/images/contacts/Mail Grey.png"
+                                            <a href="mailto:info@brainence.com" title="">
+                                                <img id="imageMail" src="content/images/contacts/Mail Grey.png" alt="mail"
                                                      onmouseover="ChangeImage('imageMail', 'content/images/contacts/Mail.png')"
                                                      onmouseout="ChangeImage('imageMail', 'content/images/contacts/Mail Grey.png')" />
                                             </a>
@@ -330,7 +338,7 @@
 
                                         <div class="row">
                                             <div class="selected-contact-item col-sm-6 col-xs-6">
-                                                <img class="grayscale grayscale-item" ng-src="{{selectedContact.image}}" />
+                                                <img class="grayscale grayscale-item" ng-src="{{selectedContact.image}}" alt="grayscale_item"/>
                                                 <p>{{selectedContact.name}}, {{selectedContact.position}}</p>
                                             </div>
 
@@ -339,8 +347,8 @@
                                                     <div class="frame contacts-frame" id="contacts-frame">
                                                         <ul class="clearfix" id="contacts-clearfix">
                                                             <li class="contacts-item" ng-repeat="contact in contacts">
-                                                                <img class="grayscale grayscale-item" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" />
-                                                                <img class="grayscale grayscale-item" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" />
+                                                                <img class="grayscale grayscale-item" ng-src="{{contact[0].image}}" ng-click="SelectContact($index,0)" alt="grayscale_item"/>
+                                                                <img class="grayscale grayscale-item" ng-src="{{contact[1].image}}" ng-click="SelectContact($index,1)" alt="grayscale_item"/>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -357,7 +365,7 @@
                                                 <div class="frame photo-frame" id="photo-frame">
                                                     <ul class="clearfix" id="photo-clearfix">
                                                         <li ng-repeat="photo in photos">
-                                                            <img class="grayscale grayscale-item photo-item" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" />
+                                                            <img class="grayscale grayscale-item photo-item" ng-src="{{photo}}" data-toggle="modal" data-target="#photoModal" ng-click="OpenPhoto($index)" alt="grayscale_item"/>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -380,15 +388,15 @@
                                 <div class="career-header">
                                     <span class="career-page-slogan">CAREER</span>
                                     <span class="career-menu">
-                                        <a class="career-menu-item career-menu-item-active" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>
+                                        <a class="career-menu-item career-menu-item-active" title="" ng-click="ActivateMenuCareer(0); ShowAllCareer();">ALL</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>
+                                        <a class="career-menu-item" title="" ng-click="ActivateMenuCareer(1,'sales_marketing'); submenu='sales_marketing'">SALES MARKETING</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>
+                                        <a class="career-menu-item" title="" ng-click="ActivateMenuCareer(2,'hr'); submenu='hr'">HR</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a>
+                                        <a class="career-menu-item" title="" ng-click="ActivateMenuCareer(3,'administrative'); submenu='administrative'">ADMINISTRATIVE</a>
                                         <span class="menu-divider"> | </span>
-                                        <a class="career-menu-item" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
+                                        <a class="career-menu-item" title="" ng-click="ActivateMenuCareer(4,'tech'); submenu='tech'">TECH</a>
                                     </span>
                                 </div>
                                 <div class="gradient"></div>
@@ -408,8 +416,8 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <img class="button-slide button-slide-left" ng-click="PrevCareer()" src="content/images/switch_button_triangle.png" />
-                                        <img class="button-slide button-slide-right" ng-click="NextCareer()" src="content/images/switch_button_triangle.png" />
+                                        <img class="button-slide button-slide-left" ng-click="PrevCareer()" src="content/images/switch_button_triangle.png" alt="left_button"/>
+                                        <img class="button-slide button-slide-right" ng-click="NextCareer()" src="content/images/switch_button_triangle.png"  alt="right_button"/>
                                     </div>
                                     <div class="career-scrollbar">
                                         <div class="career-handle">
@@ -440,7 +448,7 @@
                                     <div class="col-xs-8 selected-career-details nopadding-right pull-right">
                                         <div id="selectedCareer"></div>
                                         <p class="selected-career-back-button">
-                                            <a ng-click="SelectList()">Back</a>
+                                            <a title="" ng-click="SelectList()">Back</a>
                                         </p>
                                     </div>
                                 </div>
@@ -456,11 +464,11 @@
                                     <div class="col-sm-6">
                                         <span class="portfolio-page-slogan">PARTNERSHIP</span>
                                         <span class="portfolio-menu">
-                                            <a class="partnership-menu-item partnership-menu-item-active" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>
+                                            <a class="partnership-menu-item partnership-menu-item-active" title="" ng-click="showallianceCooperation(); ActivateMenu(0);">ALLIANCE COOPERATION</a>
                                             <span class="menu-divider"> | </span>
-                                            <a class="partnership-menu-item" ng-click="showDirectCooperation(); ActivateMenu(1);">DIRECT COOPERATION</a>
+                                            <a class="partnership-menu-item" title="" ng-click="showDirectCooperation(); ActivateMenu(1);">DIRECT COOPERATION</a>
                                             <span class="menu-divider"> | </span>
-                                            <a class="partnership-menu-item" ng-click="showPartners(); ActivateMenu(2);">PARTNERS</a>
+                                            <a class="partnership-menu-item" title="" ng-click="showPartners(); ActivateMenu(2);">PARTNERS</a>
                                         </span>
                                     </div>
 
@@ -471,7 +479,7 @@
                                         <ul class="clearfix" id="allianceCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png"  alt="partnership"/>
                                                     <p class="partnership-item-header">
                                                         Alliance Cooperation
                                                     </p>
@@ -480,7 +488,7 @@
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/2_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/2_icon.png" alt="partnership"/>
                                                     <p class="partnership-item-header">
                                                         Potential issues:
                                                     </p>
@@ -494,7 +502,7 @@
                                             </li>
                                             <li class="partnership-item partnership-last-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image" id="imageBrainence" src="content/images/partnership/3_grey.png"
+                                                    <img class="partnership-image" id="imageBrainence" src="content/images/partnership/3_grey.png" alt="partnership"
                                                          onmouseover="ChangeImage('imageBrainence', 'content/images/partnership/3_icon.png')"
                                                          onmouseout="ChangeImage('imageBrainence', 'content/images/partnership/3_grey.png')" />
                                                     <p class="partnership-item-header">
@@ -516,7 +524,7 @@
                                         <ul class="clearfix" style="display: none;" id="directCooperationContent">
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/1_icon.png" alt="partnership"/>
                                                     <p class="partnership-item-header">
                                                         Direct Cooperation
                                                     </p>
@@ -525,7 +533,7 @@
                                             </li>
                                             <li class="partnership-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/4_icon.png" />
+                                                    <img class="partnership-image grayscale grayscale-item" src="content/images/partnership/4_icon.png" alt="partnership"/>
                                                     <p class="partnership-item-header">
                                                         Potential issues:
                                                     </p>
@@ -540,7 +548,7 @@
                                             </li>
                                             <li class="partnership-item partnership-last-item col-sm-4 nomargin">
                                                 <div class="partnership-data">
-                                                    <img class="partnership-image" id="imageBrainence2" src="content/images/partnership/3_grey.png"
+                                                    <img class="partnership-image" id="imageBrainence2" src="content/images/partnership/3_grey.png" alt="partnership"
                                                          onmouseover="ChangeImage('imageBrainence2', 'content/images/partnership/3_icon.png')"
                                                          onmouseout="ChangeImage('imageBrainence2', 'content/images/partnership/3_grey.png')" />
                                                     <p class="partnership-item-header">
@@ -561,11 +569,11 @@
                                             <div class="frame partners-frame" id="partners-frame">
                                                 <ul class="clearfix" id="partners-clearfix">
                                                     <li class="partners-item" ng-repeat="partner in partners">
-                                                        <!--<a href="{{partner.href}}" target="_blank"><img class="grayscale grayscale-item" ng-src="{{partner.image}}" /></a>
-                                                        <p>{{partner.company}}</p>-->
+                                                        <!--<a href="{{partner.href}}" target="_blank"><img class="grayscale grayscale-item" ng-src="{{partner.image}}" alt="partner"/></a>
+    <p>{{partner.company}}</p>-->
                                                         <div class="grayscale grayscale-item partner-gray-item">
                                                             <div>
-                                                                <a href="{{partner.href}}" target="_blank"><img ng-src="{{partner.image}}" /></a>
+                                                                <a href="{{partner.href}}" title="" target="_blank"><img ng-src="{{partner.image}}" alt="partnership"/></a>
                                                                 <p>{{partner.company}}</p>
                                                             </div>
                                                         </div>
@@ -602,19 +610,19 @@
                             <div class="carousel-inner">
                                 <div class="item carousel-photo-item active" id="firstBootstrapImage">
                                     <div>
-                                        <img />
+                                        <img alt=""/>
                                     </div>
                                 </div>
                                 <div class="item carousel-photo-item" ng-repeat="photo in photos">
                                     <div>
-                                        <img ng-src="{{photo}}">
+                                        <img ng-src="{{photo}}" alt="carousel_item">
                                     </div>
                                 </div>
                             </div>
-                            <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+                            <a class="left carousel-control" title="" href="#photoCarousel" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
-                            <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+                            <a class="right carousel-control" title="" href="#photoCarousel" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
                             <button type="button" class="close" id="button-close" data-dismiss="modal">&times;</button>
@@ -625,7 +633,7 @@
         </div>
         <div id="game" style="display: none">
             <div id="close_button_parrent">
-                <span><a id="close_game_button" onclick="closegame()">X</a></span>
+                <span><a id="close_game_button" title="" onclick="closegame()">X</a></span>
             </div>
             <div id="game-status" class="ui"></div>
             <div id="game-panels">
@@ -637,7 +645,7 @@
                         <li>3. Score extra points by moving around a lot.</li>
                         <li>4. Stay alive.</li>
                     </ul>
-                    <a href="#" id="start-button" class="shaking">Start</a>
+                    <a href="#" title="" id="start-button" class="shaking">Start</a>
                     <div id="level-selector">
                         <span>Level:</span>
                         <ul class="levels"></ul>
@@ -647,18 +655,18 @@
             <canvas id="world"></canvas>
         </div>
     </div>
-    <script src="src/iehelpers.js"></script>
+    <script src="src/iehelpers.min.js"></script>
     <script src="src/vendor/plugins.js"></script>
     <script src="src/horizontal.js"></script>
-    <script src="src/testimonial.js"></script>
+    <script src="src/testimonial.min.js"></script>
     <script src="src/portfolio.js"></script>
-    <script src="src/contacts.js"></script>
-    <script src="src/photos.js"></script>
+    <script src="src/contacts.min.js"></script>
+    <script src="src/photos.min.js"></script>
     <script src="src/career.js"></script>
-    <script src="src/partnership.js"></script>
+    <script src="src/partnership.min.js"></script>
     <script src="src/background.js"></script>
     <script type="text/javascript" src="lib/game.js"></script>
-    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/main.min.js"></script>
 
 
 
