@@ -4,8 +4,7 @@
       xmlns:fb="http://ogp.me/ns/fb#">
 <head>    
     <meta charset="utf-8" />
-    <meta name="description" content="Brainence is an outsourcing company engaged in the development web products and software. We are the team of specialists focused on finding the most reliable, effective and innovative solutions for transforming customer ideas into products that work for their business." />
-    <meta name="keywords" content="Software, outsourcing, services, development, mvp, startup, startups">
+    <meta name="description" content="http://brainence.com/" />
     <meta property="og:url" content="http://brainence.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Brainence" />
@@ -18,7 +17,7 @@
     <meta name="twitter:title" content="Brainence"/>
     <meta name="twitter:image" content="http://brainence.com/preview.png"/>
     <meta name="twitter:card" content="summary"/>
-    <title>Brainence - Software Outsourcing Services / Startups / MVP</title>
+    <title>Brainence</title>
     <link rel="stylesheet" href="style/font-awesome.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style/horizontal.min.css" />
@@ -96,8 +95,6 @@
                     <li id="home">
                         <div class="page-content home-page-content">
                             <div class="homepage-details">
-                                <h1 itemscope itemtype="http://schema.org" class="content-hide">Brainence - Software outsourcing services</h1>
-                                <h2 itemscope itemtype="http://schema.org" class="content-hide">MVP Startups Software Development</h2>
                                 <p class="page-slogan" style="vertical-align: middle" id="page-slogan">BRAINENCE</p>
                                 <div class="gradient homepage-gradient"></div>
                                 <div class="row homepage-row">
@@ -174,6 +171,7 @@
                                         </span>
                                     </div>
                                     <p class="portfolio-menu col-sm-7" id="portfolio-submenu" ng-switch on="submenu">
+                                        <h1 itemscope itemtype="http://schema.org" class="content-hide">Technology</h1>
                                         <span ng-switch-when="technology" ng-repeat="item in submenuTechnologies">
                                             <a class="portfolio-submenu-item portfolio-submenu-item-active" title="" ng-click="ActivateSubmenu($index); ShowTechnology(item)">{{item}}</a>
                                         </span>
@@ -322,7 +320,7 @@
                                                      onmouseover="ChangeImage('imageSkype', 'content/images/contacts/Skype .png')"
                                                      onmouseout="ChangeImage('imageSkype', 'content/images/contacts/Skype grey.png')" />
                                             </a>
-                                            <a href="tel:+380964375079" title="">
+                                            <a href="tel:+380666606640" title="">
                                                 <img id="imageCall" src="content/images/contacts/Call Grey.png" alt="call"
                                                      onmouseover="ChangeImage('imageCall', 'content/images/contacts/Call.png')"
                                                      onmouseout="ChangeImage('imageCall', 'content/images/contacts/Call Grey.png')" />
@@ -640,7 +638,7 @@
             <div id="game-status" class="ui"></div>
             <div id="game-panels">
                 <div id="message" class="ui">
-                    <h3 id="title">Instructions</h3>
+                    <h2 id="title">Instructions</h2>
                     <ul class="instructions">
                         <li>1. Avoid white dots.</li>
                         <li>2. Hit other dots for boosts.</li>
@@ -660,12 +658,12 @@
     <script src="src/iehelpers.min.js"></script>
     <script src="src/vendor/plugins.js"></script>
     <script src="src/horizontal.js"></script>
-    <script src="src/testimonial.js"></script>
+    <script src="src/testimonial.min.js"></script>
     <script src="src/portfolio.js"></script>
-    <script src="src/contacts.js"></script>
-    <script src="src/photos.js"></script>
+    <script src="src/contacts.min.js"></script>
+    <script src="src/photos.min.js"></script>
     <script src="src/career.js"></script>
-    <script src="src/partnership.js"></script>
+    <script src="src/partnership.min.js"></script>
     <script src="src/background.js"></script>
     <script type="text/javascript" src="lib/game.js"></script>
     <script type="text/javascript" src="src/main.min.js"></script>
